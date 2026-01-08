@@ -1,0 +1,14 @@
+2025-12-17 12:23:29,116 - INFO - Initialized AutomatedDispersionTrader
+2025-12-17 12:23:29,117 - INFO -   Capital: $100,000
+2025-12-17 12:23:29,117 - INFO -   Vega-neutral: False
+2025-12-17 12:23:29,117 - INFO -   Trading mode: crawl
+2025-12-17 12:23:29,117 - INFO - ============================================================
+2025-12-17 12:23:29,117 - INFO - AUTOMATED DISPERSION TRADER
+2025-12-17 12:23:29,117 - INFO - ============================================================
+2025-12-17 12:23:29,117 - INFO - Processing signal: SHORT_DISPERSION
+2025-12-17 12:23:29,117 - INFO -   Implied Correlation: 0.45
+2025-12-17 12:23:29,117 - INFO -   Z-Score: 2.1
+2025-12-17 12:23:29,117 - INFO - Running safety checks...
+2025-12-17 12:23:29,117 - INFO - ✓ All safety checks passed
+2025-12-17 12:23:29,117 - INFO - Using standard 50/50 position sizing...
+2025-12-17 12:24:02,626 - INFO - Trade DSP_20251217_122329 CANCELLED by user

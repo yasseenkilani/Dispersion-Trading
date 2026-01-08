@@ -1,0 +1,1755 @@
+2025-12-25 00:13:25,040 - INFO - Initializing signal generator...
+2025-12-25 00:13:25,041 - INFO - Index Symbol: QQQ
+2025-12-25 00:13:25,078 - INFO - Connecting to IBKR...
+2025-12-25 00:13:25,175 - INFO - sent startApi
+2025-12-25 00:13:25,175 - INFO - REQUEST startApi {}
+2025-12-25 00:13:25,176 - INFO - SENDING startApi b'\x00\x00\x00\x0871\x002\x001\x00\x00'
+2025-12-25 00:13:25,176 - INFO - ANSWER connectAck {}
+2025-12-25 00:13:25,221 - INFO - ANSWER managedAccounts {'accountsList': 'DU9424599'}
+2025-12-25 00:13:27,180 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:13:27,180 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:13:27,685 - INFO - Successfully connected to IBKR
+2025-12-25 00:13:27,685 - INFO - Fetching IV data from IBKR...
+2025-12-25 00:13:27,686 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:13:27,686 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:13:27,687 - INFO - REQUEST reqMktData {'reqId': 1, 'contract': 4364252016: 0,QQQ,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:13:27,687 - INFO - SENDING reqMktData b'\x00\x00\x00-1\x0011\x001\x000\x00QQQ\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:13:27,973 - INFO - ANSWER tickReqParams {'tickerId': 1, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:13:27,976 - INFO - ANSWER marketDataType {'reqId': 1, 'marketDataType': 1}
+2025-12-25 00:13:27,985 - INFO - ANSWER tickSize {'reqId': 1, 'tickType': 0, 'size': 25}
+2025-12-25 00:13:27,986 - INFO - ANSWER tickSize {'reqId': 1, 'tickType': 3, 'size': 1}
+2025-12-25 00:13:27,986 - INFO - ANSWER tickSize {'reqId': 1, 'tickType': 5, 'size': 2}
+2025-12-25 00:13:27,987 - INFO - ANSWER tickSize {'reqId': 1, 'tickType': 0, 'size': 25}
+2025-12-25 00:13:27,988 - INFO - ANSWER tickSize {'reqId': 1, 'tickType': 3, 'size': 1}
+2025-12-25 00:13:27,988 - INFO - ANSWER tickSize {'reqId': 1, 'tickType': 5, 'size': 2}
+2025-12-25 00:13:27,988 - INFO - ANSWER tickSize {'reqId': 1, 'tickType': 8, 'size': 467338}
+2025-12-25 00:13:27,989 - INFO - ANSWER tickString {'reqId': 1, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:13:27,990 - INFO - ANSWER tickString {'reqId': 1, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:13:27,990 - INFO - ANSWER tickString {'reqId': 1, 'tickType': 45, 'value': '1766607198'}
+2025-12-25 00:13:27,995 - INFO - REQUEST cancelMktData {'reqId': 1}
+2025-12-25 00:13:27,995 - INFO - SENDING cancelMktData b'\x00\x00\x00\x062\x002\x001\x00'
+2025-12-25 00:13:27,996 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:13:27,996 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:13:27,996 - INFO - REQUEST reqMktData {'reqId': 2, 'contract': 4364252544: 0,QQQ,OPT,20260116,620.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:13:27,996 - INFO - SENDING reqMktData b'\x00\x00\x00;1\x0011\x002\x000\x00QQQ\x00OPT\x0020260116\x00620.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:13:31,000 - INFO - ANSWER marketDataType {'reqId': 2, 'marketDataType': 1}
+2025-12-25 00:13:31,001 - INFO - ANSWER tickReqParams {'tickerId': 2, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:13:31,229 - INFO - ANSWER tickString {'reqId': 2, 'tickType': 45, 'value': '1766600059'}
+2025-12-25 00:13:31,230 - INFO - ANSWER tickSize {'reqId': 2, 'tickType': 5, 'size': 5}
+2025-12-25 00:13:31,231 - INFO - ANSWER tickSize {'reqId': 2, 'tickType': 5, 'size': 5}
+2025-12-25 00:13:31,232 - INFO - ANSWER tickSize {'reqId': 2, 'tickType': 8, 'size': 1292}
+2025-12-25 00:13:31,234 - INFO - ANSWER tickSize {'reqId': 2, 'tickType': 0, 'size': 0}
+2025-12-25 00:13:31,235 - INFO - ANSWER tickSize {'reqId': 2, 'tickType': 3, 'size': 0}
+2025-12-25 00:13:31,236 - INFO - ANSWER tickSize {'reqId': 2, 'tickType': 0, 'size': 0}
+2025-12-25 00:13:31,237 - INFO - ANSWER tickSize {'reqId': 2, 'tickType': 3, 'size': 0}
+2025-12-25 00:13:32,181 - INFO - ANSWER tickSize {'reqId': 2, 'tickType': 5, 'size': 5}
+2025-12-25 00:13:32,181 - INFO - ANSWER tickString {'reqId': 2, 'tickType': 45, 'value': '1766600059'}
+2025-12-25 00:13:32,190 - INFO - REQUEST cancelMktData {'reqId': 2}
+2025-12-25 00:13:32,190 - INFO - SENDING cancelMktData b'\x00\x00\x00\x062\x002\x002\x00'
+2025-12-25 00:13:32,190 - INFO - QQQ IV: 15.07%
+2025-12-25 00:13:32,190 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:13:32,190 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:13:32,191 - INFO - REQUEST reqMktData {'reqId': 3, 'contract': 4364253072: 0,NVDA,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:13:32,191 - INFO - SENDING reqMktData b'\x00\x00\x00.1\x0011\x003\x000\x00NVDA\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:13:32,678 - INFO - ANSWER tickReqParams {'tickerId': 3, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:13:32,679 - INFO - ANSWER marketDataType {'reqId': 3, 'marketDataType': 1}
+2025-12-25 00:13:32,681 - INFO - ANSWER tickSize {'reqId': 3, 'tickType': 0, 'size': 2}
+2025-12-25 00:13:32,681 - INFO - ANSWER tickSize {'reqId': 3, 'tickType': 3, 'size': 20}
+2025-12-25 00:13:32,681 - INFO - ANSWER tickSize {'reqId': 3, 'tickType': 5, 'size': 1}
+2025-12-25 00:13:32,682 - INFO - ANSWER tickSize {'reqId': 3, 'tickType': 0, 'size': 2}
+2025-12-25 00:13:32,682 - INFO - ANSWER tickSize {'reqId': 3, 'tickType': 3, 'size': 20}
+2025-12-25 00:13:32,682 - INFO - ANSWER tickSize {'reqId': 3, 'tickType': 5, 'size': 1}
+2025-12-25 00:13:32,683 - INFO - ANSWER tickSize {'reqId': 3, 'tickType': 8, 'size': 652787}
+2025-12-25 00:13:32,683 - INFO - ANSWER tickString {'reqId': 3, 'tickType': 32, 'value': 'KP'}
+2025-12-25 00:13:32,683 - INFO - ANSWER tickString {'reqId': 3, 'tickType': 33, 'value': 'KPQ'}
+2025-12-25 00:13:32,684 - INFO - ANSWER tickString {'reqId': 3, 'tickType': 45, 'value': '1766607188'}
+2025-12-25 00:13:32,710 - INFO - REQUEST cancelMktData {'reqId': 3}
+2025-12-25 00:13:32,710 - INFO - SENDING cancelMktData b'\x00\x00\x00\x062\x002\x003\x00'
+2025-12-25 00:13:32,710 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:13:32,710 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:13:32,711 - INFO - REQUEST reqMktData {'reqId': 4, 'contract': 4364253072: 0,NVDA,OPT,20260116,190.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:13:32,711 - INFO - SENDING reqMktData b'\x00\x00\x00<1\x0011\x004\x000\x00NVDA\x00OPT\x0020260116\x00190.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:13:34,071 - INFO - ANSWER marketDataType {'reqId': 4, 'marketDataType': 1}
+2025-12-25 00:13:34,072 - INFO - ANSWER tickReqParams {'tickerId': 4, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:13:34,379 - INFO - ANSWER tickString {'reqId': 4, 'tickType': 45, 'value': '1766599190'}
+2025-12-25 00:13:34,379 - INFO - ANSWER tickSize {'reqId': 4, 'tickType': 5, 'size': 1}
+2025-12-25 00:13:34,380 - INFO - ANSWER tickSize {'reqId': 4, 'tickType': 5, 'size': 1}
+2025-12-25 00:13:34,380 - INFO - ANSWER tickSize {'reqId': 4, 'tickType': 8, 'size': 8972}
+2025-12-25 00:13:34,381 - INFO - ANSWER tickSize {'reqId': 4, 'tickType': 0, 'size': 0}
+2025-12-25 00:13:34,381 - INFO - ANSWER tickSize {'reqId': 4, 'tickType': 3, 'size': 0}
+2025-12-25 00:13:34,382 - INFO - ANSWER tickSize {'reqId': 4, 'tickType': 0, 'size': 0}
+2025-12-25 00:13:34,382 - INFO - ANSWER tickSize {'reqId': 4, 'tickType': 3, 'size': 0}
+2025-12-25 00:13:37,007 - INFO - ANSWER tickSize {'reqId': 4, 'tickType': 5, 'size': 1}
+2025-12-25 00:13:37,008 - INFO - ANSWER tickString {'reqId': 4, 'tickType': 45, 'value': '1766599190'}
+2025-12-25 00:13:40,730 - INFO - REQUEST cancelMktData {'reqId': 4}
+2025-12-25 00:13:40,730 - INFO - SENDING cancelMktData b'\x00\x00\x00\x062\x002\x004\x00'
+2025-12-25 00:13:41,035 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:13:41,035 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:13:41,036 - INFO - REQUEST reqMktData {'reqId': 5, 'contract': 4364253072: 0,AAPL,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:13:41,036 - INFO - SENDING reqMktData b'\x00\x00\x00.1\x0011\x005\x000\x00AAPL\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:13:41,311 - INFO - ANSWER tickReqParams {'tickerId': 5, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:13:41,312 - INFO - ANSWER marketDataType {'reqId': 5, 'marketDataType': 1}
+2025-12-25 00:13:41,313 - INFO - ANSWER tickSize {'reqId': 5, 'tickType': 0, 'size': 2}
+2025-12-25 00:13:41,314 - INFO - ANSWER tickSize {'reqId': 5, 'tickType': 3, 'size': 2}
+2025-12-25 00:13:41,314 - INFO - ANSWER tickSize {'reqId': 5, 'tickType': 5, 'size': 3}
+2025-12-25 00:13:41,315 - INFO - ANSWER tickSize {'reqId': 5, 'tickType': 0, 'size': 2}
+2025-12-25 00:13:41,315 - INFO - ANSWER tickSize {'reqId': 5, 'tickType': 3, 'size': 2}
+2025-12-25 00:13:41,316 - INFO - ANSWER tickSize {'reqId': 5, 'tickType': 5, 'size': 3}
+2025-12-25 00:13:41,316 - INFO - ANSWER tickSize {'reqId': 5, 'tickType': 8, 'size': 178960}
+2025-12-25 00:13:41,316 - INFO - ANSWER tickString {'reqId': 5, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:13:41,317 - INFO - ANSWER tickString {'reqId': 5, 'tickType': 33, 'value': 'PQ'}
+2025-12-25 00:13:41,317 - INFO - ANSWER tickString {'reqId': 5, 'tickType': 45, 'value': '1766607132'}
+2025-12-25 00:13:41,344 - INFO - REQUEST cancelMktData {'reqId': 5}
+2025-12-25 00:13:41,344 - INFO - SENDING cancelMktData b'\x00\x00\x00\x062\x002\x005\x00'
+2025-12-25 00:13:41,345 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:13:41,345 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:13:41,345 - INFO - REQUEST reqMktData {'reqId': 6, 'contract': 4364253072: 0,AAPL,OPT,20260116,270.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:13:41,346 - INFO - SENDING reqMktData b'\x00\x00\x00<1\x0011\x006\x000\x00AAPL\x00OPT\x0020260116\x00270.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:13:42,597 - INFO - ANSWER marketDataType {'reqId': 6, 'marketDataType': 1}
+2025-12-25 00:13:42,597 - INFO - ANSWER tickReqParams {'tickerId': 6, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:13:42,844 - INFO - ANSWER tickSize {'reqId': 6, 'tickType': 8, 'size': 1749}
+2025-12-25 00:13:42,844 - INFO - ANSWER tickString {'reqId': 6, 'tickType': 45, 'value': '1766599180'}
+2025-12-25 00:13:42,845 - INFO - ANSWER tickSize {'reqId': 6, 'tickType': 5, 'size': 1}
+2025-12-25 00:13:42,845 - INFO - ANSWER tickSize {'reqId': 6, 'tickType': 5, 'size': 1}
+2025-12-25 00:13:42,846 - INFO - ANSWER tickSize {'reqId': 6, 'tickType': 0, 'size': 0}
+2025-12-25 00:13:42,846 - INFO - ANSWER tickSize {'reqId': 6, 'tickType': 3, 'size': 0}
+2025-12-25 00:13:42,846 - INFO - ANSWER tickSize {'reqId': 6, 'tickType': 0, 'size': 0}
+2025-12-25 00:13:42,847 - INFO - ANSWER tickSize {'reqId': 6, 'tickType': 3, 'size': 0}
+2025-12-25 00:13:44,029 - INFO - ANSWER tickSize {'reqId': 6, 'tickType': 5, 'size': 1}
+2025-12-25 00:13:44,030 - INFO - ANSWER tickString {'reqId': 6, 'tickType': 45, 'value': '1766599180'}
+2025-12-25 00:13:49,381 - INFO - REQUEST cancelMktData {'reqId': 6}
+2025-12-25 00:13:49,381 - INFO - SENDING cancelMktData b'\x00\x00\x00\x062\x002\x006\x00'
+2025-12-25 00:13:49,686 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:13:49,687 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:13:49,687 - INFO - REQUEST reqMktData {'reqId': 7, 'contract': 4364253072: 0,GOOGL,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:13:49,688 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x007\x000\x00GOOGL\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:13:50,178 - INFO - ANSWER marketDataType {'reqId': 7, 'marketDataType': 1}
+2025-12-25 00:13:50,179 - INFO - ANSWER tickReqParams {'tickerId': 7, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:13:50,180 - INFO - ANSWER tickSize {'reqId': 7, 'tickType': 0, 'size': 5}
+2025-12-25 00:13:50,180 - INFO - ANSWER tickSize {'reqId': 7, 'tickType': 0, 'size': 5}
+2025-12-25 00:13:50,181 - INFO - ANSWER tickSize {'reqId': 7, 'tickType': 3, 'size': 1}
+2025-12-25 00:13:50,181 - INFO - ANSWER tickSize {'reqId': 7, 'tickType': 3, 'size': 1}
+2025-12-25 00:13:50,422 - INFO - ANSWER tickString {'reqId': 7, 'tickType': 45, 'value': '1766606890'}
+2025-12-25 00:13:50,422 - INFO - ANSWER tickSize {'reqId': 7, 'tickType': 5, 'size': 1}
+2025-12-25 00:13:50,423 - INFO - ANSWER tickSize {'reqId': 7, 'tickType': 5, 'size': 1}
+2025-12-25 00:13:50,424 - INFO - ANSWER tickSize {'reqId': 7, 'tickType': 8, 'size': 100781}
+2025-12-25 00:13:50,424 - INFO - ANSWER tickString {'reqId': 7, 'tickType': 32, 'value': 'PQ'}
+2025-12-25 00:13:50,424 - INFO - ANSWER tickString {'reqId': 7, 'tickType': 33, 'value': 'Q'}
+2025-12-25 00:13:50,507 - INFO - REQUEST cancelMktData {'reqId': 7}
+2025-12-25 00:13:50,508 - INFO - SENDING cancelMktData b'\x00\x00\x00\x062\x002\x007\x00'
+2025-12-25 00:13:50,508 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:13:50,509 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:13:50,509 - INFO - REQUEST reqMktData {'reqId': 8, 'contract': 4364253072: 0,GOOGL,OPT,20260116,310.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:13:50,509 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x008\x000\x00GOOGL\x00OPT\x0020260116\x00310.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:13:58,525 - INFO - REQUEST cancelMktData {'reqId': 8}
+2025-12-25 00:13:58,525 - INFO - SENDING cancelMktData b'\x00\x00\x00\x062\x002\x008\x00'
+2025-12-25 00:13:58,831 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:13:58,832 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:13:58,832 - INFO - REQUEST reqMktData {'reqId': 9, 'contract': 4364253072: 0,GOOG,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:13:58,833 - INFO - SENDING reqMktData b'\x00\x00\x00.1\x0011\x009\x000\x00GOOG\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:13:59,341 - INFO - ANSWER marketDataType {'reqId': 9, 'marketDataType': 1}
+2025-12-25 00:13:59,342 - INFO - ANSWER tickReqParams {'tickerId': 9, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:13:59,567 - INFO - ANSWER tickString {'reqId': 9, 'tickType': 45, 'value': '1766605516'}
+2025-12-25 00:13:59,568 - INFO - ANSWER tickSize {'reqId': 9, 'tickType': 5, 'size': 10}
+2025-12-25 00:13:59,569 - INFO - ANSWER tickSize {'reqId': 9, 'tickType': 5, 'size': 10}
+2025-12-25 00:13:59,569 - INFO - ANSWER tickSize {'reqId': 9, 'tickType': 8, 'size': 61298}
+2025-12-25 00:13:59,570 - INFO - ANSWER tickSize {'reqId': 9, 'tickType': 0, 'size': 1}
+2025-12-25 00:13:59,570 - INFO - ANSWER tickSize {'reqId': 9, 'tickType': 3, 'size': 1}
+2025-12-25 00:13:59,570 - INFO - ANSWER tickSize {'reqId': 9, 'tickType': 0, 'size': 1}
+2025-12-25 00:13:59,570 - INFO - ANSWER tickSize {'reqId': 9, 'tickType': 3, 'size': 1}
+2025-12-25 00:13:59,571 - INFO - ANSWER tickString {'reqId': 9, 'tickType': 32, 'value': 'K'}
+2025-12-25 00:13:59,571 - INFO - ANSWER tickString {'reqId': 9, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:13:59,657 - INFO - REQUEST cancelMktData {'reqId': 9}
+2025-12-25 00:13:59,658 - INFO - SENDING cancelMktData b'\x00\x00\x00\x062\x002\x009\x00'
+2025-12-25 00:13:59,659 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:13:59,659 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:13:59,660 - INFO - REQUEST reqMktData {'reqId': 10, 'contract': 4364253072: 0,GOOG,OPT,20260116,320.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:13:59,660 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0010\x000\x00GOOG\x00OPT\x0020260116\x00320.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:00,625 - INFO - ANSWER marketDataType {'reqId': 10, 'marketDataType': 1}
+2025-12-25 00:14:00,625 - INFO - ANSWER tickReqParams {'tickerId': 10, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:14:01,107 - INFO - ANSWER tickString {'reqId': 10, 'tickType': 45, 'value': '1766599110'}
+2025-12-25 00:14:01,107 - INFO - ANSWER tickSize {'reqId': 10, 'tickType': 5, 'size': 1}
+2025-12-25 00:14:01,108 - INFO - ANSWER tickSize {'reqId': 10, 'tickType': 5, 'size': 1}
+2025-12-25 00:14:01,109 - INFO - ANSWER tickSize {'reqId': 10, 'tickType': 8, 'size': 1283}
+2025-12-25 00:14:01,110 - INFO - ANSWER tickSize {'reqId': 10, 'tickType': 0, 'size': 0}
+2025-12-25 00:14:01,111 - INFO - ANSWER tickSize {'reqId': 10, 'tickType': 3, 'size': 0}
+2025-12-25 00:14:01,111 - INFO - ANSWER tickSize {'reqId': 10, 'tickType': 0, 'size': 0}
+2025-12-25 00:14:01,111 - INFO - ANSWER tickSize {'reqId': 10, 'tickType': 3, 'size': 0}
+2025-12-25 00:14:02,029 - INFO - REQUEST cancelMktData {'reqId': 10}
+2025-12-25 00:14:02,030 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0010\x00'
+2025-12-25 00:14:02,332 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:02,333 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:02,333 - INFO - REQUEST reqMktData {'reqId': 11, 'contract': 4364253072: 0,MSFT,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:02,333 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0011\x000\x00MSFT\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:02,571 - INFO - ANSWER tickReqParams {'tickerId': 11, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:14:02,573 - INFO - ANSWER marketDataType {'reqId': 11, 'marketDataType': 1}
+2025-12-25 00:14:02,576 - INFO - ANSWER tickSize {'reqId': 11, 'tickType': 0, 'size': 3}
+2025-12-25 00:14:02,576 - INFO - ANSWER tickSize {'reqId': 11, 'tickType': 3, 'size': 3}
+2025-12-25 00:14:02,577 - INFO - ANSWER tickSize {'reqId': 11, 'tickType': 5, 'size': 1}
+2025-12-25 00:14:02,577 - INFO - ANSWER tickSize {'reqId': 11, 'tickType': 0, 'size': 3}
+2025-12-25 00:14:02,577 - INFO - ANSWER tickSize {'reqId': 11, 'tickType': 3, 'size': 3}
+2025-12-25 00:14:02,578 - INFO - ANSWER tickSize {'reqId': 11, 'tickType': 5, 'size': 1}
+2025-12-25 00:14:02,578 - INFO - ANSWER tickSize {'reqId': 11, 'tickType': 8, 'size': 146229}
+2025-12-25 00:14:02,579 - INFO - ANSWER tickString {'reqId': 11, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:14:02,579 - INFO - ANSWER tickString {'reqId': 11, 'tickType': 33, 'value': 'KPQ'}
+2025-12-25 00:14:02,579 - INFO - ANSWER tickString {'reqId': 11, 'tickType': 45, 'value': '1766606973'}
+2025-12-25 00:14:02,643 - INFO - REQUEST cancelMktData {'reqId': 11}
+2025-12-25 00:14:02,644 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0011\x00'
+2025-12-25 00:14:02,644 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:02,644 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:02,645 - INFO - REQUEST reqMktData {'reqId': 12, 'contract': 4364253072: 0,MSFT,OPT,20260116,490.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:02,645 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0012\x000\x00MSFT\x00OPT\x0020260116\x00490.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:10,649 - INFO - REQUEST cancelMktData {'reqId': 12}
+2025-12-25 00:14:10,649 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0012\x00'
+2025-12-25 00:14:10,953 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:10,954 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:10,954 - INFO - REQUEST reqMktData {'reqId': 13, 'contract': 4364254128: 0,AMZN,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:10,954 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0013\x000\x00AMZN\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:11,193 - INFO - ANSWER tickReqParams {'tickerId': 13, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:14:11,193 - INFO - ANSWER marketDataType {'reqId': 13, 'marketDataType': 1}
+2025-12-25 00:14:11,195 - INFO - ANSWER tickSize {'reqId': 13, 'tickType': 0, 'size': 38}
+2025-12-25 00:14:11,195 - INFO - ANSWER tickSize {'reqId': 13, 'tickType': 3, 'size': 1}
+2025-12-25 00:14:11,195 - INFO - ANSWER tickSize {'reqId': 13, 'tickType': 5, 'size': 1}
+2025-12-25 00:14:11,196 - INFO - ANSWER tickSize {'reqId': 13, 'tickType': 0, 'size': 38}
+2025-12-25 00:14:11,196 - INFO - ANSWER tickSize {'reqId': 13, 'tickType': 3, 'size': 1}
+2025-12-25 00:14:11,196 - INFO - ANSWER tickSize {'reqId': 13, 'tickType': 5, 'size': 1}
+2025-12-25 00:14:11,196 - INFO - ANSWER tickSize {'reqId': 13, 'tickType': 8, 'size': 113903}
+2025-12-25 00:14:11,197 - INFO - ANSWER tickString {'reqId': 13, 'tickType': 32, 'value': 'Q'}
+2025-12-25 00:14:11,197 - INFO - ANSWER tickString {'reqId': 13, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:14:11,197 - INFO - ANSWER tickString {'reqId': 13, 'tickType': 45, 'value': '1766607232'}
+2025-12-25 00:14:11,261 - INFO - REQUEST cancelMktData {'reqId': 13}
+2025-12-25 00:14:11,262 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0013\x00'
+2025-12-25 00:14:11,262 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:11,262 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:11,262 - INFO - REQUEST reqMktData {'reqId': 14, 'contract': 4364254128: 0,AMZN,OPT,20260116,230.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:11,263 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0014\x000\x00AMZN\x00OPT\x0020260116\x00230.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:12,253 - INFO - ANSWER marketDataType {'reqId': 14, 'marketDataType': 1}
+2025-12-25 00:14:12,253 - INFO - ANSWER tickReqParams {'tickerId': 14, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:14:12,777 - INFO - ANSWER tickString {'reqId': 14, 'tickType': 45, 'value': '1766599193'}
+2025-12-25 00:14:12,778 - INFO - ANSWER tickSize {'reqId': 14, 'tickType': 5, 'size': 5}
+2025-12-25 00:14:12,779 - INFO - ANSWER tickSize {'reqId': 14, 'tickType': 5, 'size': 5}
+2025-12-25 00:14:12,779 - INFO - ANSWER tickSize {'reqId': 14, 'tickType': 8, 'size': 1122}
+2025-12-25 00:14:12,780 - INFO - ANSWER tickSize {'reqId': 14, 'tickType': 0, 'size': 0}
+2025-12-25 00:14:12,780 - INFO - ANSWER tickSize {'reqId': 14, 'tickType': 3, 'size': 0}
+2025-12-25 00:14:12,780 - INFO - ANSWER tickSize {'reqId': 14, 'tickType': 0, 'size': 0}
+2025-12-25 00:14:12,780 - INFO - ANSWER tickSize {'reqId': 14, 'tickType': 3, 'size': 0}
+2025-12-25 00:14:14,234 - INFO - ANSWER tickSize {'reqId': 14, 'tickType': 5, 'size': 5}
+2025-12-25 00:14:14,235 - INFO - ANSWER tickString {'reqId': 14, 'tickType': 45, 'value': '1766599193'}
+2025-12-25 00:14:14,335 - INFO - REQUEST cancelMktData {'reqId': 14}
+2025-12-25 00:14:14,335 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0014\x00'
+2025-12-25 00:14:14,636 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:14,636 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:14,637 - INFO - REQUEST reqMktData {'reqId': 15, 'contract': 4364254128: 0,META,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:14,637 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0015\x000\x00META\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:14,929 - INFO - ANSWER tickReqParams {'tickerId': 15, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:14:14,930 - INFO - ANSWER marketDataType {'reqId': 15, 'marketDataType': 1}
+2025-12-25 00:14:14,931 - INFO - ANSWER tickSize {'reqId': 15, 'tickType': 0, 'size': 9}
+2025-12-25 00:14:14,932 - INFO - ANSWER tickSize {'reqId': 15, 'tickType': 3, 'size': 1}
+2025-12-25 00:14:14,932 - INFO - ANSWER tickSize {'reqId': 15, 'tickType': 5, 'size': 1}
+2025-12-25 00:14:14,933 - INFO - ANSWER tickSize {'reqId': 15, 'tickType': 0, 'size': 9}
+2025-12-25 00:14:14,933 - INFO - ANSWER tickSize {'reqId': 15, 'tickType': 3, 'size': 1}
+2025-12-25 00:14:14,933 - INFO - ANSWER tickSize {'reqId': 15, 'tickType': 5, 'size': 1}
+2025-12-25 00:14:14,934 - INFO - ANSWER tickSize {'reqId': 15, 'tickType': 8, 'size': 140520}
+2025-12-25 00:14:14,934 - INFO - ANSWER tickString {'reqId': 15, 'tickType': 32, 'value': 'Q'}
+2025-12-25 00:14:14,935 - INFO - ANSWER tickString {'reqId': 15, 'tickType': 33, 'value': 'K'}
+2025-12-25 00:14:14,935 - INFO - ANSWER tickString {'reqId': 15, 'tickType': 45, 'value': '1766607174'}
+2025-12-25 00:14:14,949 - INFO - REQUEST cancelMktData {'reqId': 15}
+2025-12-25 00:14:14,949 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0015\x00'
+2025-12-25 00:14:14,950 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:14,950 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:14,950 - INFO - REQUEST reqMktData {'reqId': 16, 'contract': 4364254128: 0,META,OPT,20260116,660.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:14,951 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0016\x000\x00META\x00OPT\x0020260116\x00660.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:16,059 - INFO - ANSWER marketDataType {'reqId': 16, 'marketDataType': 1}
+2025-12-25 00:14:16,060 - INFO - ANSWER tickReqParams {'tickerId': 16, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:14:16,311 - INFO - ANSWER tickSize {'reqId': 16, 'tickType': 8, 'size': 505}
+2025-12-25 00:14:16,312 - INFO - ANSWER tickString {'reqId': 16, 'tickType': 45, 'value': '1766598998'}
+2025-12-25 00:14:16,312 - INFO - ANSWER tickSize {'reqId': 16, 'tickType': 5, 'size': 6}
+2025-12-25 00:14:16,312 - INFO - ANSWER tickSize {'reqId': 16, 'tickType': 5, 'size': 6}
+2025-12-25 00:14:16,312 - INFO - ANSWER tickSize {'reqId': 16, 'tickType': 0, 'size': 0}
+2025-12-25 00:14:16,313 - INFO - ANSWER tickSize {'reqId': 16, 'tickType': 3, 'size': 0}
+2025-12-25 00:14:16,313 - INFO - ANSWER tickSize {'reqId': 16, 'tickType': 0, 'size': 0}
+2025-12-25 00:14:16,313 - INFO - ANSWER tickSize {'reqId': 16, 'tickType': 3, 'size': 0}
+2025-12-25 00:14:18,251 - INFO - ANSWER tickSize {'reqId': 16, 'tickType': 5, 'size': 6}
+2025-12-25 00:14:18,252 - INFO - ANSWER tickString {'reqId': 16, 'tickType': 45, 'value': '1766598998'}
+2025-12-25 00:14:18,342 - INFO - REQUEST cancelMktData {'reqId': 16}
+2025-12-25 00:14:18,343 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0016\x00'
+2025-12-25 00:14:18,647 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:18,647 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:18,647 - INFO - REQUEST reqMktData {'reqId': 17, 'contract': 4364254128: 0,AVGO,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:18,648 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0017\x000\x00AVGO\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:19,146 - INFO - ANSWER marketDataType {'reqId': 17, 'marketDataType': 1}
+2025-12-25 00:14:19,147 - INFO - ANSWER tickReqParams {'tickerId': 17, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:14:19,386 - INFO - ANSWER tickString {'reqId': 17, 'tickType': 45, 'value': '1766607231'}
+2025-12-25 00:14:19,387 - INFO - ANSWER tickSize {'reqId': 17, 'tickType': 5, 'size': 1}
+2025-12-25 00:14:19,387 - INFO - ANSWER tickSize {'reqId': 17, 'tickType': 5, 'size': 1}
+2025-12-25 00:14:19,388 - INFO - ANSWER tickSize {'reqId': 17, 'tickType': 8, 'size': 284880}
+2025-12-25 00:14:19,388 - INFO - ANSWER tickSize {'reqId': 17, 'tickType': 0, 'size': 3}
+2025-12-25 00:14:19,388 - INFO - ANSWER tickSize {'reqId': 17, 'tickType': 3, 'size': 8}
+2025-12-25 00:14:19,388 - INFO - ANSWER tickSize {'reqId': 17, 'tickType': 0, 'size': 3}
+2025-12-25 00:14:19,388 - INFO - ANSWER tickSize {'reqId': 17, 'tickType': 3, 'size': 8}
+2025-12-25 00:14:19,389 - INFO - ANSWER tickString {'reqId': 17, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:14:19,389 - INFO - ANSWER tickString {'reqId': 17, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:14:19,470 - INFO - REQUEST cancelMktData {'reqId': 17}
+2025-12-25 00:14:19,470 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0017\x00'
+2025-12-25 00:14:19,470 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:19,470 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:19,470 - INFO - REQUEST reqMktData {'reqId': 18, 'contract': 4364254128: 0,AVGO,OPT,20260116,350.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:19,470 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0018\x000\x00AVGO\x00OPT\x0020260116\x00350.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:27,573 - INFO - REQUEST cancelMktData {'reqId': 18}
+2025-12-25 00:14:27,573 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0018\x00'
+2025-12-25 00:14:27,874 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:27,874 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:27,874 - INFO - REQUEST reqMktData {'reqId': 19, 'contract': 4364253792: 0,TSLA,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:27,875 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0019\x000\x00TSLA\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:28,230 - INFO - ANSWER tickReqParams {'tickerId': 19, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:14:28,230 - INFO - ANSWER marketDataType {'reqId': 19, 'marketDataType': 1}
+2025-12-25 00:14:28,231 - INFO - ANSWER tickSize {'reqId': 19, 'tickType': 0, 'size': 2}
+2025-12-25 00:14:28,231 - INFO - ANSWER tickSize {'reqId': 19, 'tickType': 3, 'size': 1}
+2025-12-25 00:14:28,231 - INFO - ANSWER tickSize {'reqId': 19, 'tickType': 5, 'size': 3}
+2025-12-25 00:14:28,232 - INFO - ANSWER tickSize {'reqId': 19, 'tickType': 0, 'size': 2}
+2025-12-25 00:14:28,232 - INFO - ANSWER tickSize {'reqId': 19, 'tickType': 3, 'size': 1}
+2025-12-25 00:14:28,232 - INFO - ANSWER tickSize {'reqId': 19, 'tickType': 5, 'size': 3}
+2025-12-25 00:14:28,250 - INFO - ANSWER tickSize {'reqId': 19, 'tickType': 8, 'size': 1029812}
+2025-12-25 00:14:28,251 - INFO - ANSWER tickString {'reqId': 19, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:14:28,251 - INFO - ANSWER tickString {'reqId': 19, 'tickType': 33, 'value': 'K'}
+2025-12-25 00:14:28,251 - INFO - ANSWER tickString {'reqId': 19, 'tickType': 45, 'value': '1766607238'}
+2025-12-25 00:14:28,287 - INFO - REQUEST cancelMktData {'reqId': 19}
+2025-12-25 00:14:28,287 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0019\x00'
+2025-12-25 00:14:28,287 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:28,288 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:28,288 - INFO - REQUEST reqMktData {'reqId': 20, 'contract': 4364253792: 0,TSLA,OPT,20260116,490.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:28,289 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0020\x000\x00TSLA\x00OPT\x0020260116\x00490.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:29,237 - INFO - ANSWER marketDataType {'reqId': 20, 'marketDataType': 1}
+2025-12-25 00:14:29,238 - INFO - ANSWER tickReqParams {'tickerId': 20, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:14:29,473 - INFO - ANSWER tickSize {'reqId': 20, 'tickType': 0, 'size': 0}
+2025-12-25 00:14:29,473 - INFO - ANSWER tickSize {'reqId': 20, 'tickType': 3, 'size': 0}
+2025-12-25 00:14:29,474 - INFO - ANSWER tickSize {'reqId': 20, 'tickType': 0, 'size': 0}
+2025-12-25 00:14:29,475 - INFO - ANSWER tickSize {'reqId': 20, 'tickType': 3, 'size': 0}
+2025-12-25 00:14:29,475 - INFO - ANSWER tickString {'reqId': 20, 'tickType': 45, 'value': '1766599199'}
+2025-12-25 00:14:29,475 - INFO - ANSWER tickSize {'reqId': 20, 'tickType': 5, 'size': 2}
+2025-12-25 00:14:29,475 - INFO - ANSWER tickSize {'reqId': 20, 'tickType': 5, 'size': 2}
+2025-12-25 00:14:29,476 - INFO - ANSWER tickSize {'reqId': 20, 'tickType': 8, 'size': 1676}
+2025-12-25 00:14:30,225 - INFO - REQUEST cancelMktData {'reqId': 20}
+2025-12-25 00:14:30,225 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0020\x00'
+2025-12-25 00:14:30,530 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:30,531 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:30,531 - INFO - REQUEST reqMktData {'reqId': 21, 'contract': 4364253792: 0,NFLX,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:30,532 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0021\x000\x00NFLX\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:31,032 - INFO - ANSWER marketDataType {'reqId': 21, 'marketDataType': 1}
+2025-12-25 00:14:31,032 - INFO - ANSWER tickReqParams {'tickerId': 21, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:14:31,389 - INFO - ANSWER tickString {'reqId': 21, 'tickType': 45, 'value': '1766607183'}
+2025-12-25 00:14:31,390 - INFO - ANSWER tickSize {'reqId': 21, 'tickType': 5, 'size': 1}
+2025-12-25 00:14:31,390 - INFO - ANSWER tickSize {'reqId': 21, 'tickType': 5, 'size': 1}
+2025-12-25 00:14:31,390 - INFO - ANSWER tickSize {'reqId': 21, 'tickType': 8, 'size': 1235976}
+2025-12-25 00:14:31,391 - INFO - ANSWER tickSize {'reqId': 21, 'tickType': 0, 'size': 28}
+2025-12-25 00:14:31,391 - INFO - ANSWER tickSize {'reqId': 21, 'tickType': 3, 'size': 2}
+2025-12-25 00:14:31,391 - INFO - ANSWER tickSize {'reqId': 21, 'tickType': 0, 'size': 28}
+2025-12-25 00:14:31,391 - INFO - ANSWER tickSize {'reqId': 21, 'tickType': 3, 'size': 2}
+2025-12-25 00:14:31,391 - INFO - ANSWER tickString {'reqId': 21, 'tickType': 32, 'value': 'KP'}
+2025-12-25 00:14:31,391 - INFO - ANSWER tickString {'reqId': 21, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:14:31,459 - INFO - REQUEST cancelMktData {'reqId': 21}
+2025-12-25 00:14:31,459 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0021\x00'
+2025-12-25 00:14:31,459 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:31,460 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:31,460 - INFO - REQUEST reqMktData {'reqId': 22, 'contract': 4364253792: 0,NFLX,OPT,20260116,95.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:31,460 - INFO - SENDING reqMktData b'\x00\x00\x00<1\x0011\x0022\x000\x00NFLX\x00OPT\x0020260116\x0095.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:32,749 - INFO - ANSWER marketDataType {'reqId': 22, 'marketDataType': 1}
+2025-12-25 00:14:32,750 - INFO - ANSWER tickReqParams {'tickerId': 22, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:14:33,364 - INFO - ANSWER tickString {'reqId': 22, 'tickType': 45, 'value': '1766599145'}
+2025-12-25 00:14:33,365 - INFO - ANSWER tickSize {'reqId': 22, 'tickType': 5, 'size': 2}
+2025-12-25 00:14:33,366 - INFO - ANSWER tickSize {'reqId': 22, 'tickType': 5, 'size': 2}
+2025-12-25 00:14:33,367 - INFO - ANSWER tickSize {'reqId': 22, 'tickType': 8, 'size': 1748}
+2025-12-25 00:14:33,368 - INFO - ANSWER tickSize {'reqId': 22, 'tickType': 0, 'size': 0}
+2025-12-25 00:14:33,368 - INFO - ANSWER tickSize {'reqId': 22, 'tickType': 3, 'size': 0}
+2025-12-25 00:14:33,368 - INFO - ANSWER tickSize {'reqId': 22, 'tickType': 0, 'size': 0}
+2025-12-25 00:14:33,369 - INFO - ANSWER tickSize {'reqId': 22, 'tickType': 3, 'size': 0}
+2025-12-25 00:14:34,235 - INFO - REQUEST cancelMktData {'reqId': 22}
+2025-12-25 00:14:34,235 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0022\x00'
+2025-12-25 00:14:34,536 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:34,537 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:34,537 - INFO - REQUEST reqMktData {'reqId': 23, 'contract': 4364253792: 0,ASML,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:34,537 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0023\x000\x00ASML\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:35,035 - INFO - ANSWER marketDataType {'reqId': 23, 'marketDataType': 1}
+2025-12-25 00:14:35,035 - INFO - ANSWER tickReqParams {'tickerId': 23, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:14:35,263 - INFO - ANSWER tickSize {'reqId': 23, 'tickType': 0, 'size': 1}
+2025-12-25 00:14:35,264 - INFO - ANSWER tickSize {'reqId': 23, 'tickType': 3, 'size': 1}
+2025-12-25 00:14:35,264 - INFO - ANSWER tickSize {'reqId': 23, 'tickType': 0, 'size': 1}
+2025-12-25 00:14:35,264 - INFO - ANSWER tickSize {'reqId': 23, 'tickType': 3, 'size': 1}
+2025-12-25 00:14:35,264 - INFO - ANSWER tickString {'reqId': 23, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:14:35,265 - INFO - ANSWER tickString {'reqId': 23, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:14:35,498 - INFO - ANSWER tickSize {'reqId': 23, 'tickType': 8, 'size': 5746}
+2025-12-25 00:14:35,498 - INFO - ANSWER tickString {'reqId': 23, 'tickType': 45, 'value': '1766599201'}
+2025-12-25 00:14:35,499 - INFO - ANSWER tickSize {'reqId': 23, 'tickType': 5, 'size': 4}
+2025-12-25 00:14:35,499 - INFO - ANSWER tickSize {'reqId': 23, 'tickType': 5, 'size': 4}
+2025-12-25 00:14:35,568 - INFO - REQUEST cancelMktData {'reqId': 23}
+2025-12-25 00:14:35,569 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0023\x00'
+2025-12-25 00:14:35,570 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:35,570 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:35,570 - INFO - REQUEST reqMktData {'reqId': 24, 'contract': 4364253792: 0,ASML,OPT,20260116,1070.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:35,571 - INFO - SENDING reqMktData b'\x00\x00\x00>1\x0011\x0024\x000\x00ASML\x00OPT\x0020260116\x001070.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:36,790 - INFO - ANSWER marketDataType {'reqId': 24, 'marketDataType': 1}
+2025-12-25 00:14:36,790 - INFO - ANSWER tickReqParams {'tickerId': 24, 'minTick': 0.05, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:14:36,792 - INFO - ANSWER tickString {'reqId': 24, 'tickType': 45, 'value': '1766598850'}
+2025-12-25 00:14:36,793 - INFO - ANSWER tickSize {'reqId': 24, 'tickType': 5, 'size': 20}
+2025-12-25 00:14:36,794 - INFO - ANSWER tickSize {'reqId': 24, 'tickType': 5, 'size': 20}
+2025-12-25 00:14:36,795 - INFO - ANSWER tickSize {'reqId': 24, 'tickType': 8, 'size': 22}
+2025-12-25 00:14:36,796 - INFO - ANSWER tickSize {'reqId': 24, 'tickType': 0, 'size': 0}
+2025-12-25 00:14:36,796 - INFO - ANSWER tickSize {'reqId': 24, 'tickType': 3, 'size': 0}
+2025-12-25 00:14:36,796 - INFO - ANSWER tickSize {'reqId': 24, 'tickType': 0, 'size': 0}
+2025-12-25 00:14:36,797 - INFO - ANSWER tickSize {'reqId': 24, 'tickType': 3, 'size': 0}
+2025-12-25 00:14:38,238 - INFO - ANSWER tickSize {'reqId': 24, 'tickType': 5, 'size': 20}
+2025-12-25 00:14:38,239 - INFO - ANSWER tickString {'reqId': 24, 'tickType': 45, 'value': '1766598850'}
+2025-12-25 00:14:38,341 - INFO - REQUEST cancelMktData {'reqId': 24}
+2025-12-25 00:14:38,341 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0024\x00'
+2025-12-25 00:14:38,646 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:38,647 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:38,647 - INFO - REQUEST reqMktData {'reqId': 25, 'contract': 4364253792: 0,COST,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:38,648 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0025\x000\x00COST\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:39,153 - INFO - ANSWER marketDataType {'reqId': 25, 'marketDataType': 1}
+2025-12-25 00:14:39,154 - INFO - ANSWER tickReqParams {'tickerId': 25, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:14:39,381 - INFO - ANSWER tickSize {'reqId': 25, 'tickType': 0, 'size': 1}
+2025-12-25 00:14:39,381 - INFO - ANSWER tickSize {'reqId': 25, 'tickType': 3, 'size': 2}
+2025-12-25 00:14:39,381 - INFO - ANSWER tickSize {'reqId': 25, 'tickType': 0, 'size': 1}
+2025-12-25 00:14:39,382 - INFO - ANSWER tickSize {'reqId': 25, 'tickType': 3, 'size': 2}
+2025-12-25 00:14:39,382 - INFO - ANSWER tickString {'reqId': 25, 'tickType': 32, 'value': 'K'}
+2025-12-25 00:14:39,382 - INFO - ANSWER tickString {'reqId': 25, 'tickType': 33, 'value': 'K'}
+2025-12-25 00:14:39,622 - INFO - ANSWER tickSize {'reqId': 25, 'tickType': 8, 'size': 45461}
+2025-12-25 00:14:39,623 - INFO - ANSWER tickString {'reqId': 25, 'tickType': 45, 'value': '1766607250'}
+2025-12-25 00:14:39,623 - INFO - ANSWER tickSize {'reqId': 25, 'tickType': 5, 'size': 2}
+2025-12-25 00:14:39,623 - INFO - ANSWER tickSize {'reqId': 25, 'tickType': 5, 'size': 2}
+2025-12-25 00:14:39,670 - INFO - REQUEST cancelMktData {'reqId': 25}
+2025-12-25 00:14:39,671 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0025\x00'
+2025-12-25 00:14:39,672 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:39,674 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:39,675 - INFO - REQUEST reqMktData {'reqId': 26, 'contract': 4364253792: 0,COST,OPT,20260116,870.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:39,677 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0026\x000\x00COST\x00OPT\x0020260116\x00870.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:40,597 - INFO - ANSWER marketDataType {'reqId': 26, 'marketDataType': 1}
+2025-12-25 00:14:40,598 - INFO - ANSWER tickReqParams {'tickerId': 26, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:14:40,823 - INFO - ANSWER tickSize {'reqId': 26, 'tickType': 8, 'size': 154}
+2025-12-25 00:14:40,824 - INFO - ANSWER tickString {'reqId': 26, 'tickType': 45, 'value': '1766599176'}
+2025-12-25 00:14:40,824 - INFO - ANSWER tickSize {'reqId': 26, 'tickType': 5, 'size': 1}
+2025-12-25 00:14:40,825 - INFO - ANSWER tickSize {'reqId': 26, 'tickType': 5, 'size': 1}
+2025-12-25 00:14:40,825 - INFO - ANSWER tickSize {'reqId': 26, 'tickType': 0, 'size': 0}
+2025-12-25 00:14:40,825 - INFO - ANSWER tickSize {'reqId': 26, 'tickType': 3, 'size': 0}
+2025-12-25 00:14:40,826 - INFO - ANSWER tickSize {'reqId': 26, 'tickType': 0, 'size': 0}
+2025-12-25 00:14:40,826 - INFO - ANSWER tickSize {'reqId': 26, 'tickType': 3, 'size': 0}
+2025-12-25 00:14:42,216 - INFO - ANSWER tickSize {'reqId': 26, 'tickType': 5, 'size': 1}
+2025-12-25 00:14:42,217 - INFO - ANSWER tickString {'reqId': 26, 'tickType': 45, 'value': '1766599176'}
+2025-12-25 00:14:42,235 - INFO - REQUEST cancelMktData {'reqId': 26}
+2025-12-25 00:14:42,236 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0026\x00'
+2025-12-25 00:14:42,539 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:42,540 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:42,540 - INFO - REQUEST reqMktData {'reqId': 27, 'contract': 4364253792: 0,AMD,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:42,541 - INFO - SENDING reqMktData b'\x00\x00\x00.1\x0011\x0027\x000\x00AMD\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:42,786 - INFO - ANSWER tickReqParams {'tickerId': 27, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:14:42,787 - INFO - ANSWER marketDataType {'reqId': 27, 'marketDataType': 1}
+2025-12-25 00:14:42,788 - INFO - ANSWER tickSize {'reqId': 27, 'tickType': 0, 'size': 1}
+2025-12-25 00:14:42,788 - INFO - ANSWER tickSize {'reqId': 27, 'tickType': 3, 'size': 3}
+2025-12-25 00:14:42,788 - INFO - ANSWER tickSize {'reqId': 27, 'tickType': 5, 'size': 1}
+2025-12-25 00:14:42,788 - INFO - ANSWER tickSize {'reqId': 27, 'tickType': 0, 'size': 1}
+2025-12-25 00:14:42,788 - INFO - ANSWER tickSize {'reqId': 27, 'tickType': 3, 'size': 3}
+2025-12-25 00:14:42,789 - INFO - ANSWER tickSize {'reqId': 27, 'tickType': 5, 'size': 1}
+2025-12-25 00:14:42,789 - INFO - ANSWER tickSize {'reqId': 27, 'tickType': 8, 'size': 79292}
+2025-12-25 00:14:42,789 - INFO - ANSWER tickString {'reqId': 27, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:14:42,789 - INFO - ANSWER tickString {'reqId': 27, 'tickType': 33, 'value': 'KP'}
+2025-12-25 00:14:42,790 - INFO - ANSWER tickString {'reqId': 27, 'tickType': 45, 'value': '1766606941'}
+2025-12-25 00:14:42,850 - INFO - REQUEST cancelMktData {'reqId': 27}
+2025-12-25 00:14:42,851 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0027\x00'
+2025-12-25 00:14:42,851 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:42,852 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:42,852 - INFO - REQUEST reqMktData {'reqId': 28, 'contract': 4364253792: 0,AMD,OPT,20260116,210.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:42,853 - INFO - SENDING reqMktData b'\x00\x00\x00<1\x0011\x0028\x000\x00AMD\x00OPT\x0020260116\x00210.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:50,875 - INFO - REQUEST cancelMktData {'reqId': 28}
+2025-12-25 00:14:50,876 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0028\x00'
+2025-12-25 00:14:51,182 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:51,182 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:51,182 - INFO - REQUEST reqMktData {'reqId': 29, 'contract': 4364254128: 0,CSCO,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:51,183 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0029\x000\x00CSCO\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:51,793 - INFO - ANSWER marketDataType {'reqId': 29, 'marketDataType': 1}
+2025-12-25 00:14:51,793 - INFO - ANSWER tickReqParams {'tickerId': 29, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:14:52,099 - INFO - ANSWER tickSize {'reqId': 29, 'tickType': 8, 'size': 91037}
+2025-12-25 00:14:52,101 - INFO - ANSWER tickString {'reqId': 29, 'tickType': 45, 'value': '1766602600'}
+2025-12-25 00:14:52,102 - INFO - ANSWER tickSize {'reqId': 29, 'tickType': 5, 'size': 2}
+2025-12-25 00:14:52,103 - INFO - ANSWER tickSize {'reqId': 29, 'tickType': 5, 'size': 2}
+2025-12-25 00:14:52,103 - INFO - ANSWER tickSize {'reqId': 29, 'tickType': 0, 'size': 1}
+2025-12-25 00:14:52,104 - INFO - ANSWER tickSize {'reqId': 29, 'tickType': 3, 'size': 5}
+2025-12-25 00:14:52,104 - INFO - ANSWER tickSize {'reqId': 29, 'tickType': 0, 'size': 1}
+2025-12-25 00:14:52,104 - INFO - ANSWER tickSize {'reqId': 29, 'tickType': 3, 'size': 5}
+2025-12-25 00:14:52,105 - INFO - ANSWER tickString {'reqId': 29, 'tickType': 32, 'value': 'K'}
+2025-12-25 00:14:52,105 - INFO - ANSWER tickString {'reqId': 29, 'tickType': 33, 'value': 'K'}
+2025-12-25 00:14:52,118 - INFO - REQUEST cancelMktData {'reqId': 29}
+2025-12-25 00:14:52,119 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0029\x00'
+2025-12-25 00:14:52,119 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:14:52,120 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:14:52,120 - INFO - REQUEST reqMktData {'reqId': 30, 'contract': 4364254128: 0,CSCO,OPT,20260116,80.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:14:52,120 - INFO - SENDING reqMktData b'\x00\x00\x00<1\x0011\x0030\x000\x00CSCO\x00OPT\x0020260116\x0080.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:14:53,310 - INFO - ANSWER tickReqParams {'tickerId': 30, 'minTick': 0.0, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:14:53,633 - INFO - ANSWER marketDataType {'reqId': 30, 'marketDataType': 1}
+2025-12-25 00:14:53,635 - INFO - ANSWER tickSize {'reqId': 30, 'tickType': 8, 'size': 1330}
+2025-12-25 00:14:53,636 - INFO - ANSWER tickString {'reqId': 30, 'tickType': 45, 'value': '1766599182'}
+2025-12-25 00:14:53,636 - INFO - ANSWER tickSize {'reqId': 30, 'tickType': 5, 'size': 4}
+2025-12-25 00:14:53,637 - INFO - ANSWER tickSize {'reqId': 30, 'tickType': 5, 'size': 4}
+2025-12-25 00:14:53,637 - INFO - ANSWER tickSize {'reqId': 30, 'tickType': 0, 'size': 0}
+2025-12-25 00:14:53,637 - INFO - ANSWER tickSize {'reqId': 30, 'tickType': 3, 'size': 0}
+2025-12-25 00:14:53,638 - INFO - ANSWER tickSize {'reqId': 30, 'tickType': 0, 'size': 0}
+2025-12-25 00:14:53,638 - INFO - ANSWER tickSize {'reqId': 30, 'tickType': 3, 'size': 0}
+2025-12-25 00:14:55,174 - INFO - ANSWER tickSize {'reqId': 30, 'tickType': 5, 'size': 4}
+2025-12-25 00:14:55,175 - INFO - ANSWER tickString {'reqId': 30, 'tickType': 45, 'value': '1766599182'}
+2025-12-25 00:15:00,141 - INFO - REQUEST cancelMktData {'reqId': 30}
+2025-12-25 00:15:00,142 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0030\x00'
+2025-12-25 00:15:00,443 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:00,444 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:00,445 - INFO - REQUEST reqMktData {'reqId': 31, 'contract': 4364254128: 0,MU,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:00,445 - INFO - SENDING reqMktData b'\x00\x00\x00-1\x0011\x0031\x000\x00MU\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:00,940 - INFO - ANSWER marketDataType {'reqId': 31, 'marketDataType': 1}
+2025-12-25 00:15:00,940 - INFO - ANSWER tickReqParams {'tickerId': 31, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:15:01,163 - INFO - ANSWER tickString {'reqId': 31, 'tickType': 45, 'value': '1766607260'}
+2025-12-25 00:15:01,164 - INFO - ANSWER tickSize {'reqId': 31, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:01,164 - INFO - REQUEST cancelMktData {'reqId': 31}
+2025-12-25 00:15:01,165 - INFO - ANSWER tickSize {'reqId': 31, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:01,165 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0031\x00'
+2025-12-25 00:15:01,165 - INFO - ANSWER tickSize {'reqId': 31, 'tickType': 8, 'size': 185114}
+2025-12-25 00:15:01,166 - INFO - ANSWER tickSize {'reqId': 31, 'tickType': 0, 'size': 1}
+2025-12-25 00:15:01,166 - INFO - ANSWER tickSize {'reqId': 31, 'tickType': 3, 'size': 2}
+2025-12-25 00:15:01,166 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:01,167 - INFO - ANSWER tickSize {'reqId': 31, 'tickType': 0, 'size': 1}
+2025-12-25 00:15:01,167 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:01,167 - INFO - ANSWER tickSize {'reqId': 31, 'tickType': 3, 'size': 2}
+2025-12-25 00:15:01,167 - INFO - REQUEST reqMktData {'reqId': 32, 'contract': 4364254128: 0,MU,OPT,20260116,280.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:01,168 - INFO - ANSWER tickString {'reqId': 31, 'tickType': 32, 'value': 'Q'}
+2025-12-25 00:15:01,168 - INFO - SENDING reqMktData b'\x00\x00\x00;1\x0011\x0032\x000\x00MU\x00OPT\x0020260116\x00280.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:01,168 - INFO - ANSWER tickString {'reqId': 31, 'tickType': 33, 'value': 'K'}
+2025-12-25 00:15:02,236 - INFO - ANSWER marketDataType {'reqId': 32, 'marketDataType': 1}
+2025-12-25 00:15:02,237 - INFO - ANSWER tickReqParams {'tickerId': 32, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:15:02,543 - INFO - ANSWER tickString {'reqId': 32, 'tickType': 45, 'value': '1766599152'}
+2025-12-25 00:15:02,544 - INFO - ANSWER tickSize {'reqId': 32, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:02,544 - INFO - ANSWER tickSize {'reqId': 32, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:02,545 - INFO - ANSWER tickSize {'reqId': 32, 'tickType': 8, 'size': 1179}
+2025-12-25 00:15:02,546 - INFO - ANSWER tickSize {'reqId': 32, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:02,546 - INFO - ANSWER tickSize {'reqId': 32, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:02,547 - INFO - ANSWER tickSize {'reqId': 32, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:02,547 - INFO - ANSWER tickSize {'reqId': 32, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:04,231 - INFO - ANSWER tickSize {'reqId': 32, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:04,232 - INFO - ANSWER tickString {'reqId': 32, 'tickType': 45, 'value': '1766599152'}
+2025-12-25 00:15:04,266 - INFO - REQUEST cancelMktData {'reqId': 32}
+2025-12-25 00:15:04,266 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0032\x00'
+2025-12-25 00:15:04,570 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:04,571 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:04,571 - INFO - REQUEST reqMktData {'reqId': 33, 'contract': 4364254128: 0,TMUS,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:04,571 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0033\x000\x00TMUS\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:05,062 - INFO - ANSWER marketDataType {'reqId': 33, 'marketDataType': 1}
+2025-12-25 00:15:05,062 - INFO - ANSWER tickReqParams {'tickerId': 33, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:15:05,921 - INFO - ANSWER tickSize {'reqId': 33, 'tickType': 8, 'size': 13117}
+2025-12-25 00:15:05,921 - INFO - ANSWER tickString {'reqId': 33, 'tickType': 45, 'value': '1766602062'}
+2025-12-25 00:15:05,922 - INFO - ANSWER tickSize {'reqId': 33, 'tickType': 5, 'size': 2}
+2025-12-25 00:15:05,922 - INFO - ANSWER tickSize {'reqId': 33, 'tickType': 5, 'size': 2}
+2025-12-25 00:15:05,922 - INFO - ANSWER tickSize {'reqId': 33, 'tickType': 0, 'size': 1}
+2025-12-25 00:15:05,923 - INFO - ANSWER tickSize {'reqId': 33, 'tickType': 3, 'size': 2}
+2025-12-25 00:15:05,923 - INFO - ANSWER tickSize {'reqId': 33, 'tickType': 0, 'size': 1}
+2025-12-25 00:15:05,923 - INFO - ANSWER tickSize {'reqId': 33, 'tickType': 3, 'size': 2}
+2025-12-25 00:15:05,923 - INFO - ANSWER tickString {'reqId': 33, 'tickType': 32, 'value': 'K'}
+2025-12-25 00:15:05,924 - INFO - ANSWER tickString {'reqId': 33, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:15:06,011 - INFO - REQUEST cancelMktData {'reqId': 33}
+2025-12-25 00:15:06,011 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0033\x00'
+2025-12-25 00:15:06,012 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:06,012 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:06,012 - INFO - REQUEST reqMktData {'reqId': 34, 'contract': 4364254128: 0,TMUS,OPT,20260116,200.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:06,012 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0034\x000\x00TMUS\x00OPT\x0020260116\x00200.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:07,154 - INFO - ANSWER tickReqParams {'tickerId': 34, 'minTick': 0.0, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:15:07,406 - INFO - ANSWER marketDataType {'reqId': 34, 'marketDataType': 1}
+2025-12-25 00:15:07,408 - INFO - ANSWER tickString {'reqId': 34, 'tickType': 45, 'value': '1766594001'}
+2025-12-25 00:15:07,409 - INFO - ANSWER tickSize {'reqId': 34, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:07,410 - INFO - ANSWER tickSize {'reqId': 34, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:07,410 - INFO - ANSWER tickSize {'reqId': 34, 'tickType': 8, 'size': 36}
+2025-12-25 00:15:07,411 - INFO - ANSWER tickSize {'reqId': 34, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:07,411 - INFO - ANSWER tickSize {'reqId': 34, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:07,411 - INFO - ANSWER tickSize {'reqId': 34, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:07,411 - INFO - ANSWER tickSize {'reqId': 34, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:09,249 - INFO - ANSWER tickSize {'reqId': 34, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:09,250 - INFO - ANSWER tickString {'reqId': 34, 'tickType': 45, 'value': '1766594001'}
+2025-12-25 00:15:14,023 - INFO - REQUEST cancelMktData {'reqId': 34}
+2025-12-25 00:15:14,024 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0034\x00'
+2025-12-25 00:15:14,326 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:14,327 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:14,327 - INFO - REQUEST reqMktData {'reqId': 35, 'contract': 4364254128: 0,AMAT,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:14,328 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0035\x000\x00AMAT\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:15,138 - INFO - ANSWER marketDataType {'reqId': 35, 'marketDataType': 1}
+2025-12-25 00:15:15,138 - INFO - ANSWER tickReqParams {'tickerId': 35, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:15:15,445 - INFO - ANSWER tickSize {'reqId': 35, 'tickType': 8, 'size': 14144}
+2025-12-25 00:15:15,447 - INFO - ANSWER tickString {'reqId': 35, 'tickType': 45, 'value': '1766601550'}
+2025-12-25 00:15:15,447 - INFO - ANSWER tickSize {'reqId': 35, 'tickType': 5, 'size': 3}
+2025-12-25 00:15:15,448 - INFO - ANSWER tickSize {'reqId': 35, 'tickType': 5, 'size': 3}
+2025-12-25 00:15:15,449 - INFO - ANSWER tickSize {'reqId': 35, 'tickType': 0, 'size': 1}
+2025-12-25 00:15:15,449 - INFO - ANSWER tickSize {'reqId': 35, 'tickType': 3, 'size': 1}
+2025-12-25 00:15:15,449 - INFO - ANSWER tickSize {'reqId': 35, 'tickType': 0, 'size': 1}
+2025-12-25 00:15:15,449 - INFO - ANSWER tickSize {'reqId': 35, 'tickType': 3, 'size': 1}
+2025-12-25 00:15:15,449 - INFO - ANSWER tickString {'reqId': 35, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:15:15,450 - INFO - ANSWER tickString {'reqId': 35, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:15:15,455 - INFO - REQUEST cancelMktData {'reqId': 35}
+2025-12-25 00:15:15,455 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0035\x00'
+2025-12-25 00:15:15,456 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:15,456 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:15,456 - INFO - REQUEST reqMktData {'reqId': 36, 'contract': 4364254128: 0,AMAT,OPT,20260116,260.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:15,456 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0036\x000\x00AMAT\x00OPT\x0020260116\x00260.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:16,483 - INFO - ANSWER marketDataType {'reqId': 36, 'marketDataType': 1}
+2025-12-25 00:15:16,483 - INFO - ANSWER tickReqParams {'tickerId': 36, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:15:16,795 - INFO - ANSWER tickSize {'reqId': 36, 'tickType': 8, 'size': 494}
+2025-12-25 00:15:16,796 - INFO - ANSWER tickString {'reqId': 36, 'tickType': 45, 'value': '1766599079'}
+2025-12-25 00:15:16,797 - INFO - ANSWER tickSize {'reqId': 36, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:16,798 - INFO - ANSWER tickSize {'reqId': 36, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:16,799 - INFO - ANSWER tickSize {'reqId': 36, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:16,799 - INFO - ANSWER tickSize {'reqId': 36, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:16,799 - INFO - ANSWER tickSize {'reqId': 36, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:16,800 - INFO - ANSWER tickSize {'reqId': 36, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:18,238 - INFO - ANSWER tickSize {'reqId': 36, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:18,240 - INFO - ANSWER tickString {'reqId': 36, 'tickType': 45, 'value': '1766599079'}
+2025-12-25 00:15:18,329 - INFO - REQUEST cancelMktData {'reqId': 36}
+2025-12-25 00:15:18,330 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0036\x00'
+2025-12-25 00:15:18,630 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:18,630 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:18,631 - INFO - REQUEST reqMktData {'reqId': 37, 'contract': 4364254128: 0,PEP,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:18,631 - INFO - SENDING reqMktData b'\x00\x00\x00.1\x0011\x0037\x000\x00PEP\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:19,174 - INFO - ANSWER marketDataType {'reqId': 37, 'marketDataType': 1}
+2025-12-25 00:15:19,175 - INFO - ANSWER tickReqParams {'tickerId': 37, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:15:19,432 - INFO - ANSWER tickString {'reqId': 37, 'tickType': 45, 'value': '1766601551'}
+2025-12-25 00:15:19,433 - INFO - ANSWER tickSize {'reqId': 37, 'tickType': 5, 'size': 7}
+2025-12-25 00:15:19,433 - INFO - ANSWER tickSize {'reqId': 37, 'tickType': 5, 'size': 7}
+2025-12-25 00:15:19,434 - INFO - ANSWER tickSize {'reqId': 37, 'tickType': 8, 'size': 26154}
+2025-12-25 00:15:19,435 - INFO - ANSWER tickSize {'reqId': 37, 'tickType': 0, 'size': 1}
+2025-12-25 00:15:19,435 - INFO - ANSWER tickSize {'reqId': 37, 'tickType': 3, 'size': 9}
+2025-12-25 00:15:19,436 - INFO - ANSWER tickSize {'reqId': 37, 'tickType': 0, 'size': 1}
+2025-12-25 00:15:19,436 - INFO - ANSWER tickSize {'reqId': 37, 'tickType': 3, 'size': 9}
+2025-12-25 00:15:19,437 - INFO - ANSWER tickString {'reqId': 37, 'tickType': 32, 'value': 'M'}
+2025-12-25 00:15:19,437 - INFO - ANSWER tickString {'reqId': 37, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:15:19,453 - INFO - REQUEST cancelMktData {'reqId': 37}
+2025-12-25 00:15:19,454 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0037\x00'
+2025-12-25 00:15:19,454 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:19,455 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:19,455 - INFO - REQUEST reqMktData {'reqId': 38, 'contract': 4364254128: 0,PEP,OPT,20260116,145.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:19,456 - INFO - SENDING reqMktData b'\x00\x00\x00<1\x0011\x0038\x000\x00PEP\x00OPT\x0020260116\x00145.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:20,791 - INFO - ANSWER marketDataType {'reqId': 38, 'marketDataType': 1}
+2025-12-25 00:15:20,792 - INFO - ANSWER tickReqParams {'tickerId': 38, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:15:20,794 - INFO - ANSWER tickString {'reqId': 38, 'tickType': 45, 'value': '1766594747'}
+2025-12-25 00:15:20,795 - INFO - ANSWER tickSize {'reqId': 38, 'tickType': 5, 'size': 2}
+2025-12-25 00:15:20,796 - INFO - ANSWER tickSize {'reqId': 38, 'tickType': 5, 'size': 2}
+2025-12-25 00:15:20,796 - INFO - ANSWER tickSize {'reqId': 38, 'tickType': 8, 'size': 48}
+2025-12-25 00:15:20,797 - INFO - ANSWER tickSize {'reqId': 38, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:20,798 - INFO - ANSWER tickSize {'reqId': 38, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:20,798 - INFO - ANSWER tickSize {'reqId': 38, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:20,799 - INFO - ANSWER tickSize {'reqId': 38, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:21,306 - INFO - REQUEST cancelMktData {'reqId': 38}
+2025-12-25 00:15:21,306 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0038\x00'
+2025-12-25 00:15:21,611 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:21,611 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:21,611 - INFO - REQUEST reqMktData {'reqId': 39, 'contract': 4364254128: 0,LRCX,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:21,612 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0039\x000\x00LRCX\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:22,502 - INFO - ANSWER marketDataType {'reqId': 39, 'marketDataType': 1}
+2025-12-25 00:15:22,503 - INFO - ANSWER tickReqParams {'tickerId': 39, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:15:22,704 - INFO - ANSWER tickSize {'reqId': 39, 'tickType': 8, 'size': 25974}
+2025-12-25 00:15:22,705 - INFO - ANSWER tickString {'reqId': 39, 'tickType': 45, 'value': '1766606414'}
+2025-12-25 00:15:22,706 - INFO - ANSWER tickSize {'reqId': 39, 'tickType': 5, 'size': 5}
+2025-12-25 00:15:22,706 - INFO - ANSWER tickSize {'reqId': 39, 'tickType': 5, 'size': 5}
+2025-12-25 00:15:22,706 - INFO - ANSWER tickSize {'reqId': 39, 'tickType': 0, 'size': 2}
+2025-12-25 00:15:22,707 - INFO - ANSWER tickSize {'reqId': 39, 'tickType': 3, 'size': 1}
+2025-12-25 00:15:22,707 - INFO - ANSWER tickSize {'reqId': 39, 'tickType': 0, 'size': 2}
+2025-12-25 00:15:22,707 - INFO - ANSWER tickSize {'reqId': 39, 'tickType': 3, 'size': 1}
+2025-12-25 00:15:22,707 - INFO - ANSWER tickString {'reqId': 39, 'tickType': 32, 'value': 'K'}
+2025-12-25 00:15:22,707 - INFO - ANSWER tickString {'reqId': 39, 'tickType': 33, 'value': 'Q'}
+2025-12-25 00:15:22,742 - INFO - REQUEST cancelMktData {'reqId': 39}
+2025-12-25 00:15:22,743 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0039\x00'
+2025-12-25 00:15:22,744 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:22,744 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:22,745 - INFO - REQUEST reqMktData {'reqId': 40, 'contract': 4364254128: 0,LRCX,OPT,20260116,175.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:22,745 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0040\x000\x00LRCX\x00OPT\x0020260116\x00175.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:24,048 - INFO - ANSWER marketDataType {'reqId': 40, 'marketDataType': 1}
+2025-12-25 00:15:24,049 - INFO - ANSWER tickReqParams {'tickerId': 40, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:15:24,353 - INFO - ANSWER tickSize {'reqId': 40, 'tickType': 8, 'size': 31}
+2025-12-25 00:15:24,355 - INFO - ANSWER tickString {'reqId': 40, 'tickType': 45, 'value': '1766599012'}
+2025-12-25 00:15:24,356 - INFO - ANSWER tickSize {'reqId': 40, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:24,356 - INFO - ANSWER tickSize {'reqId': 40, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:24,357 - INFO - ANSWER tickSize {'reqId': 40, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:24,357 - INFO - ANSWER tickSize {'reqId': 40, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:24,358 - INFO - ANSWER tickSize {'reqId': 40, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:24,358 - INFO - ANSWER tickSize {'reqId': 40, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:25,308 - INFO - REQUEST cancelMktData {'reqId': 40}
+2025-12-25 00:15:25,308 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0040\x00'
+2025-12-25 00:15:25,609 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:25,610 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:25,611 - INFO - REQUEST reqMktData {'reqId': 41, 'contract': 4364254128: 0,ISRG,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:25,612 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0041\x000\x00ISRG\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:26,504 - INFO - ANSWER marketDataType {'reqId': 41, 'marketDataType': 1}
+2025-12-25 00:15:26,504 - INFO - ANSWER tickReqParams {'tickerId': 41, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:15:26,810 - INFO - ANSWER tickSize {'reqId': 41, 'tickType': 8, 'size': 8880}
+2025-12-25 00:15:26,812 - INFO - ANSWER tickString {'reqId': 41, 'tickType': 45, 'value': '1766599385'}
+2025-12-25 00:15:26,812 - INFO - ANSWER tickSize {'reqId': 41, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:26,812 - INFO - ANSWER tickSize {'reqId': 41, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:26,813 - INFO - ANSWER tickSize {'reqId': 41, 'tickType': 0, 'size': 1}
+2025-12-25 00:15:26,813 - INFO - ANSWER tickSize {'reqId': 41, 'tickType': 3, 'size': 1}
+2025-12-25 00:15:26,813 - INFO - ANSWER tickSize {'reqId': 41, 'tickType': 0, 'size': 1}
+2025-12-25 00:15:26,813 - INFO - ANSWER tickSize {'reqId': 41, 'tickType': 3, 'size': 1}
+2025-12-25 00:15:26,814 - INFO - ANSWER tickString {'reqId': 41, 'tickType': 32, 'value': 'Q'}
+2025-12-25 00:15:26,814 - INFO - ANSWER tickString {'reqId': 41, 'tickType': 33, 'value': 'Q'}
+2025-12-25 00:15:26,838 - INFO - REQUEST cancelMktData {'reqId': 41}
+2025-12-25 00:15:26,838 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0041\x00'
+2025-12-25 00:15:26,839 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:26,839 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:26,840 - INFO - REQUEST reqMktData {'reqId': 42, 'contract': 4364254128: 0,ISRG,OPT,20260116,580.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:26,840 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0042\x000\x00ISRG\x00OPT\x0020260116\x00580.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:28,040 - INFO - ANSWER marketDataType {'reqId': 42, 'marketDataType': 1}
+2025-12-25 00:15:28,041 - INFO - ANSWER tickReqParams {'tickerId': 42, 'minTick': 0.05, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:15:28,343 - INFO - ANSWER tickSize {'reqId': 42, 'tickType': 8, 'size': 17}
+2025-12-25 00:15:28,344 - INFO - ANSWER tickString {'reqId': 42, 'tickType': 45, 'value': '1766594680'}
+2025-12-25 00:15:28,345 - INFO - ANSWER tickSize {'reqId': 42, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:28,345 - INFO - ANSWER tickSize {'reqId': 42, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:28,346 - INFO - ANSWER tickSize {'reqId': 42, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:28,346 - INFO - ANSWER tickSize {'reqId': 42, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:28,346 - INFO - ANSWER tickSize {'reqId': 42, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:28,347 - INFO - ANSWER tickSize {'reqId': 42, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:30,188 - INFO - ANSWER tickSize {'reqId': 42, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:30,189 - INFO - ANSWER tickString {'reqId': 42, 'tickType': 45, 'value': '1766594680'}
+2025-12-25 00:15:34,933 - INFO - REQUEST cancelMktData {'reqId': 42}
+2025-12-25 00:15:34,934 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0042\x00'
+2025-12-25 00:15:35,235 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:35,235 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:35,236 - INFO - REQUEST reqMktData {'reqId': 43, 'contract': 4364254128: 0,QCOM,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:35,236 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0043\x000\x00QCOM\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:36,811 - INFO - ANSWER marketDataType {'reqId': 43, 'marketDataType': 1}
+2025-12-25 00:15:36,812 - INFO - ANSWER tickReqParams {'tickerId': 43, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:15:36,813 - INFO - ANSWER tickString {'reqId': 43, 'tickType': 45, 'value': '1766604777'}
+2025-12-25 00:15:36,814 - INFO - ANSWER tickSize {'reqId': 43, 'tickType': 5, 'size': 29}
+2025-12-25 00:15:36,815 - INFO - ANSWER tickSize {'reqId': 43, 'tickType': 5, 'size': 29}
+2025-12-25 00:15:36,815 - INFO - ANSWER tickSize {'reqId': 43, 'tickType': 8, 'size': 16425}
+2025-12-25 00:15:36,816 - INFO - ANSWER tickSize {'reqId': 43, 'tickType': 0, 'size': 10}
+2025-12-25 00:15:36,816 - INFO - ANSWER tickSize {'reqId': 43, 'tickType': 3, 'size': 1}
+2025-12-25 00:15:36,816 - INFO - ANSWER tickSize {'reqId': 43, 'tickType': 0, 'size': 10}
+2025-12-25 00:15:36,817 - INFO - ANSWER tickSize {'reqId': 43, 'tickType': 3, 'size': 1}
+2025-12-25 00:15:36,817 - INFO - ANSWER tickString {'reqId': 43, 'tickType': 32, 'value': 'Q'}
+2025-12-25 00:15:36,817 - INFO - ANSWER tickString {'reqId': 43, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:15:36,874 - INFO - REQUEST cancelMktData {'reqId': 43}
+2025-12-25 00:15:36,874 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0043\x00'
+2025-12-25 00:15:36,874 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:36,875 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:36,875 - INFO - REQUEST reqMktData {'reqId': 44, 'contract': 4364254128: 0,QCOM,OPT,20260116,175.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:36,876 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0044\x000\x00QCOM\x00OPT\x0020260116\x00175.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:38,178 - INFO - ANSWER marketDataType {'reqId': 44, 'marketDataType': 1}
+2025-12-25 00:15:38,179 - INFO - ANSWER tickReqParams {'tickerId': 44, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:15:38,770 - INFO - ANSWER tickString {'reqId': 44, 'tickType': 45, 'value': '1766598865'}
+2025-12-25 00:15:38,771 - INFO - ANSWER tickSize {'reqId': 44, 'tickType': 5, 'size': 8}
+2025-12-25 00:15:38,772 - INFO - ANSWER tickSize {'reqId': 44, 'tickType': 5, 'size': 8}
+2025-12-25 00:15:38,773 - INFO - ANSWER tickSize {'reqId': 44, 'tickType': 8, 'size': 25}
+2025-12-25 00:15:38,774 - INFO - ANSWER tickSize {'reqId': 44, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:38,774 - INFO - ANSWER tickSize {'reqId': 44, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:38,774 - INFO - ANSWER tickSize {'reqId': 44, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:38,775 - INFO - ANSWER tickSize {'reqId': 44, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:40,080 - INFO - ANSWER tickSize {'reqId': 44, 'tickType': 5, 'size': 8}
+2025-12-25 00:15:40,080 - INFO - ANSWER tickString {'reqId': 44, 'tickType': 45, 'value': '1766598865'}
+2025-12-25 00:15:44,896 - INFO - REQUEST cancelMktData {'reqId': 44}
+2025-12-25 00:15:44,896 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0044\x00'
+2025-12-25 00:15:45,197 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:45,198 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:45,198 - INFO - REQUEST reqMktData {'reqId': 45, 'contract': 4364254128: 0,INTU,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:45,198 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0045\x000\x00INTU\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:46,164 - INFO - ANSWER marketDataType {'reqId': 45, 'marketDataType': 1}
+2025-12-25 00:15:46,164 - INFO - ANSWER tickReqParams {'tickerId': 45, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:15:46,166 - INFO - ANSWER tickString {'reqId': 45, 'tickType': 45, 'value': '1766599201'}
+2025-12-25 00:15:46,166 - INFO - ANSWER tickSize {'reqId': 45, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:46,167 - INFO - ANSWER tickSize {'reqId': 45, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:46,167 - INFO - ANSWER tickSize {'reqId': 45, 'tickType': 8, 'size': 8350}
+2025-12-25 00:15:46,168 - INFO - ANSWER tickSize {'reqId': 45, 'tickType': 0, 'size': 1}
+2025-12-25 00:15:46,168 - INFO - ANSWER tickSize {'reqId': 45, 'tickType': 3, 'size': 2}
+2025-12-25 00:15:46,169 - INFO - ANSWER tickSize {'reqId': 45, 'tickType': 0, 'size': 1}
+2025-12-25 00:15:46,169 - INFO - ANSWER tickSize {'reqId': 45, 'tickType': 3, 'size': 2}
+2025-12-25 00:15:46,170 - INFO - ANSWER tickString {'reqId': 45, 'tickType': 32, 'value': 'Q'}
+2025-12-25 00:15:46,170 - INFO - ANSWER tickString {'reqId': 45, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:15:46,228 - INFO - REQUEST cancelMktData {'reqId': 45}
+2025-12-25 00:15:46,228 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0045\x00'
+2025-12-25 00:15:46,229 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:46,229 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:46,230 - INFO - REQUEST reqMktData {'reqId': 46, 'contract': 4364254128: 0,INTU,OPT,20260116,670.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:46,230 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0046\x000\x00INTU\x00OPT\x0020260116\x00670.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:47,705 - INFO - ANSWER marketDataType {'reqId': 46, 'marketDataType': 1}
+2025-12-25 00:15:47,705 - INFO - ANSWER tickReqParams {'tickerId': 46, 'minTick': 0.05, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:15:48,317 - INFO - ANSWER tickSize {'reqId': 46, 'tickType': 8, 'size': 0}
+2025-12-25 00:15:48,318 - INFO - ANSWER tickSize {'reqId': 46, 'tickType': 5, 'size': 0}
+2025-12-25 00:15:48,319 - INFO - ANSWER tickSize {'reqId': 46, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:48,319 - INFO - ANSWER tickSize {'reqId': 46, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:48,320 - INFO - ANSWER tickSize {'reqId': 46, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:48,320 - INFO - ANSWER tickSize {'reqId': 46, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:49,296 - INFO - REQUEST cancelMktData {'reqId': 46}
+2025-12-25 00:15:49,298 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0046\x00'
+2025-12-25 00:15:49,600 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:49,601 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:49,602 - INFO - REQUEST reqMktData {'reqId': 47, 'contract': 4364254128: 0,INTC,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:49,602 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0047\x000\x00INTC\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:49,842 - INFO - ANSWER tickReqParams {'tickerId': 47, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:15:49,843 - INFO - ANSWER marketDataType {'reqId': 47, 'marketDataType': 1}
+2025-12-25 00:15:49,844 - INFO - ANSWER tickSize {'reqId': 47, 'tickType': 0, 'size': 33}
+2025-12-25 00:15:49,844 - INFO - ANSWER tickSize {'reqId': 47, 'tickType': 3, 'size': 1}
+2025-12-25 00:15:49,845 - INFO - ANSWER tickSize {'reqId': 47, 'tickType': 5, 'size': 3}
+2025-12-25 00:15:49,845 - INFO - ANSWER tickSize {'reqId': 47, 'tickType': 0, 'size': 33}
+2025-12-25 00:15:49,845 - INFO - ANSWER tickSize {'reqId': 47, 'tickType': 3, 'size': 1}
+2025-12-25 00:15:49,845 - INFO - ANSWER tickSize {'reqId': 47, 'tickType': 5, 'size': 3}
+2025-12-25 00:15:49,846 - INFO - ANSWER tickSize {'reqId': 47, 'tickType': 8, 'size': 373311}
+2025-12-25 00:15:49,846 - INFO - ANSWER tickString {'reqId': 47, 'tickType': 32, 'value': 'KQZ'}
+2025-12-25 00:15:49,846 - INFO - ANSWER tickString {'reqId': 47, 'tickType': 33, 'value': 'K'}
+2025-12-25 00:15:49,847 - INFO - ANSWER tickString {'reqId': 47, 'tickType': 45, 'value': '1766607325'}
+2025-12-25 00:15:49,910 - INFO - REQUEST cancelMktData {'reqId': 47}
+2025-12-25 00:15:49,910 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0047\x00'
+2025-12-25 00:15:49,911 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:49,911 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:49,911 - INFO - REQUEST reqMktData {'reqId': 48, 'contract': 4364254128: 0,INTC,OPT,20260116,36.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:49,912 - INFO - SENDING reqMktData b'\x00\x00\x00<1\x0011\x0048\x000\x00INTC\x00OPT\x0020260116\x0036.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:51,080 - INFO - ANSWER marketDataType {'reqId': 48, 'marketDataType': 1}
+2025-12-25 00:15:51,081 - INFO - ANSWER tickReqParams {'tickerId': 48, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:15:51,309 - INFO - ANSWER tickSize {'reqId': 48, 'tickType': 8, 'size': 1591}
+2025-12-25 00:15:51,310 - INFO - ANSWER tickString {'reqId': 48, 'tickType': 45, 'value': '1766598921'}
+2025-12-25 00:15:51,310 - INFO - ANSWER tickSize {'reqId': 48, 'tickType': 5, 'size': 2}
+2025-12-25 00:15:51,311 - INFO - ANSWER tickSize {'reqId': 48, 'tickType': 5, 'size': 2}
+2025-12-25 00:15:51,311 - INFO - ANSWER tickSize {'reqId': 48, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:51,311 - INFO - ANSWER tickSize {'reqId': 48, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:51,311 - INFO - ANSWER tickSize {'reqId': 48, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:51,312 - INFO - ANSWER tickSize {'reqId': 48, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:53,207 - INFO - REQUEST cancelMktData {'reqId': 48}
+2025-12-25 00:15:53,208 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0048\x00'
+2025-12-25 00:15:53,512 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:53,513 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:53,513 - INFO - REQUEST reqMktData {'reqId': 49, 'contract': 4364254128: 0,BKNG,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:53,514 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0049\x000\x00BKNG\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:54,152 - INFO - ANSWER marketDataType {'reqId': 49, 'marketDataType': 1}
+2025-12-25 00:15:54,152 - INFO - ANSWER tickReqParams {'tickerId': 49, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:15:54,416 - INFO - ANSWER tickSize {'reqId': 49, 'tickType': 0, 'size': 2}
+2025-12-25 00:15:54,417 - INFO - ANSWER tickSize {'reqId': 49, 'tickType': 3, 'size': 2}
+2025-12-25 00:15:54,418 - INFO - ANSWER tickSize {'reqId': 49, 'tickType': 0, 'size': 2}
+2025-12-25 00:15:54,418 - INFO - ANSWER tickSize {'reqId': 49, 'tickType': 3, 'size': 2}
+2025-12-25 00:15:54,418 - INFO - ANSWER tickString {'reqId': 49, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:15:54,418 - INFO - ANSWER tickString {'reqId': 49, 'tickType': 33, 'value': 'QZ'}
+2025-12-25 00:15:54,419 - INFO - ANSWER tickSize {'reqId': 49, 'tickType': 8, 'size': 5281}
+2025-12-25 00:15:54,419 - INFO - ANSWER tickString {'reqId': 49, 'tickType': 45, 'value': '1766599200'}
+2025-12-25 00:15:54,419 - INFO - ANSWER tickSize {'reqId': 49, 'tickType': 5, 'size': 5}
+2025-12-25 00:15:54,419 - INFO - ANSWER tickSize {'reqId': 49, 'tickType': 5, 'size': 5}
+2025-12-25 00:15:54,431 - INFO - REQUEST cancelMktData {'reqId': 49}
+2025-12-25 00:15:54,432 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0049\x00'
+2025-12-25 00:15:54,433 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:15:54,433 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:15:54,434 - INFO - REQUEST reqMktData {'reqId': 50, 'contract': 4364254128: 0,BKNG,OPT,20260116,5450.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:15:54,434 - INFO - SENDING reqMktData b'\x00\x00\x00>1\x0011\x0050\x000\x00BKNG\x00OPT\x0020260116\x005450.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:15:55,692 - INFO - ANSWER tickReqParams {'tickerId': 50, 'minTick': 0.0, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:15:55,995 - INFO - ANSWER marketDataType {'reqId': 50, 'marketDataType': 1}
+2025-12-25 00:15:55,997 - INFO - ANSWER tickSize {'reqId': 50, 'tickType': 8, 'size': 1}
+2025-12-25 00:15:55,997 - INFO - ANSWER tickString {'reqId': 50, 'tickType': 45, 'value': '1766597743'}
+2025-12-25 00:15:55,998 - INFO - ANSWER tickSize {'reqId': 50, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:55,999 - INFO - ANSWER tickSize {'reqId': 50, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:55,999 - INFO - ANSWER tickSize {'reqId': 50, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:56,000 - INFO - ANSWER tickSize {'reqId': 50, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:56,000 - INFO - ANSWER tickSize {'reqId': 50, 'tickType': 0, 'size': 0}
+2025-12-25 00:15:56,000 - INFO - ANSWER tickSize {'reqId': 50, 'tickType': 3, 'size': 0}
+2025-12-25 00:15:58,236 - INFO - ANSWER tickSize {'reqId': 50, 'tickType': 5, 'size': 1}
+2025-12-25 00:15:58,236 - INFO - ANSWER tickString {'reqId': 50, 'tickType': 45, 'value': '1766597743'}
+2025-12-25 00:16:02,438 - INFO - REQUEST cancelMktData {'reqId': 50}
+2025-12-25 00:16:02,439 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0050\x00'
+2025-12-25 00:16:02,743 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:02,743 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:02,744 - INFO - REQUEST reqMktData {'reqId': 51, 'contract': 4364254128: 0,AMGN,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:02,745 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0051\x000\x00AMGN\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:03,367 - INFO - ANSWER marketDataType {'reqId': 51, 'marketDataType': 1}
+2025-12-25 00:16:03,367 - INFO - ANSWER tickReqParams {'tickerId': 51, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:16:03,673 - INFO - ANSWER tickString {'reqId': 51, 'tickType': 45, 'value': '1766599485'}
+2025-12-25 00:16:03,674 - INFO - ANSWER tickSize {'reqId': 51, 'tickType': 5, 'size': 7}
+2025-12-25 00:16:03,675 - INFO - ANSWER tickSize {'reqId': 51, 'tickType': 5, 'size': 7}
+2025-12-25 00:16:03,676 - INFO - ANSWER tickSize {'reqId': 51, 'tickType': 8, 'size': 20840}
+2025-12-25 00:16:03,676 - INFO - ANSWER tickSize {'reqId': 51, 'tickType': 0, 'size': 2}
+2025-12-25 00:16:03,677 - INFO - ANSWER tickSize {'reqId': 51, 'tickType': 3, 'size': 2}
+2025-12-25 00:16:03,677 - INFO - ANSWER tickSize {'reqId': 51, 'tickType': 0, 'size': 2}
+2025-12-25 00:16:03,677 - INFO - ANSWER tickSize {'reqId': 51, 'tickType': 3, 'size': 2}
+2025-12-25 00:16:03,677 - INFO - ANSWER tickString {'reqId': 51, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:16:03,678 - INFO - ANSWER tickString {'reqId': 51, 'tickType': 33, 'value': 'PQ'}
+2025-12-25 00:16:03,774 - INFO - REQUEST cancelMktData {'reqId': 51}
+2025-12-25 00:16:03,774 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0051\x00'
+2025-12-25 00:16:03,775 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:03,775 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:03,776 - INFO - REQUEST reqMktData {'reqId': 52, 'contract': 4364254128: 0,AMGN,OPT,20260116,330.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:03,776 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0052\x000\x00AMGN\x00OPT\x0020260116\x00330.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:04,855 - INFO - ANSWER tickReqParams {'tickerId': 52, 'minTick': 0.0, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:16:05,074 - INFO - ANSWER marketDataType {'reqId': 52, 'marketDataType': 1}
+2025-12-25 00:16:05,076 - INFO - ANSWER tickString {'reqId': 52, 'tickType': 45, 'value': '1766598687'}
+2025-12-25 00:16:05,077 - INFO - ANSWER tickSize {'reqId': 52, 'tickType': 5, 'size': 2}
+2025-12-25 00:16:05,077 - INFO - ANSWER tickSize {'reqId': 52, 'tickType': 5, 'size': 2}
+2025-12-25 00:16:05,078 - INFO - ANSWER tickSize {'reqId': 52, 'tickType': 8, 'size': 21}
+2025-12-25 00:16:05,078 - INFO - ANSWER tickSize {'reqId': 52, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:05,079 - INFO - ANSWER tickSize {'reqId': 52, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:05,079 - INFO - ANSWER tickSize {'reqId': 52, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:05,079 - INFO - ANSWER tickSize {'reqId': 52, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:06,131 - INFO - REQUEST cancelMktData {'reqId': 52}
+2025-12-25 00:16:06,132 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0052\x00'
+2025-12-25 00:16:06,436 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:06,437 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:06,437 - INFO - REQUEST reqMktData {'reqId': 53, 'contract': 4364254128: 0,TXN,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:06,438 - INFO - SENDING reqMktData b'\x00\x00\x00.1\x0011\x0053\x000\x00TXN\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:07,132 - INFO - ANSWER marketDataType {'reqId': 53, 'marketDataType': 1}
+2025-12-25 00:16:07,133 - INFO - ANSWER tickReqParams {'tickerId': 53, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:16:07,392 - INFO - ANSWER tickSize {'reqId': 53, 'tickType': 8, 'size': 12659}
+2025-12-25 00:16:07,399 - INFO - ANSWER tickString {'reqId': 53, 'tickType': 45, 'value': '1766602346'}
+2025-12-25 00:16:07,400 - INFO - ANSWER tickSize {'reqId': 53, 'tickType': 5, 'size': 1}
+2025-12-25 00:16:07,400 - INFO - ANSWER tickSize {'reqId': 53, 'tickType': 5, 'size': 1}
+2025-12-25 00:16:07,400 - INFO - ANSWER tickSize {'reqId': 53, 'tickType': 0, 'size': 5}
+2025-12-25 00:16:07,400 - INFO - ANSWER tickSize {'reqId': 53, 'tickType': 3, 'size': 1}
+2025-12-25 00:16:07,400 - INFO - ANSWER tickSize {'reqId': 53, 'tickType': 0, 'size': 5}
+2025-12-25 00:16:07,401 - INFO - ANSWER tickSize {'reqId': 53, 'tickType': 3, 'size': 1}
+2025-12-25 00:16:07,401 - INFO - ANSWER tickString {'reqId': 53, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:16:07,401 - INFO - ANSWER tickString {'reqId': 53, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:16:07,468 - INFO - REQUEST cancelMktData {'reqId': 53}
+2025-12-25 00:16:07,468 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0053\x00'
+2025-12-25 00:16:07,469 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:07,470 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:07,470 - INFO - REQUEST reqMktData {'reqId': 54, 'contract': 4364254128: 0,TXN,OPT,20260116,175.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:07,471 - INFO - SENDING reqMktData b'\x00\x00\x00<1\x0011\x0054\x000\x00TXN\x00OPT\x0020260116\x00175.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:08,486 - INFO - ANSWER marketDataType {'reqId': 54, 'marketDataType': 1}
+2025-12-25 00:16:08,487 - INFO - ANSWER tickReqParams {'tickerId': 54, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:16:08,488 - INFO - ANSWER tickString {'reqId': 54, 'tickType': 45, 'value': '1766599069'}
+2025-12-25 00:16:08,489 - INFO - ANSWER tickSize {'reqId': 54, 'tickType': 5, 'size': 2}
+2025-12-25 00:16:08,489 - INFO - ANSWER tickSize {'reqId': 54, 'tickType': 5, 'size': 2}
+2025-12-25 00:16:08,490 - INFO - ANSWER tickSize {'reqId': 54, 'tickType': 8, 'size': 12}
+2025-12-25 00:16:08,490 - INFO - ANSWER tickSize {'reqId': 54, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:08,490 - INFO - ANSWER tickSize {'reqId': 54, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:08,490 - INFO - ANSWER tickSize {'reqId': 54, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:08,491 - INFO - ANSWER tickSize {'reqId': 54, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:10,226 - INFO - ANSWER tickSize {'reqId': 54, 'tickType': 5, 'size': 2}
+2025-12-25 00:16:10,227 - INFO - ANSWER tickString {'reqId': 54, 'tickType': 45, 'value': '1766599069'}
+2025-12-25 00:16:15,494 - INFO - REQUEST cancelMktData {'reqId': 54}
+2025-12-25 00:16:15,494 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0054\x00'
+2025-12-25 00:16:15,798 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:15,798 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:15,799 - INFO - REQUEST reqMktData {'reqId': 55, 'contract': 4364254128: 0,KLAC,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:15,800 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0055\x000\x00KLAC\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:16,502 - INFO - ANSWER marketDataType {'reqId': 55, 'marketDataType': 1}
+2025-12-25 00:16:16,503 - INFO - ANSWER tickReqParams {'tickerId': 55, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:16:16,971 - INFO - ANSWER tickSize {'reqId': 55, 'tickType': 8, 'size': 5260}
+2025-12-25 00:16:16,972 - INFO - ANSWER tickString {'reqId': 55, 'tickType': 45, 'value': '1766599200'}
+2025-12-25 00:16:16,972 - INFO - ANSWER tickSize {'reqId': 55, 'tickType': 5, 'size': 5}
+2025-12-25 00:16:16,973 - INFO - ANSWER tickSize {'reqId': 55, 'tickType': 5, 'size': 5}
+2025-12-25 00:16:16,973 - INFO - ANSWER tickSize {'reqId': 55, 'tickType': 0, 'size': 1}
+2025-12-25 00:16:16,973 - INFO - ANSWER tickSize {'reqId': 55, 'tickType': 3, 'size': 1}
+2025-12-25 00:16:16,974 - INFO - ANSWER tickSize {'reqId': 55, 'tickType': 0, 'size': 1}
+2025-12-25 00:16:16,974 - INFO - ANSWER tickSize {'reqId': 55, 'tickType': 3, 'size': 1}
+2025-12-25 00:16:16,974 - INFO - ANSWER tickString {'reqId': 55, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:16:16,974 - INFO - ANSWER tickString {'reqId': 55, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:16:17,029 - INFO - REQUEST cancelMktData {'reqId': 55}
+2025-12-25 00:16:17,030 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0055\x00'
+2025-12-25 00:16:17,031 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:17,031 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:17,032 - INFO - REQUEST reqMktData {'reqId': 56, 'contract': 4364254128: 0,KLAC,OPT,20260116,1280.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:17,032 - INFO - SENDING reqMktData b'\x00\x00\x00>1\x0011\x0056\x000\x00KLAC\x00OPT\x0020260116\x001280.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:18,310 - INFO - ANSWER tickReqParams {'tickerId': 56, 'minTick': 0.0, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:16:18,420 - INFO - ANSWER marketDataType {'reqId': 56, 'marketDataType': 1}
+2025-12-25 00:16:18,422 - INFO - ANSWER tickString {'reqId': 56, 'tickType': 45, 'value': '1766598708'}
+2025-12-25 00:16:18,422 - INFO - ANSWER tickSize {'reqId': 56, 'tickType': 5, 'size': 1}
+2025-12-25 00:16:18,423 - INFO - ANSWER tickSize {'reqId': 56, 'tickType': 5, 'size': 1}
+2025-12-25 00:16:18,423 - INFO - ANSWER tickSize {'reqId': 56, 'tickType': 8, 'size': 1}
+2025-12-25 00:16:18,424 - INFO - ANSWER tickSize {'reqId': 56, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:18,425 - INFO - ANSWER tickSize {'reqId': 56, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:18,425 - INFO - ANSWER tickSize {'reqId': 56, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:18,425 - INFO - ANSWER tickSize {'reqId': 56, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:19,302 - INFO - REQUEST cancelMktData {'reqId': 56}
+2025-12-25 00:16:19,302 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0056\x00'
+2025-12-25 00:16:19,608 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:19,608 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:19,609 - INFO - REQUEST reqMktData {'reqId': 57, 'contract': 4364254128: 0,PDD,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:19,609 - INFO - SENDING reqMktData b'\x00\x00\x00.1\x0011\x0057\x000\x00PDD\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:20,264 - INFO - ANSWER marketDataType {'reqId': 57, 'marketDataType': 1}
+2025-12-25 00:16:20,265 - INFO - ANSWER tickReqParams {'tickerId': 57, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:16:20,571 - INFO - ANSWER tickSize {'reqId': 57, 'tickType': 0, 'size': 4}
+2025-12-25 00:16:20,572 - INFO - ANSWER tickSize {'reqId': 57, 'tickType': 3, 'size': 3}
+2025-12-25 00:16:20,573 - INFO - ANSWER tickSize {'reqId': 57, 'tickType': 0, 'size': 4}
+2025-12-25 00:16:20,573 - INFO - ANSWER tickSize {'reqId': 57, 'tickType': 3, 'size': 3}
+2025-12-25 00:16:20,574 - INFO - ANSWER tickString {'reqId': 57, 'tickType': 32, 'value': 'Z'}
+2025-12-25 00:16:20,574 - INFO - ANSWER tickString {'reqId': 57, 'tickType': 33, 'value': 'Q'}
+2025-12-25 00:16:20,574 - INFO - ANSWER tickSize {'reqId': 57, 'tickType': 8, 'size': 60127}
+2025-12-25 00:16:20,575 - INFO - ANSWER tickString {'reqId': 57, 'tickType': 45, 'value': '1766604140'}
+2025-12-25 00:16:20,575 - INFO - ANSWER tickSize {'reqId': 57, 'tickType': 5, 'size': 2}
+2025-12-25 00:16:20,575 - INFO - ANSWER tickSize {'reqId': 57, 'tickType': 5, 'size': 2}
+2025-12-25 00:16:20,625 - INFO - REQUEST cancelMktData {'reqId': 57}
+2025-12-25 00:16:20,625 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0057\x00'
+2025-12-25 00:16:20,627 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:20,627 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:20,627 - INFO - REQUEST reqMktData {'reqId': 58, 'contract': 4364254128: 0,PDD,OPT,20260116,115.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:20,628 - INFO - SENDING reqMktData b'\x00\x00\x00<1\x0011\x0058\x000\x00PDD\x00OPT\x0020260116\x00115.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:21,799 - INFO - ANSWER marketDataType {'reqId': 58, 'marketDataType': 1}
+2025-12-25 00:16:21,800 - INFO - ANSWER tickReqParams {'tickerId': 58, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:16:22,106 - INFO - ANSWER tickString {'reqId': 58, 'tickType': 45, 'value': '1766599161'}
+2025-12-25 00:16:22,107 - INFO - ANSWER tickSize {'reqId': 58, 'tickType': 5, 'size': 2}
+2025-12-25 00:16:22,108 - INFO - ANSWER tickSize {'reqId': 58, 'tickType': 5, 'size': 2}
+2025-12-25 00:16:22,109 - INFO - ANSWER tickSize {'reqId': 58, 'tickType': 8, 'size': 265}
+2025-12-25 00:16:22,110 - INFO - ANSWER tickSize {'reqId': 58, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:22,110 - INFO - ANSWER tickSize {'reqId': 58, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:22,111 - INFO - ANSWER tickSize {'reqId': 58, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:22,111 - INFO - ANSWER tickSize {'reqId': 58, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:23,100 - INFO - REQUEST cancelMktData {'reqId': 58}
+2025-12-25 00:16:23,101 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0058\x00'
+2025-12-25 00:16:23,403 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:23,403 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:23,404 - INFO - REQUEST reqMktData {'reqId': 59, 'contract': 4364254128: 0,GILD,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:23,405 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0059\x000\x00GILD\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:24,088 - INFO - ANSWER marketDataType {'reqId': 59, 'marketDataType': 1}
+2025-12-25 00:16:24,090 - INFO - ANSWER tickReqParams {'tickerId': 59, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:16:24,563 - INFO - ANSWER tickString {'reqId': 59, 'tickType': 45, 'value': '1766599201'}
+2025-12-25 00:16:24,564 - INFO - ANSWER tickSize {'reqId': 59, 'tickType': 5, 'size': 14}
+2025-12-25 00:16:24,564 - INFO - ANSWER tickSize {'reqId': 59, 'tickType': 5, 'size': 14}
+2025-12-25 00:16:24,565 - INFO - ANSWER tickSize {'reqId': 59, 'tickType': 8, 'size': 16062}
+2025-12-25 00:16:24,565 - INFO - ANSWER tickSize {'reqId': 59, 'tickType': 0, 'size': 1}
+2025-12-25 00:16:24,565 - INFO - ANSWER tickSize {'reqId': 59, 'tickType': 3, 'size': 4}
+2025-12-25 00:16:24,566 - INFO - ANSWER tickSize {'reqId': 59, 'tickType': 0, 'size': 1}
+2025-12-25 00:16:24,566 - INFO - ANSWER tickSize {'reqId': 59, 'tickType': 3, 'size': 4}
+2025-12-25 00:16:24,566 - INFO - ANSWER tickString {'reqId': 59, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:16:24,567 - INFO - ANSWER tickString {'reqId': 59, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:16:24,633 - INFO - REQUEST cancelMktData {'reqId': 59}
+2025-12-25 00:16:24,633 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0059\x00'
+2025-12-25 00:16:24,633 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:24,634 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:24,634 - INFO - REQUEST reqMktData {'reqId': 60, 'contract': 4364254128: 0,GILD,OPT,20260116,125.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:24,634 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0060\x000\x00GILD\x00OPT\x0020260116\x00125.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:27,328 - INFO - ANSWER marketDataType {'reqId': 60, 'marketDataType': 1}
+2025-12-25 00:16:27,328 - INFO - ANSWER tickReqParams {'tickerId': 60, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:16:27,329 - INFO - ANSWER tickString {'reqId': 60, 'tickType': 45, 'value': '1766592803'}
+2025-12-25 00:16:27,330 - INFO - ANSWER tickSize {'reqId': 60, 'tickType': 5, 'size': 3}
+2025-12-25 00:16:27,330 - INFO - ANSWER tickSize {'reqId': 60, 'tickType': 5, 'size': 3}
+2025-12-25 00:16:27,331 - INFO - ANSWER tickSize {'reqId': 60, 'tickType': 8, 'size': 13}
+2025-12-25 00:16:27,332 - INFO - ANSWER tickSize {'reqId': 60, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:27,332 - INFO - ANSWER tickSize {'reqId': 60, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:27,332 - INFO - ANSWER tickSize {'reqId': 60, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:27,332 - INFO - ANSWER tickSize {'reqId': 60, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:29,013 - INFO - ANSWER tickSize {'reqId': 60, 'tickType': 5, 'size': 3}
+2025-12-25 00:16:29,014 - INFO - ANSWER tickString {'reqId': 60, 'tickType': 45, 'value': '1766592803'}
+2025-12-25 00:16:32,736 - INFO - REQUEST cancelMktData {'reqId': 60}
+2025-12-25 00:16:32,737 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0060\x00'
+2025-12-25 00:16:33,041 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:33,041 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:33,042 - INFO - REQUEST reqMktData {'reqId': 61, 'contract': 4364254128: 0,ADBE,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:33,042 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0061\x000\x00ADBE\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:33,780 - INFO - ANSWER marketDataType {'reqId': 61, 'marketDataType': 1}
+2025-12-25 00:16:33,781 - INFO - ANSWER tickReqParams {'tickerId': 61, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:16:34,042 - INFO - ANSWER tickSize {'reqId': 61, 'tickType': 0, 'size': 1}
+2025-12-25 00:16:34,043 - INFO - ANSWER tickSize {'reqId': 61, 'tickType': 3, 'size': 6}
+2025-12-25 00:16:34,043 - INFO - ANSWER tickSize {'reqId': 61, 'tickType': 0, 'size': 1}
+2025-12-25 00:16:34,044 - INFO - ANSWER tickSize {'reqId': 61, 'tickType': 3, 'size': 6}
+2025-12-25 00:16:34,044 - INFO - ANSWER tickString {'reqId': 61, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:16:34,044 - INFO - ANSWER tickString {'reqId': 61, 'tickType': 33, 'value': 'KZ'}
+2025-12-25 00:16:34,044 - INFO - ANSWER tickSize {'reqId': 61, 'tickType': 8, 'size': 29151}
+2025-12-25 00:16:34,045 - INFO - ANSWER tickString {'reqId': 61, 'tickType': 45, 'value': '1766605694'}
+2025-12-25 00:16:34,045 - INFO - ANSWER tickSize {'reqId': 61, 'tickType': 5, 'size': 1}
+2025-12-25 00:16:34,045 - INFO - ANSWER tickSize {'reqId': 61, 'tickType': 5, 'size': 1}
+2025-12-25 00:16:34,075 - INFO - REQUEST cancelMktData {'reqId': 61}
+2025-12-25 00:16:34,076 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0061\x00'
+2025-12-25 00:16:34,077 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:34,077 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:34,078 - INFO - REQUEST reqMktData {'reqId': 62, 'contract': 4364254128: 0,ADBE,OPT,20260116,350.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:34,078 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0062\x000\x00ADBE\x00OPT\x0020260116\x00350.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:35,259 - INFO - ANSWER marketDataType {'reqId': 62, 'marketDataType': 1}
+2025-12-25 00:16:35,260 - INFO - ANSWER tickReqParams {'tickerId': 62, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:16:35,494 - INFO - ANSWER tickString {'reqId': 62, 'tickType': 45, 'value': '1766598879'}
+2025-12-25 00:16:35,496 - INFO - ANSWER tickSize {'reqId': 62, 'tickType': 5, 'size': 11}
+2025-12-25 00:16:35,497 - INFO - ANSWER tickSize {'reqId': 62, 'tickType': 5, 'size': 11}
+2025-12-25 00:16:35,497 - INFO - ANSWER tickSize {'reqId': 62, 'tickType': 8, 'size': 33}
+2025-12-25 00:16:35,497 - INFO - ANSWER tickSize {'reqId': 62, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:35,497 - INFO - ANSWER tickSize {'reqId': 62, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:35,497 - INFO - ANSWER tickSize {'reqId': 62, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:35,498 - INFO - ANSWER tickSize {'reqId': 62, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:37,103 - INFO - ANSWER tickSize {'reqId': 62, 'tickType': 5, 'size': 11}
+2025-12-25 00:16:37,103 - INFO - ANSWER tickString {'reqId': 62, 'tickType': 45, 'value': '1766598879'}
+2025-12-25 00:16:37,157 - INFO - REQUEST cancelMktData {'reqId': 62}
+2025-12-25 00:16:37,157 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0062\x00'
+2025-12-25 00:16:37,462 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:37,463 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:37,463 - INFO - REQUEST reqMktData {'reqId': 63, 'contract': 4364254128: 0,ADI,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:37,465 - INFO - SENDING reqMktData b'\x00\x00\x00.1\x0011\x0063\x000\x00ADI\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:38,079 - INFO - ANSWER marketDataType {'reqId': 63, 'marketDataType': 1}
+2025-12-25 00:16:38,080 - INFO - ANSWER tickReqParams {'tickerId': 63, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:16:38,388 - INFO - ANSWER tickSize {'reqId': 63, 'tickType': 8, 'size': 8877}
+2025-12-25 00:16:38,388 - INFO - ANSWER tickString {'reqId': 63, 'tickType': 45, 'value': '1766601551'}
+2025-12-25 00:16:38,389 - INFO - ANSWER tickSize {'reqId': 63, 'tickType': 5, 'size': 1}
+2025-12-25 00:16:38,389 - INFO - ANSWER tickSize {'reqId': 63, 'tickType': 5, 'size': 1}
+2025-12-25 00:16:38,389 - INFO - ANSWER tickSize {'reqId': 63, 'tickType': 0, 'size': 1}
+2025-12-25 00:16:38,390 - INFO - ANSWER tickSize {'reqId': 63, 'tickType': 3, 'size': 1}
+2025-12-25 00:16:38,390 - INFO - ANSWER tickSize {'reqId': 63, 'tickType': 0, 'size': 1}
+2025-12-25 00:16:38,390 - INFO - ANSWER tickSize {'reqId': 63, 'tickType': 3, 'size': 1}
+2025-12-25 00:16:38,390 - INFO - ANSWER tickString {'reqId': 63, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:16:38,390 - INFO - ANSWER tickString {'reqId': 63, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:16:38,391 - INFO - REQUEST cancelMktData {'reqId': 63}
+2025-12-25 00:16:38,391 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0063\x00'
+2025-12-25 00:16:38,392 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:38,392 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:38,392 - INFO - REQUEST reqMktData {'reqId': 64, 'contract': 4364254128: 0,ADI,OPT,20260116,280.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:38,393 - INFO - SENDING reqMktData b'\x00\x00\x00<1\x0011\x0064\x000\x00ADI\x00OPT\x0020260116\x00280.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:39,793 - INFO - ANSWER marketDataType {'reqId': 64, 'marketDataType': 1}
+2025-12-25 00:16:39,794 - INFO - ANSWER tickReqParams {'tickerId': 64, 'minTick': 0.05, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:16:40,463 - INFO - ANSWER tickSize {'reqId': 64, 'tickType': 8, 'size': 3}
+2025-12-25 00:16:40,464 - INFO - ANSWER tickString {'reqId': 64, 'tickType': 45, 'value': '1766592311'}
+2025-12-25 00:16:40,465 - INFO - ANSWER tickSize {'reqId': 64, 'tickType': 5, 'size': 1}
+2025-12-25 00:16:40,466 - INFO - ANSWER tickSize {'reqId': 64, 'tickType': 5, 'size': 1}
+2025-12-25 00:16:40,466 - INFO - ANSWER tickSize {'reqId': 64, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:40,466 - INFO - ANSWER tickSize {'reqId': 64, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:40,466 - INFO - ANSWER tickSize {'reqId': 64, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:40,466 - INFO - ANSWER tickSize {'reqId': 64, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:41,178 - INFO - REQUEST cancelMktData {'reqId': 64}
+2025-12-25 00:16:41,179 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0064\x00'
+2025-12-25 00:16:41,479 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:41,480 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:41,480 - INFO - REQUEST reqMktData {'reqId': 65, 'contract': 4364254128: 0,ARM,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:41,480 - INFO - SENDING reqMktData b'\x00\x00\x00.1\x0011\x0065\x000\x00ARM\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:42,379 - INFO - ANSWER marketDataType {'reqId': 65, 'marketDataType': 1}
+2025-12-25 00:16:42,379 - INFO - ANSWER tickReqParams {'tickerId': 65, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:16:42,610 - INFO - ANSWER tickSize {'reqId': 65, 'tickType': 0, 'size': 14}
+2025-12-25 00:16:42,610 - INFO - ANSWER tickSize {'reqId': 65, 'tickType': 3, 'size': 1}
+2025-12-25 00:16:42,611 - INFO - ANSWER tickSize {'reqId': 65, 'tickType': 0, 'size': 14}
+2025-12-25 00:16:42,611 - INFO - ANSWER tickSize {'reqId': 65, 'tickType': 3, 'size': 1}
+2025-12-25 00:16:42,612 - INFO - ANSWER tickString {'reqId': 65, 'tickType': 32, 'value': 'KP'}
+2025-12-25 00:16:42,612 - INFO - ANSWER tickString {'reqId': 65, 'tickType': 33, 'value': 'K'}
+2025-12-25 00:16:42,612 - INFO - ANSWER tickSize {'reqId': 65, 'tickType': 8, 'size': 21583}
+2025-12-25 00:16:42,613 - INFO - ANSWER tickString {'reqId': 65, 'tickType': 45, 'value': '1766607034'}
+2025-12-25 00:16:42,613 - INFO - ANSWER tickSize {'reqId': 65, 'tickType': 5, 'size': 1}
+2025-12-25 00:16:42,613 - INFO - ANSWER tickSize {'reqId': 65, 'tickType': 5, 'size': 1}
+2025-12-25 00:16:42,710 - INFO - REQUEST cancelMktData {'reqId': 65}
+2025-12-25 00:16:42,710 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0065\x00'
+2025-12-25 00:16:42,711 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:42,711 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:42,711 - INFO - REQUEST reqMktData {'reqId': 66, 'contract': 4364254128: 0,ARM,OPT,20260116,110.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:42,711 - INFO - SENDING reqMktData b'\x00\x00\x00<1\x0011\x0066\x000\x00ARM\x00OPT\x0020260116\x00110.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:43,913 - INFO - ANSWER marketDataType {'reqId': 66, 'marketDataType': 1}
+2025-12-25 00:16:43,913 - INFO - ANSWER tickReqParams {'tickerId': 66, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:16:44,152 - INFO - ANSWER tickString {'reqId': 66, 'tickType': 45, 'value': '1766594202'}
+2025-12-25 00:16:44,153 - INFO - ANSWER tickSize {'reqId': 66, 'tickType': 5, 'size': 3}
+2025-12-25 00:16:44,154 - INFO - ANSWER tickSize {'reqId': 66, 'tickType': 5, 'size': 3}
+2025-12-25 00:16:44,155 - INFO - ANSWER tickSize {'reqId': 66, 'tickType': 8, 'size': 82}
+2025-12-25 00:16:44,155 - INFO - ANSWER tickSize {'reqId': 66, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:44,156 - INFO - ANSWER tickSize {'reqId': 66, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:44,156 - INFO - ANSWER tickSize {'reqId': 66, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:44,157 - INFO - ANSWER tickSize {'reqId': 66, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:45,176 - INFO - REQUEST cancelMktData {'reqId': 66}
+2025-12-25 00:16:45,177 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0066\x00'
+2025-12-25 00:16:45,483 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:45,483 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:45,484 - INFO - REQUEST reqMktData {'reqId': 67, 'contract': 4364254128: 0,PANW,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:45,484 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0067\x000\x00PANW\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:46,418 - INFO - ANSWER marketDataType {'reqId': 67, 'marketDataType': 1}
+2025-12-25 00:16:46,418 - INFO - ANSWER tickReqParams {'tickerId': 67, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:16:46,682 - INFO - ANSWER tickSize {'reqId': 67, 'tickType': 0, 'size': 4}
+2025-12-25 00:16:46,682 - INFO - ANSWER tickSize {'reqId': 67, 'tickType': 3, 'size': 1}
+2025-12-25 00:16:46,683 - INFO - ANSWER tickSize {'reqId': 67, 'tickType': 0, 'size': 4}
+2025-12-25 00:16:46,683 - INFO - ANSWER tickSize {'reqId': 67, 'tickType': 3, 'size': 1}
+2025-12-25 00:16:46,684 - INFO - ANSWER tickString {'reqId': 67, 'tickType': 32, 'value': 'KP'}
+2025-12-25 00:16:46,684 - INFO - ANSWER tickString {'reqId': 67, 'tickType': 33, 'value': 'K'}
+2025-12-25 00:16:46,935 - INFO - ANSWER tickSize {'reqId': 67, 'tickType': 8, 'size': 18285}
+2025-12-25 00:16:46,936 - INFO - ANSWER tickString {'reqId': 67, 'tickType': 45, 'value': '1766607185'}
+2025-12-25 00:16:46,937 - INFO - ANSWER tickSize {'reqId': 67, 'tickType': 5, 'size': 3}
+2025-12-25 00:16:46,937 - INFO - ANSWER tickSize {'reqId': 67, 'tickType': 5, 'size': 3}
+2025-12-25 00:16:47,013 - INFO - REQUEST cancelMktData {'reqId': 67}
+2025-12-25 00:16:47,014 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0067\x00'
+2025-12-25 00:16:47,014 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:47,015 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:47,015 - INFO - REQUEST reqMktData {'reqId': 68, 'contract': 4364254128: 0,PANW,OPT,20260116,185.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:47,016 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0068\x000\x00PANW\x00OPT\x0020260116\x00185.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:47,991 - INFO - ANSWER tickReqParams {'tickerId': 68, 'minTick': 0.0, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:16:48,194 - INFO - ANSWER marketDataType {'reqId': 68, 'marketDataType': 1}
+2025-12-25 00:16:48,196 - INFO - ANSWER tickSize {'reqId': 68, 'tickType': 8, 'size': 52}
+2025-12-25 00:16:48,197 - INFO - ANSWER tickString {'reqId': 68, 'tickType': 45, 'value': '1766598620'}
+2025-12-25 00:16:48,197 - INFO - ANSWER tickSize {'reqId': 68, 'tickType': 5, 'size': 1}
+2025-12-25 00:16:48,198 - INFO - ANSWER tickSize {'reqId': 68, 'tickType': 5, 'size': 1}
+2025-12-25 00:16:48,198 - INFO - ANSWER tickSize {'reqId': 68, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:48,198 - INFO - ANSWER tickSize {'reqId': 68, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:48,199 - INFO - ANSWER tickSize {'reqId': 68, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:48,199 - INFO - ANSWER tickSize {'reqId': 68, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:49,166 - INFO - REQUEST cancelMktData {'reqId': 68}
+2025-12-25 00:16:49,166 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0068\x00'
+2025-12-25 00:16:49,469 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:49,469 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:49,469 - INFO - REQUEST reqMktData {'reqId': 69, 'contract': 4364254128: 0,HON,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:49,470 - INFO - SENDING reqMktData b'\x00\x00\x00.1\x0011\x0069\x000\x00HON\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:50,133 - INFO - ANSWER marketDataType {'reqId': 69, 'marketDataType': 1}
+2025-12-25 00:16:50,134 - INFO - ANSWER tickReqParams {'tickerId': 69, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:16:50,135 - INFO - ANSWER tickSize {'reqId': 69, 'tickType': 0, 'size': 1}
+2025-12-25 00:16:50,135 - INFO - ANSWER tickSize {'reqId': 69, 'tickType': 3, 'size': 2}
+2025-12-25 00:16:50,136 - INFO - ANSWER tickSize {'reqId': 69, 'tickType': 0, 'size': 1}
+2025-12-25 00:16:50,136 - INFO - ANSWER tickSize {'reqId': 69, 'tickType': 3, 'size': 2}
+2025-12-25 00:16:50,136 - INFO - ANSWER tickString {'reqId': 69, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:16:50,136 - INFO - ANSWER tickString {'reqId': 69, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:16:50,675 - INFO - ANSWER tickSize {'reqId': 69, 'tickType': 8, 'size': 14794}
+2025-12-25 00:16:50,676 - INFO - ANSWER tickString {'reqId': 69, 'tickType': 45, 'value': '1766599485'}
+2025-12-25 00:16:50,677 - INFO - ANSWER tickSize {'reqId': 69, 'tickType': 5, 'size': 7}
+2025-12-25 00:16:50,678 - INFO - ANSWER tickSize {'reqId': 69, 'tickType': 5, 'size': 7}
+2025-12-25 00:16:50,702 - INFO - REQUEST cancelMktData {'reqId': 69}
+2025-12-25 00:16:50,703 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0069\x00'
+2025-12-25 00:16:50,703 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:50,704 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:50,704 - INFO - REQUEST reqMktData {'reqId': 70, 'contract': 4364254128: 0,HON,OPT,20260116,195.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:50,704 - INFO - SENDING reqMktData b'\x00\x00\x00<1\x0011\x0070\x000\x00HON\x00OPT\x0020260116\x00195.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:51,775 - INFO - ANSWER marketDataType {'reqId': 70, 'marketDataType': 1}
+2025-12-25 00:16:51,775 - INFO - ANSWER tickReqParams {'tickerId': 70, 'minTick': 0.05, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:16:52,006 - INFO - ANSWER tickString {'reqId': 70, 'tickType': 45, 'value': '1766598640'}
+2025-12-25 00:16:52,007 - INFO - ANSWER tickSize {'reqId': 70, 'tickType': 5, 'size': 1}
+2025-12-25 00:16:52,008 - INFO - ANSWER tickSize {'reqId': 70, 'tickType': 5, 'size': 1}
+2025-12-25 00:16:52,009 - INFO - ANSWER tickSize {'reqId': 70, 'tickType': 8, 'size': 9}
+2025-12-25 00:16:52,009 - INFO - ANSWER tickSize {'reqId': 70, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:52,010 - INFO - ANSWER tickSize {'reqId': 70, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:52,010 - INFO - ANSWER tickSize {'reqId': 70, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:52,010 - INFO - ANSWER tickSize {'reqId': 70, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:53,069 - INFO - REQUEST cancelMktData {'reqId': 70}
+2025-12-25 00:16:53,070 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0070\x00'
+2025-12-25 00:16:53,375 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:53,375 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:53,376 - INFO - REQUEST reqMktData {'reqId': 71, 'contract': 4364254128: 0,CRWD,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:53,377 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0071\x000\x00CRWD\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:54,361 - INFO - ANSWER marketDataType {'reqId': 71, 'marketDataType': 1}
+2025-12-25 00:16:54,361 - INFO - ANSWER tickReqParams {'tickerId': 71, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:16:54,670 - INFO - ANSWER tickSize {'reqId': 71, 'tickType': 0, 'size': 2}
+2025-12-25 00:16:54,671 - INFO - ANSWER tickSize {'reqId': 71, 'tickType': 3, 'size': 1}
+2025-12-25 00:16:54,672 - INFO - ANSWER tickSize {'reqId': 71, 'tickType': 0, 'size': 2}
+2025-12-25 00:16:54,672 - INFO - ANSWER tickSize {'reqId': 71, 'tickType': 3, 'size': 1}
+2025-12-25 00:16:54,673 - INFO - ANSWER tickString {'reqId': 71, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:16:54,673 - INFO - ANSWER tickString {'reqId': 71, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:16:54,674 - INFO - ANSWER tickSize {'reqId': 71, 'tickType': 8, 'size': 18583}
+2025-12-25 00:16:54,674 - INFO - ANSWER tickString {'reqId': 71, 'tickType': 45, 'value': '1766607406'}
+2025-12-25 00:16:54,674 - INFO - ANSWER tickSize {'reqId': 71, 'tickType': 5, 'size': 2}
+2025-12-25 00:16:54,675 - INFO - ANSWER tickSize {'reqId': 71, 'tickType': 5, 'size': 2}
+2025-12-25 00:16:54,718 - INFO - REQUEST cancelMktData {'reqId': 71}
+2025-12-25 00:16:54,720 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0071\x00'
+2025-12-25 00:16:54,722 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:54,723 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:54,725 - INFO - REQUEST reqMktData {'reqId': 72, 'contract': 4364254128: 0,CRWD,OPT,20260116,480.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:54,726 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0072\x000\x00CRWD\x00OPT\x0020260116\x00480.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:55,538 - INFO - ANSWER tickReqParams {'tickerId': 72, 'minTick': 0.0, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:16:55,776 - INFO - ANSWER marketDataType {'reqId': 72, 'marketDataType': 1}
+2025-12-25 00:16:55,778 - INFO - ANSWER tickSize {'reqId': 72, 'tickType': 8, 'size': 62}
+2025-12-25 00:16:55,779 - INFO - ANSWER tickString {'reqId': 72, 'tickType': 45, 'value': '1766598069'}
+2025-12-25 00:16:55,780 - INFO - ANSWER tickSize {'reqId': 72, 'tickType': 5, 'size': 2}
+2025-12-25 00:16:55,780 - INFO - ANSWER tickSize {'reqId': 72, 'tickType': 5, 'size': 2}
+2025-12-25 00:16:55,780 - INFO - ANSWER tickSize {'reqId': 72, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:55,781 - INFO - ANSWER tickSize {'reqId': 72, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:55,781 - INFO - ANSWER tickSize {'reqId': 72, 'tickType': 0, 'size': 0}
+2025-12-25 00:16:55,781 - INFO - ANSWER tickSize {'reqId': 72, 'tickType': 3, 'size': 0}
+2025-12-25 00:16:57,091 - INFO - REQUEST cancelMktData {'reqId': 72}
+2025-12-25 00:16:57,092 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0072\x00'
+2025-12-25 00:16:57,397 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:57,397 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:57,398 - INFO - REQUEST reqMktData {'reqId': 73, 'contract': 4364254128: 0,VRTX,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:57,399 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0073\x000\x00VRTX\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:16:58,662 - INFO - ANSWER marketDataType {'reqId': 73, 'marketDataType': 1}
+2025-12-25 00:16:58,662 - INFO - ANSWER tickReqParams {'tickerId': 73, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:16:58,969 - INFO - ANSWER tickString {'reqId': 73, 'tickType': 45, 'value': '1766602020'}
+2025-12-25 00:16:58,970 - INFO - ANSWER tickSize {'reqId': 73, 'tickType': 5, 'size': 73}
+2025-12-25 00:16:58,971 - INFO - ANSWER tickSize {'reqId': 73, 'tickType': 5, 'size': 73}
+2025-12-25 00:16:58,971 - INFO - ANSWER tickSize {'reqId': 73, 'tickType': 8, 'size': 7754}
+2025-12-25 00:16:58,971 - INFO - ANSWER tickSize {'reqId': 73, 'tickType': 0, 'size': 1}
+2025-12-25 00:16:58,971 - INFO - ANSWER tickSize {'reqId': 73, 'tickType': 3, 'size': 2}
+2025-12-25 00:16:58,972 - INFO - ANSWER tickSize {'reqId': 73, 'tickType': 0, 'size': 1}
+2025-12-25 00:16:58,972 - INFO - ANSWER tickSize {'reqId': 73, 'tickType': 3, 'size': 2}
+2025-12-25 00:16:58,972 - INFO - ANSWER tickString {'reqId': 73, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:16:58,972 - INFO - ANSWER tickString {'reqId': 73, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:16:59,049 - INFO - REQUEST cancelMktData {'reqId': 73}
+2025-12-25 00:16:59,050 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0073\x00'
+2025-12-25 00:16:59,051 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:16:59,051 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:16:59,051 - INFO - REQUEST reqMktData {'reqId': 74, 'contract': 4364254128: 0,VRTX,OPT,20260116,460.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:16:59,052 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0074\x000\x00VRTX\x00OPT\x0020260116\x00460.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:00,198 - INFO - ANSWER marketDataType {'reqId': 74, 'marketDataType': 1}
+2025-12-25 00:17:00,198 - INFO - ANSWER tickReqParams {'tickerId': 74, 'minTick': 0.05, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:17:00,507 - INFO - ANSWER tickString {'reqId': 74, 'tickType': 45, 'value': '1766598921'}
+2025-12-25 00:17:00,508 - INFO - ANSWER tickSize {'reqId': 74, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:00,508 - INFO - ANSWER tickSize {'reqId': 74, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:00,509 - INFO - ANSWER tickSize {'reqId': 74, 'tickType': 8, 'size': 14}
+2025-12-25 00:17:00,509 - INFO - ANSWER tickSize {'reqId': 74, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:00,510 - INFO - ANSWER tickSize {'reqId': 74, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:00,510 - INFO - ANSWER tickSize {'reqId': 74, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:00,510 - INFO - ANSWER tickSize {'reqId': 74, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:01,509 - INFO - REQUEST cancelMktData {'reqId': 74}
+2025-12-25 00:17:01,510 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0074\x00'
+2025-12-25 00:17:01,815 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:01,816 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:01,816 - INFO - REQUEST reqMktData {'reqId': 75, 'contract': 4364254128: 0,CEG,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:01,817 - INFO - SENDING reqMktData b'\x00\x00\x00.1\x0011\x0075\x000\x00CEG\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:02,655 - INFO - ANSWER marketDataType {'reqId': 75, 'marketDataType': 1}
+2025-12-25 00:17:02,656 - INFO - ANSWER tickReqParams {'tickerId': 75, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:17:02,917 - INFO - ANSWER tickSize {'reqId': 75, 'tickType': 0, 'size': 4}
+2025-12-25 00:17:02,917 - INFO - ANSWER tickSize {'reqId': 75, 'tickType': 3, 'size': 1}
+2025-12-25 00:17:02,918 - INFO - ANSWER tickSize {'reqId': 75, 'tickType': 0, 'size': 4}
+2025-12-25 00:17:02,918 - INFO - ANSWER tickSize {'reqId': 75, 'tickType': 3, 'size': 1}
+2025-12-25 00:17:02,918 - INFO - ANSWER tickString {'reqId': 75, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:17:02,919 - INFO - ANSWER tickString {'reqId': 75, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:17:02,919 - INFO - ANSWER tickSize {'reqId': 75, 'tickType': 8, 'size': 15704}
+2025-12-25 00:17:02,919 - INFO - ANSWER tickString {'reqId': 75, 'tickType': 45, 'value': '1766606114'}
+2025-12-25 00:17:02,919 - INFO - ANSWER tickSize {'reqId': 75, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:02,920 - INFO - ANSWER tickSize {'reqId': 75, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:02,958 - INFO - REQUEST cancelMktData {'reqId': 75}
+2025-12-25 00:17:02,958 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0075\x00'
+2025-12-25 00:17:02,959 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:02,959 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:02,960 - INFO - REQUEST reqMktData {'reqId': 76, 'contract': 4364254128: 0,CEG,OPT,20260116,360.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:02,961 - INFO - SENDING reqMktData b'\x00\x00\x00<1\x0011\x0076\x000\x00CEG\x00OPT\x0020260116\x00360.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:03,710 - INFO - ANSWER marketDataType {'reqId': 76, 'marketDataType': 1}
+2025-12-25 00:17:03,710 - INFO - ANSWER tickReqParams {'tickerId': 76, 'minTick': 0.05, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:17:03,945 - INFO - ANSWER tickSize {'reqId': 76, 'tickType': 8, 'size': 1}
+2025-12-25 00:17:03,946 - INFO - ANSWER tickSize {'reqId': 76, 'tickType': 5, 'size': 0}
+2025-12-25 00:17:03,946 - INFO - ANSWER tickSize {'reqId': 76, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:03,947 - INFO - ANSWER tickSize {'reqId': 76, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:03,947 - INFO - ANSWER tickSize {'reqId': 76, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:03,947 - INFO - ANSWER tickSize {'reqId': 76, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:05,236 - INFO - ANSWER tickSize {'reqId': 76, 'tickType': 5, 'size': 0}
+2025-12-25 00:17:05,317 - INFO - REQUEST cancelMktData {'reqId': 76}
+2025-12-25 00:17:05,317 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0076\x00'
+2025-12-25 00:17:05,622 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:05,622 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:05,623 - INFO - REQUEST reqMktData {'reqId': 77, 'contract': 4364254128: 0,ADP,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:05,623 - INFO - SENDING reqMktData b'\x00\x00\x00.1\x0011\x0077\x000\x00ADP\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:06,649 - INFO - ANSWER marketDataType {'reqId': 77, 'marketDataType': 1}
+2025-12-25 00:17:06,649 - INFO - ANSWER tickReqParams {'tickerId': 77, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:17:06,897 - INFO - ANSWER tickString {'reqId': 77, 'tickType': 45, 'value': '1766599341'}
+2025-12-25 00:17:06,899 - INFO - ANSWER tickSize {'reqId': 77, 'tickType': 5, 'size': 2}
+2025-12-25 00:17:06,899 - INFO - ANSWER tickSize {'reqId': 77, 'tickType': 5, 'size': 2}
+2025-12-25 00:17:06,900 - INFO - ANSWER tickSize {'reqId': 77, 'tickType': 8, 'size': 15554}
+2025-12-25 00:17:06,901 - INFO - ANSWER tickSize {'reqId': 77, 'tickType': 0, 'size': 2}
+2025-12-25 00:17:06,901 - INFO - ANSWER tickSize {'reqId': 77, 'tickType': 3, 'size': 1}
+2025-12-25 00:17:06,901 - INFO - ANSWER tickSize {'reqId': 77, 'tickType': 0, 'size': 2}
+2025-12-25 00:17:06,902 - INFO - ANSWER tickSize {'reqId': 77, 'tickType': 3, 'size': 1}
+2025-12-25 00:17:06,902 - INFO - ANSWER tickString {'reqId': 77, 'tickType': 32, 'value': 'Q'}
+2025-12-25 00:17:06,903 - INFO - ANSWER tickString {'reqId': 77, 'tickType': 33, 'value': 'K'}
+2025-12-25 00:17:06,964 - INFO - REQUEST cancelMktData {'reqId': 77}
+2025-12-25 00:17:06,965 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0077\x00'
+2025-12-25 00:17:06,966 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:06,966 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:06,967 - INFO - REQUEST reqMktData {'reqId': 78, 'contract': 4364254128: 0,ADP,OPT,20260116,260.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:06,968 - INFO - SENDING reqMktData b'\x00\x00\x00<1\x0011\x0078\x000\x00ADP\x00OPT\x0020260116\x00260.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:08,187 - INFO - ANSWER marketDataType {'reqId': 78, 'marketDataType': 1}
+2025-12-25 00:17:08,188 - INFO - ANSWER tickReqParams {'tickerId': 78, 'minTick': 0.05, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:17:08,494 - INFO - ANSWER tickString {'reqId': 78, 'tickType': 45, 'value': '1766588121'}
+2025-12-25 00:17:08,496 - INFO - ANSWER tickSize {'reqId': 78, 'tickType': 5, 'size': 6}
+2025-12-25 00:17:08,496 - INFO - ANSWER tickSize {'reqId': 78, 'tickType': 5, 'size': 6}
+2025-12-25 00:17:08,497 - INFO - ANSWER tickSize {'reqId': 78, 'tickType': 8, 'size': 6}
+2025-12-25 00:17:08,497 - INFO - ANSWER tickSize {'reqId': 78, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:08,497 - INFO - ANSWER tickSize {'reqId': 78, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:08,498 - INFO - ANSWER tickSize {'reqId': 78, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:08,498 - INFO - ANSWER tickSize {'reqId': 78, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:10,105 - INFO - ANSWER tickSize {'reqId': 78, 'tickType': 5, 'size': 6}
+2025-12-25 00:17:10,105 - INFO - ANSWER tickString {'reqId': 78, 'tickType': 45, 'value': '1766588121'}
+2025-12-25 00:17:14,975 - INFO - REQUEST cancelMktData {'reqId': 78}
+2025-12-25 00:17:14,975 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0078\x00'
+2025-12-25 00:17:15,279 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:15,280 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:15,280 - INFO - REQUEST reqMktData {'reqId': 79, 'contract': 4364254128: 0,CMCSA,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:15,281 - INFO - SENDING reqMktData b'\x00\x00\x0001\x0011\x0079\x000\x00CMCSA\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:16,478 - INFO - ANSWER marketDataType {'reqId': 79, 'marketDataType': 1}
+2025-12-25 00:17:16,478 - INFO - ANSWER tickReqParams {'tickerId': 79, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:17:16,788 - INFO - ANSWER tickSize {'reqId': 79, 'tickType': 8, 'size': 103512}
+2025-12-25 00:17:16,790 - INFO - ANSWER tickString {'reqId': 79, 'tickType': 45, 'value': '1766606199'}
+2025-12-25 00:17:16,791 - INFO - ANSWER tickSize {'reqId': 79, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:16,791 - INFO - ANSWER tickSize {'reqId': 79, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:16,792 - INFO - ANSWER tickSize {'reqId': 79, 'tickType': 0, 'size': 1}
+2025-12-25 00:17:16,792 - INFO - ANSWER tickSize {'reqId': 79, 'tickType': 3, 'size': 1}
+2025-12-25 00:17:16,792 - INFO - ANSWER tickSize {'reqId': 79, 'tickType': 0, 'size': 1}
+2025-12-25 00:17:16,793 - INFO - ANSWER tickSize {'reqId': 79, 'tickType': 3, 'size': 1}
+2025-12-25 00:17:16,793 - INFO - ANSWER tickString {'reqId': 79, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:17:16,793 - INFO - ANSWER tickString {'reqId': 79, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:17:16,821 - INFO - REQUEST cancelMktData {'reqId': 79}
+2025-12-25 00:17:16,822 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0079\x00'
+2025-12-25 00:17:16,823 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:16,823 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:16,824 - INFO - REQUEST reqMktData {'reqId': 80, 'contract': 4364254128: 0,CMCSA,OPT,20260116,30.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:16,824 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0080\x000\x00CMCSA\x00OPT\x0020260116\x0030.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:18,507 - INFO - ANSWER marketDataType {'reqId': 80, 'marketDataType': 1}
+2025-12-25 00:17:18,508 - INFO - ANSWER tickReqParams {'tickerId': 80, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:17:18,508 - INFO - ANSWER tickString {'reqId': 80, 'tickType': 45, 'value': '1766599170'}
+2025-12-25 00:17:18,509 - INFO - ANSWER tickSize {'reqId': 80, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:18,509 - INFO - ANSWER tickSize {'reqId': 80, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:18,510 - INFO - ANSWER tickSize {'reqId': 80, 'tickType': 8, 'size': 8735}
+2025-12-25 00:17:18,510 - INFO - ANSWER tickSize {'reqId': 80, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:18,510 - INFO - ANSWER tickSize {'reqId': 80, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:18,510 - INFO - ANSWER tickSize {'reqId': 80, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:18,511 - INFO - ANSWER tickSize {'reqId': 80, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:20,046 - INFO - ANSWER tickSize {'reqId': 80, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:20,046 - INFO - ANSWER tickString {'reqId': 80, 'tickType': 45, 'value': '1766599170'}
+2025-12-25 00:17:20,115 - INFO - REQUEST cancelMktData {'reqId': 80}
+2025-12-25 00:17:20,116 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0080\x00'
+2025-12-25 00:17:20,419 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:20,419 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:20,420 - INFO - REQUEST reqMktData {'reqId': 81, 'contract': 4364254128: 0,MELI,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:20,420 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0081\x000\x00MELI\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:21,394 - INFO - ANSWER marketDataType {'reqId': 81, 'marketDataType': 1}
+2025-12-25 00:17:21,395 - INFO - ANSWER tickReqParams {'tickerId': 81, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:17:21,703 - INFO - ANSWER tickString {'reqId': 81, 'tickType': 45, 'value': '1766603505'}
+2025-12-25 00:17:21,704 - INFO - ANSWER tickSize {'reqId': 81, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:21,705 - INFO - ANSWER tickSize {'reqId': 81, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:21,706 - INFO - ANSWER tickSize {'reqId': 81, 'tickType': 8, 'size': 9810}
+2025-12-25 00:17:21,706 - INFO - ANSWER tickSize {'reqId': 81, 'tickType': 0, 'size': 2}
+2025-12-25 00:17:21,706 - INFO - ANSWER tickSize {'reqId': 81, 'tickType': 3, 'size': 1}
+2025-12-25 00:17:21,706 - INFO - ANSWER tickSize {'reqId': 81, 'tickType': 0, 'size': 2}
+2025-12-25 00:17:21,707 - INFO - ANSWER tickSize {'reqId': 81, 'tickType': 3, 'size': 1}
+2025-12-25 00:17:21,707 - INFO - ANSWER tickString {'reqId': 81, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:17:21,707 - INFO - ANSWER tickString {'reqId': 81, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:17:21,758 - INFO - REQUEST cancelMktData {'reqId': 81}
+2025-12-25 00:17:21,758 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0081\x00'
+2025-12-25 00:17:21,759 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:21,759 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:21,760 - INFO - REQUEST reqMktData {'reqId': 82, 'contract': 4364254128: 0,MELI,OPT,20260116,2000.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:21,760 - INFO - SENDING reqMktData b'\x00\x00\x00>1\x0011\x0082\x000\x00MELI\x00OPT\x0020260116\x002000.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:24,780 - INFO - ANSWER tickReqParams {'tickerId': 82, 'minTick': 0.0, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:17:25,082 - INFO - ANSWER marketDataType {'reqId': 82, 'marketDataType': 1}
+2025-12-25 00:17:25,084 - INFO - ANSWER tickSize {'reqId': 82, 'tickType': 8, 'size': 0}
+2025-12-25 00:17:25,084 - INFO - ANSWER tickSize {'reqId': 82, 'tickType': 5, 'size': 0}
+2025-12-25 00:17:25,085 - INFO - ANSWER tickSize {'reqId': 82, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:25,085 - INFO - ANSWER tickSize {'reqId': 82, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:25,086 - INFO - ANSWER tickSize {'reqId': 82, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:25,086 - INFO - ANSWER tickSize {'reqId': 82, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:26,076 - INFO - REQUEST cancelMktData {'reqId': 82}
+2025-12-25 00:17:26,077 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0082\x00'
+2025-12-25 00:17:26,378 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:26,379 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:26,379 - INFO - REQUEST reqMktData {'reqId': 83, 'contract': 4364254128: 0,DASH,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:26,379 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0083\x000\x00DASH\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:27,538 - INFO - ANSWER marketDataType {'reqId': 83, 'marketDataType': 1}
+2025-12-25 00:17:27,538 - INFO - ANSWER tickReqParams {'tickerId': 83, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:17:27,735 - INFO - ANSWER tickSize {'reqId': 83, 'tickType': 0, 'size': 9}
+2025-12-25 00:17:27,736 - INFO - ANSWER tickSize {'reqId': 83, 'tickType': 3, 'size': 2}
+2025-12-25 00:17:27,736 - INFO - ANSWER tickSize {'reqId': 83, 'tickType': 0, 'size': 9}
+2025-12-25 00:17:27,737 - INFO - ANSWER tickSize {'reqId': 83, 'tickType': 3, 'size': 2}
+2025-12-25 00:17:27,737 - INFO - ANSWER tickString {'reqId': 83, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:17:27,737 - INFO - ANSWER tickString {'reqId': 83, 'tickType': 33, 'value': 'Q'}
+2025-12-25 00:17:27,737 - INFO - ANSWER tickSize {'reqId': 83, 'tickType': 8, 'size': 30584}
+2025-12-25 00:17:27,738 - INFO - ANSWER tickString {'reqId': 83, 'tickType': 45, 'value': '1766603096'}
+2025-12-25 00:17:27,738 - INFO - ANSWER tickSize {'reqId': 83, 'tickType': 5, 'size': 2}
+2025-12-25 00:17:27,738 - INFO - ANSWER tickSize {'reqId': 83, 'tickType': 5, 'size': 2}
+2025-12-25 00:17:27,816 - INFO - REQUEST cancelMktData {'reqId': 83}
+2025-12-25 00:17:27,817 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0083\x00'
+2025-12-25 00:17:27,817 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:27,818 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:27,818 - INFO - REQUEST reqMktData {'reqId': 84, 'contract': 4364254128: 0,DASH,OPT,20260116,230.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:27,819 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0084\x000\x00DASH\x00OPT\x0020260116\x00230.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:29,079 - INFO - ANSWER tickReqParams {'tickerId': 84, 'minTick': 0.0, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:17:29,255 - INFO - ANSWER marketDataType {'reqId': 84, 'marketDataType': 1}
+2025-12-25 00:17:29,256 - INFO - ANSWER tickString {'reqId': 84, 'tickType': 45, 'value': '1766592025'}
+2025-12-25 00:17:29,256 - INFO - ANSWER tickSize {'reqId': 84, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:29,257 - INFO - ANSWER tickSize {'reqId': 84, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:29,257 - INFO - ANSWER tickSize {'reqId': 84, 'tickType': 8, 'size': 2}
+2025-12-25 00:17:29,258 - INFO - ANSWER tickSize {'reqId': 84, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:29,258 - INFO - ANSWER tickSize {'reqId': 84, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:29,259 - INFO - ANSWER tickSize {'reqId': 84, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:29,259 - INFO - ANSWER tickSize {'reqId': 84, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:30,266 - INFO - REQUEST cancelMktData {'reqId': 84}
+2025-12-25 00:17:30,267 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0084\x00'
+2025-12-25 00:17:30,573 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:30,573 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:30,574 - INFO - REQUEST reqMktData {'reqId': 85, 'contract': 4364254128: 0,SBUX,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:30,574 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0085\x000\x00SBUX\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:31,312 - INFO - ANSWER marketDataType {'reqId': 85, 'marketDataType': 1}
+2025-12-25 00:17:31,313 - INFO - ANSWER tickReqParams {'tickerId': 85, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:17:31,828 - INFO - ANSWER tickSize {'reqId': 85, 'tickType': 0, 'size': 2}
+2025-12-25 00:17:31,828 - INFO - ANSWER tickSize {'reqId': 85, 'tickType': 3, 'size': 1}
+2025-12-25 00:17:31,829 - INFO - ANSWER tickSize {'reqId': 85, 'tickType': 0, 'size': 2}
+2025-12-25 00:17:31,829 - INFO - ANSWER tickSize {'reqId': 85, 'tickType': 3, 'size': 1}
+2025-12-25 00:17:31,829 - INFO - ANSWER tickString {'reqId': 85, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:17:31,830 - INFO - ANSWER tickString {'reqId': 85, 'tickType': 33, 'value': 'K'}
+2025-12-25 00:17:32,103 - INFO - ANSWER tickString {'reqId': 85, 'tickType': 45, 'value': '1766604511'}
+2025-12-25 00:17:32,103 - INFO - ANSWER tickSize {'reqId': 85, 'tickType': 5, 'size': 2}
+2025-12-25 00:17:32,104 - INFO - ANSWER tickSize {'reqId': 85, 'tickType': 5, 'size': 2}
+2025-12-25 00:17:32,104 - INFO - ANSWER tickSize {'reqId': 85, 'tickType': 8, 'size': 34591}
+2025-12-25 00:17:32,109 - INFO - REQUEST cancelMktData {'reqId': 85}
+2025-12-25 00:17:32,110 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0085\x00'
+2025-12-25 00:17:32,111 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:32,111 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:32,111 - INFO - REQUEST reqMktData {'reqId': 86, 'contract': 4364254128: 0,SBUX,OPT,20260116,85.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:32,112 - INFO - SENDING reqMktData b'\x00\x00\x00<1\x0011\x0086\x000\x00SBUX\x00OPT\x0020260116\x0085.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:33,376 - INFO - ANSWER marketDataType {'reqId': 86, 'marketDataType': 1}
+2025-12-25 00:17:33,377 - INFO - ANSWER tickReqParams {'tickerId': 86, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:17:33,991 - INFO - ANSWER tickSize {'reqId': 86, 'tickType': 8, 'size': 229}
+2025-12-25 00:17:33,993 - INFO - ANSWER tickString {'reqId': 86, 'tickType': 45, 'value': '1766599104'}
+2025-12-25 00:17:33,994 - INFO - ANSWER tickSize {'reqId': 86, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:33,994 - INFO - ANSWER tickSize {'reqId': 86, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:33,994 - INFO - ANSWER tickSize {'reqId': 86, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:33,995 - INFO - ANSWER tickSize {'reqId': 86, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:33,995 - INFO - ANSWER tickSize {'reqId': 86, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:33,995 - INFO - ANSWER tickSize {'reqId': 86, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:35,239 - INFO - ANSWER tickSize {'reqId': 86, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:35,240 - INFO - ANSWER tickString {'reqId': 86, 'tickType': 45, 'value': '1766599104'}
+2025-12-25 00:17:35,286 - INFO - REQUEST cancelMktData {'reqId': 86}
+2025-12-25 00:17:35,288 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0086\x00'
+2025-12-25 00:17:35,591 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:35,591 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:35,592 - INFO - REQUEST reqMktData {'reqId': 87, 'contract': 4364254128: 0,CDNS,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:35,592 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0087\x000\x00CDNS\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:36,447 - INFO - ANSWER marketDataType {'reqId': 87, 'marketDataType': 1}
+2025-12-25 00:17:36,448 - INFO - ANSWER tickReqParams {'tickerId': 87, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:17:36,690 - INFO - ANSWER tickSize {'reqId': 87, 'tickType': 8, 'size': 8995}
+2025-12-25 00:17:36,691 - INFO - ANSWER tickString {'reqId': 87, 'tickType': 45, 'value': '1766599803'}
+2025-12-25 00:17:36,692 - INFO - ANSWER tickSize {'reqId': 87, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:36,693 - INFO - ANSWER tickSize {'reqId': 87, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:36,693 - INFO - ANSWER tickSize {'reqId': 87, 'tickType': 0, 'size': 5}
+2025-12-25 00:17:36,693 - INFO - ANSWER tickSize {'reqId': 87, 'tickType': 3, 'size': 5}
+2025-12-25 00:17:36,694 - INFO - ANSWER tickSize {'reqId': 87, 'tickType': 0, 'size': 5}
+2025-12-25 00:17:36,694 - INFO - ANSWER tickSize {'reqId': 87, 'tickType': 3, 'size': 5}
+2025-12-25 00:17:36,694 - INFO - ANSWER tickString {'reqId': 87, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:17:36,695 - INFO - ANSWER tickString {'reqId': 87, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:17:36,718 - INFO - REQUEST cancelMktData {'reqId': 87}
+2025-12-25 00:17:36,718 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0087\x00'
+2025-12-25 00:17:36,718 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:36,719 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:36,719 - INFO - REQUEST reqMktData {'reqId': 88, 'contract': 4364254128: 0,CDNS,OPT,20260116,320.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:36,719 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0088\x000\x00CDNS\x00OPT\x0020260116\x00320.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:38,910 - INFO - ANSWER marketDataType {'reqId': 88, 'marketDataType': 1}
+2025-12-25 00:17:38,911 - INFO - ANSWER tickReqParams {'tickerId': 88, 'minTick': 0.05, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:17:38,912 - INFO - ANSWER tickSize {'reqId': 88, 'tickType': 5, 'size': 0}
+2025-12-25 00:17:38,913 - INFO - ANSWER tickSize {'reqId': 88, 'tickType': 8, 'size': 0}
+2025-12-25 00:17:38,913 - INFO - ANSWER tickSize {'reqId': 88, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:38,914 - INFO - ANSWER tickSize {'reqId': 88, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:38,914 - INFO - ANSWER tickSize {'reqId': 88, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:38,915 - INFO - ANSWER tickSize {'reqId': 88, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:40,108 - INFO - REQUEST cancelMktData {'reqId': 88}
+2025-12-25 00:17:40,108 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0088\x00'
+2025-12-25 00:17:40,413 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:40,413 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:40,413 - INFO - REQUEST reqMktData {'reqId': 89, 'contract': 4364254128: 0,SNPS,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:40,413 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0089\x000\x00SNPS\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:41,363 - INFO - ANSWER marketDataType {'reqId': 89, 'marketDataType': 1}
+2025-12-25 00:17:41,363 - INFO - ANSWER tickReqParams {'tickerId': 89, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:17:41,669 - INFO - ANSWER tickSize {'reqId': 89, 'tickType': 0, 'size': 1}
+2025-12-25 00:17:41,670 - INFO - ANSWER tickSize {'reqId': 89, 'tickType': 3, 'size': 2}
+2025-12-25 00:17:41,671 - INFO - ANSWER tickSize {'reqId': 89, 'tickType': 0, 'size': 1}
+2025-12-25 00:17:41,671 - INFO - ANSWER tickSize {'reqId': 89, 'tickType': 3, 'size': 2}
+2025-12-25 00:17:41,671 - INFO - ANSWER tickString {'reqId': 89, 'tickType': 32, 'value': 'Q'}
+2025-12-25 00:17:41,671 - INFO - ANSWER tickString {'reqId': 89, 'tickType': 33, 'value': 'K'}
+2025-12-25 00:17:41,671 - INFO - ANSWER tickSize {'reqId': 89, 'tickType': 8, 'size': 10974}
+2025-12-25 00:17:41,672 - INFO - ANSWER tickString {'reqId': 89, 'tickType': 45, 'value': '1766602603'}
+2025-12-25 00:17:41,672 - INFO - ANSWER tickSize {'reqId': 89, 'tickType': 5, 'size': 2}
+2025-12-25 00:17:41,672 - INFO - ANSWER tickSize {'reqId': 89, 'tickType': 5, 'size': 2}
+2025-12-25 00:17:41,750 - INFO - REQUEST cancelMktData {'reqId': 89}
+2025-12-25 00:17:41,751 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0089\x00'
+2025-12-25 00:17:41,751 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:41,751 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:41,751 - INFO - REQUEST reqMktData {'reqId': 90, 'contract': 4364254128: 0,SNPS,OPT,20260116,480.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:41,751 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0090\x000\x00SNPS\x00OPT\x0020260116\x00480.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:42,857 - INFO - ANSWER tickReqParams {'tickerId': 90, 'minTick': 0.0, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:17:43,134 - INFO - ANSWER marketDataType {'reqId': 90, 'marketDataType': 1}
+2025-12-25 00:17:43,135 - INFO - ANSWER tickSize {'reqId': 90, 'tickType': 8, 'size': 2}
+2025-12-25 00:17:43,137 - INFO - ANSWER tickString {'reqId': 90, 'tickType': 45, 'value': '1766594310'}
+2025-12-25 00:17:43,138 - INFO - ANSWER tickSize {'reqId': 90, 'tickType': 5, 'size': 2}
+2025-12-25 00:17:43,138 - INFO - ANSWER tickSize {'reqId': 90, 'tickType': 5, 'size': 2}
+2025-12-25 00:17:43,139 - INFO - ANSWER tickSize {'reqId': 90, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:43,139 - INFO - ANSWER tickSize {'reqId': 90, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:43,139 - INFO - ANSWER tickSize {'reqId': 90, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:43,140 - INFO - ANSWER tickSize {'reqId': 90, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:44,103 - INFO - REQUEST cancelMktData {'reqId': 90}
+2025-12-25 00:17:44,103 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0090\x00'
+2025-12-25 00:17:44,408 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:44,408 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:44,409 - INFO - REQUEST reqMktData {'reqId': 91, 'contract': 4364254128: 0,MAR,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:44,409 - INFO - SENDING reqMktData b'\x00\x00\x00.1\x0011\x0091\x000\x00MAR\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:45,662 - INFO - ANSWER marketDataType {'reqId': 91, 'marketDataType': 1}
+2025-12-25 00:17:45,663 - INFO - ANSWER tickReqParams {'tickerId': 91, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:17:45,970 - INFO - ANSWER tickSize {'reqId': 91, 'tickType': 0, 'size': 1}
+2025-12-25 00:17:45,971 - INFO - ANSWER tickSize {'reqId': 91, 'tickType': 3, 'size': 2}
+2025-12-25 00:17:45,971 - INFO - ANSWER tickSize {'reqId': 91, 'tickType': 0, 'size': 1}
+2025-12-25 00:17:45,971 - INFO - ANSWER tickSize {'reqId': 91, 'tickType': 3, 'size': 2}
+2025-12-25 00:17:45,972 - INFO - ANSWER tickString {'reqId': 91, 'tickType': 32, 'value': 'K'}
+2025-12-25 00:17:45,972 - INFO - ANSWER tickString {'reqId': 91, 'tickType': 33, 'value': 'Q'}
+2025-12-25 00:17:45,973 - INFO - ANSWER tickSize {'reqId': 91, 'tickType': 8, 'size': 13291}
+2025-12-25 00:17:45,973 - INFO - ANSWER tickString {'reqId': 91, 'tickType': 45, 'value': '1766599201'}
+2025-12-25 00:17:45,974 - INFO - ANSWER tickSize {'reqId': 91, 'tickType': 5, 'size': 4}
+2025-12-25 00:17:45,974 - INFO - ANSWER tickSize {'reqId': 91, 'tickType': 5, 'size': 4}
+2025-12-25 00:17:46,054 - INFO - REQUEST cancelMktData {'reqId': 91}
+2025-12-25 00:17:46,054 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0091\x00'
+2025-12-25 00:17:46,055 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:46,055 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:46,055 - INFO - REQUEST reqMktData {'reqId': 92, 'contract': 4364254128: 0,MAR,OPT,20260116,320.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:46,056 - INFO - SENDING reqMktData b'\x00\x00\x00<1\x0011\x0092\x000\x00MAR\x00OPT\x0020260116\x00320.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:47,199 - INFO - ANSWER marketDataType {'reqId': 92, 'marketDataType': 1}
+2025-12-25 00:17:47,200 - INFO - ANSWER tickReqParams {'tickerId': 92, 'minTick': 0.05, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:17:47,507 - INFO - ANSWER tickString {'reqId': 92, 'tickType': 45, 'value': '1766594856'}
+2025-12-25 00:17:47,508 - INFO - ANSWER tickSize {'reqId': 92, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:47,508 - INFO - ANSWER tickSize {'reqId': 92, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:47,509 - INFO - ANSWER tickSize {'reqId': 92, 'tickType': 8, 'size': 4}
+2025-12-25 00:17:47,509 - INFO - ANSWER tickSize {'reqId': 92, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:47,510 - INFO - ANSWER tickSize {'reqId': 92, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:47,510 - INFO - ANSWER tickSize {'reqId': 92, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:47,510 - INFO - ANSWER tickSize {'reqId': 92, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:49,008 - INFO - ANSWER tickSize {'reqId': 92, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:49,008 - INFO - ANSWER tickString {'reqId': 92, 'tickType': 45, 'value': '1766594856'}
+2025-12-25 00:17:49,034 - INFO - REQUEST cancelMktData {'reqId': 92}
+2025-12-25 00:17:49,034 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0092\x00'
+2025-12-25 00:17:49,338 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:49,338 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:49,338 - INFO - REQUEST reqMktData {'reqId': 93, 'contract': 4364254128: 0,ABNB,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:49,339 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0093\x000\x00ABNB\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:50,579 - INFO - ANSWER marketDataType {'reqId': 93, 'marketDataType': 1}
+2025-12-25 00:17:50,579 - INFO - ANSWER tickReqParams {'tickerId': 93, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:17:50,886 - INFO - ANSWER tickSize {'reqId': 93, 'tickType': 0, 'size': 1}
+2025-12-25 00:17:50,886 - INFO - ANSWER tickSize {'reqId': 93, 'tickType': 3, 'size': 8}
+2025-12-25 00:17:50,887 - INFO - ANSWER tickSize {'reqId': 93, 'tickType': 0, 'size': 1}
+2025-12-25 00:17:50,887 - INFO - ANSWER tickSize {'reqId': 93, 'tickType': 3, 'size': 8}
+2025-12-25 00:17:50,888 - INFO - ANSWER tickString {'reqId': 93, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:17:50,888 - INFO - ANSWER tickString {'reqId': 93, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:17:50,889 - INFO - ANSWER tickSize {'reqId': 93, 'tickType': 8, 'size': 14575}
+2025-12-25 00:17:50,889 - INFO - ANSWER tickString {'reqId': 93, 'tickType': 45, 'value': '1766601550'}
+2025-12-25 00:17:50,890 - INFO - ANSWER tickSize {'reqId': 93, 'tickType': 5, 'size': 13}
+2025-12-25 00:17:50,890 - INFO - ANSWER tickSize {'reqId': 93, 'tickType': 5, 'size': 13}
+2025-12-25 00:17:50,971 - INFO - REQUEST cancelMktData {'reqId': 93}
+2025-12-25 00:17:50,972 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0093\x00'
+2025-12-25 00:17:50,973 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:50,973 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:50,974 - INFO - REQUEST reqMktData {'reqId': 94, 'contract': 4364254128: 0,ABNB,OPT,20260116,135.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:50,975 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0094\x000\x00ABNB\x00OPT\x0020260116\x00135.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:52,115 - INFO - ANSWER marketDataType {'reqId': 94, 'marketDataType': 1}
+2025-12-25 00:17:52,116 - INFO - ANSWER tickReqParams {'tickerId': 94, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:17:52,423 - INFO - ANSWER tickString {'reqId': 94, 'tickType': 45, 'value': '1766597586'}
+2025-12-25 00:17:52,424 - INFO - ANSWER tickSize {'reqId': 94, 'tickType': 5, 'size': 2}
+2025-12-25 00:17:52,424 - INFO - ANSWER tickSize {'reqId': 94, 'tickType': 5, 'size': 2}
+2025-12-25 00:17:52,425 - INFO - ANSWER tickSize {'reqId': 94, 'tickType': 8, 'size': 17}
+2025-12-25 00:17:52,425 - INFO - ANSWER tickSize {'reqId': 94, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:52,426 - INFO - ANSWER tickSize {'reqId': 94, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:52,426 - INFO - ANSWER tickSize {'reqId': 94, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:52,426 - INFO - ANSWER tickSize {'reqId': 94, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:54,238 - INFO - ANSWER tickSize {'reqId': 94, 'tickType': 5, 'size': 2}
+2025-12-25 00:17:54,239 - INFO - ANSWER tickString {'reqId': 94, 'tickType': 45, 'value': '1766597586'}
+2025-12-25 00:17:54,263 - INFO - REQUEST cancelMktData {'reqId': 94}
+2025-12-25 00:17:54,263 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0094\x00'
+2025-12-25 00:17:54,566 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:54,567 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:54,567 - INFO - REQUEST reqMktData {'reqId': 95, 'contract': 4364254128: 0,ORLY,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:54,568 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0095\x000\x00ORLY\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:56,415 - INFO - ANSWER marketDataType {'reqId': 95, 'marketDataType': 1}
+2025-12-25 00:17:56,415 - INFO - ANSWER tickReqParams {'tickerId': 95, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:17:56,722 - INFO - ANSWER tickString {'reqId': 95, 'tickType': 45, 'value': '1766606775'}
+2025-12-25 00:17:56,723 - INFO - ANSWER tickSize {'reqId': 95, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:56,723 - INFO - ANSWER tickSize {'reqId': 95, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:56,724 - INFO - ANSWER tickSize {'reqId': 95, 'tickType': 8, 'size': 19945}
+2025-12-25 00:17:56,724 - INFO - ANSWER tickSize {'reqId': 95, 'tickType': 0, 'size': 1}
+2025-12-25 00:17:56,725 - INFO - ANSWER tickSize {'reqId': 95, 'tickType': 3, 'size': 3}
+2025-12-25 00:17:56,725 - INFO - ANSWER tickSize {'reqId': 95, 'tickType': 0, 'size': 1}
+2025-12-25 00:17:56,725 - INFO - REQUEST cancelMktData {'reqId': 95}
+2025-12-25 00:17:56,726 - INFO - ANSWER tickSize {'reqId': 95, 'tickType': 3, 'size': 3}
+2025-12-25 00:17:56,726 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0095\x00'
+2025-12-25 00:17:56,727 - INFO - ANSWER tickString {'reqId': 95, 'tickType': 32, 'value': 'Q'}
+2025-12-25 00:17:56,727 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:56,727 - INFO - ANSWER tickString {'reqId': 95, 'tickType': 33, 'value': 'Q'}
+2025-12-25 00:17:56,727 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:56,728 - INFO - REQUEST reqMktData {'reqId': 96, 'contract': 4364254128: 0,ORLY,OPT,20260116,90.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:56,728 - INFO - SENDING reqMktData b'\x00\x00\x00<1\x0011\x0096\x000\x00ORLY\x00OPT\x0020260116\x0090.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:17:57,647 - INFO - ANSWER tickReqParams {'tickerId': 96, 'minTick': 0.0, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:17:57,951 - INFO - ANSWER marketDataType {'reqId': 96, 'marketDataType': 1}
+2025-12-25 00:17:57,952 - INFO - ANSWER tickSize {'reqId': 96, 'tickType': 8, 'size': 6}
+2025-12-25 00:17:57,953 - INFO - ANSWER tickString {'reqId': 96, 'tickType': 45, 'value': '1766597632'}
+2025-12-25 00:17:57,954 - INFO - ANSWER tickSize {'reqId': 96, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:57,954 - INFO - ANSWER tickSize {'reqId': 96, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:57,955 - INFO - ANSWER tickSize {'reqId': 96, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:57,955 - INFO - ANSWER tickSize {'reqId': 96, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:57,955 - INFO - ANSWER tickSize {'reqId': 96, 'tickType': 0, 'size': 0}
+2025-12-25 00:17:57,956 - INFO - ANSWER tickSize {'reqId': 96, 'tickType': 3, 'size': 0}
+2025-12-25 00:17:59,066 - INFO - ANSWER tickSize {'reqId': 96, 'tickType': 5, 'size': 1}
+2025-12-25 00:17:59,068 - INFO - ANSWER tickString {'reqId': 96, 'tickType': 45, 'value': '1766597632'}
+2025-12-25 00:17:59,088 - INFO - REQUEST cancelMktData {'reqId': 96}
+2025-12-25 00:17:59,088 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0096\x00'
+2025-12-25 00:17:59,393 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:17:59,394 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:17:59,394 - INFO - REQUEST reqMktData {'reqId': 97, 'contract': 4364254128: 0,REGN,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:17:59,395 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0097\x000\x00REGN\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:18:00,104 - INFO - ANSWER marketDataType {'reqId': 97, 'marketDataType': 1}
+2025-12-25 00:18:00,105 - INFO - ANSWER tickReqParams {'tickerId': 97, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:18:00,357 - INFO - ANSWER tickString {'reqId': 97, 'tickType': 45, 'value': '1766604404'}
+2025-12-25 00:18:00,358 - INFO - ANSWER tickSize {'reqId': 97, 'tickType': 5, 'size': 1}
+2025-12-25 00:18:00,359 - INFO - ANSWER tickSize {'reqId': 97, 'tickType': 5, 'size': 1}
+2025-12-25 00:18:00,360 - INFO - ANSWER tickSize {'reqId': 97, 'tickType': 8, 'size': 6676}
+2025-12-25 00:18:00,360 - INFO - ANSWER tickSize {'reqId': 97, 'tickType': 0, 'size': 1}
+2025-12-25 00:18:00,361 - INFO - ANSWER tickSize {'reqId': 97, 'tickType': 3, 'size': 1}
+2025-12-25 00:18:00,361 - INFO - ANSWER tickSize {'reqId': 97, 'tickType': 0, 'size': 1}
+2025-12-25 00:18:00,361 - INFO - ANSWER tickSize {'reqId': 97, 'tickType': 3, 'size': 1}
+2025-12-25 00:18:00,361 - INFO - ANSWER tickString {'reqId': 97, 'tickType': 32, 'value': 'K'}
+2025-12-25 00:18:00,362 - INFO - ANSWER tickString {'reqId': 97, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:18:00,420 - INFO - REQUEST cancelMktData {'reqId': 97}
+2025-12-25 00:18:00,420 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0097\x00'
+2025-12-25 00:18:00,421 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:18:00,421 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:18:00,422 - INFO - REQUEST reqMktData {'reqId': 98, 'contract': 4364254128: 0,REGN,OPT,20260116,790.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:18:00,422 - INFO - SENDING reqMktData b'\x00\x00\x00=1\x0011\x0098\x000\x00REGN\x00OPT\x0020260116\x00790.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:18:01,641 - INFO - ANSWER tickReqParams {'tickerId': 98, 'minTick': 0.0, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:18:01,866 - INFO - ANSWER marketDataType {'reqId': 98, 'marketDataType': 1}
+2025-12-25 00:18:01,867 - INFO - ANSWER tickString {'reqId': 98, 'tickType': 45, 'value': '1766594247'}
+2025-12-25 00:18:01,868 - INFO - ANSWER tickSize {'reqId': 98, 'tickType': 5, 'size': 1}
+2025-12-25 00:18:01,869 - INFO - ANSWER tickSize {'reqId': 98, 'tickType': 5, 'size': 1}
+2025-12-25 00:18:01,869 - INFO - ANSWER tickSize {'reqId': 98, 'tickType': 8, 'size': 1}
+2025-12-25 00:18:01,870 - INFO - ANSWER tickSize {'reqId': 98, 'tickType': 0, 'size': 0}
+2025-12-25 00:18:01,870 - INFO - ANSWER tickSize {'reqId': 98, 'tickType': 3, 'size': 0}
+2025-12-25 00:18:01,870 - INFO - ANSWER tickSize {'reqId': 98, 'tickType': 0, 'size': 0}
+2025-12-25 00:18:01,870 - INFO - ANSWER tickSize {'reqId': 98, 'tickType': 3, 'size': 0}
+2025-12-25 00:18:03,095 - INFO - REQUEST cancelMktData {'reqId': 98}
+2025-12-25 00:18:03,095 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0098\x00'
+2025-12-25 00:18:03,399 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:18:03,399 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:18:03,400 - INFO - REQUEST reqMktData {'reqId': 99, 'contract': 4364254128: 0,CTAS,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:18:03,400 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x0099\x000\x00CTAS\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:18:04,132 - INFO - ANSWER marketDataType {'reqId': 99, 'marketDataType': 1}
+2025-12-25 00:18:04,133 - INFO - ANSWER tickReqParams {'tickerId': 99, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:18:04,135 - INFO - ANSWER tickSize {'reqId': 99, 'tickType': 0, 'size': 1}
+2025-12-25 00:18:04,136 - INFO - ANSWER tickSize {'reqId': 99, 'tickType': 3, 'size': 1}
+2025-12-25 00:18:04,136 - INFO - ANSWER tickSize {'reqId': 99, 'tickType': 0, 'size': 1}
+2025-12-25 00:18:04,137 - INFO - ANSWER tickSize {'reqId': 99, 'tickType': 3, 'size': 1}
+2025-12-25 00:18:04,137 - INFO - ANSWER tickString {'reqId': 99, 'tickType': 32, 'value': 'P'}
+2025-12-25 00:18:04,137 - INFO - ANSWER tickString {'reqId': 99, 'tickType': 33, 'value': 'P'}
+2025-12-25 00:18:04,372 - INFO - ANSWER tickSize {'reqId': 99, 'tickType': 8, 'size': 5988}
+2025-12-25 00:18:04,373 - INFO - ANSWER tickString {'reqId': 99, 'tickType': 45, 'value': '1766601945'}
+2025-12-25 00:18:04,373 - INFO - ANSWER tickSize {'reqId': 99, 'tickType': 5, 'size': 1}
+2025-12-25 00:18:04,374 - INFO - ANSWER tickSize {'reqId': 99, 'tickType': 5, 'size': 1}
+2025-12-25 00:18:04,427 - INFO - REQUEST cancelMktData {'reqId': 99}
+2025-12-25 00:18:04,428 - INFO - SENDING cancelMktData b'\x00\x00\x00\x072\x002\x0099\x00'
+2025-12-25 00:18:04,429 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:18:04,430 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:18:04,430 - INFO - REQUEST reqMktData {'reqId': 100, 'contract': 4364254128: 0,CTAS,OPT,20260116,185.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:18:04,431 - INFO - SENDING reqMktData b'\x00\x00\x00>1\x0011\x00100\x000\x00CTAS\x00OPT\x0020260116\x00185.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:18:05,408 - INFO - ANSWER marketDataType {'reqId': 100, 'marketDataType': 1}
+2025-12-25 00:18:05,409 - INFO - ANSWER tickReqParams {'tickerId': 100, 'minTick': 0.05, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:18:05,938 - INFO - ANSWER tickSize {'reqId': 100, 'tickType': 8, 'size': 0}
+2025-12-25 00:18:05,939 - INFO - ANSWER tickSize {'reqId': 100, 'tickType': 5, 'size': 0}
+2025-12-25 00:18:05,940 - INFO - ANSWER tickSize {'reqId': 100, 'tickType': 0, 'size': 0}
+2025-12-25 00:18:05,940 - INFO - ANSWER tickSize {'reqId': 100, 'tickType': 3, 'size': 0}
+2025-12-25 00:18:05,940 - INFO - ANSWER tickSize {'reqId': 100, 'tickType': 0, 'size': 0}
+2025-12-25 00:18:05,941 - INFO - ANSWER tickSize {'reqId': 100, 'tickType': 3, 'size': 0}
+2025-12-25 00:18:07,214 - INFO - REQUEST cancelMktData {'reqId': 100}
+2025-12-25 00:18:07,215 - INFO - SENDING cancelMktData b'\x00\x00\x00\x082\x002\x00100\x00'
+2025-12-25 00:18:07,517 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:18:07,518 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:18:07,518 - INFO - REQUEST reqMktData {'reqId': 101, 'contract': 4364254128: 0,WBD,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:18:07,518 - INFO - SENDING reqMktData b'\x00\x00\x00/1\x0011\x00101\x000\x00WBD\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:18:08,396 - INFO - ANSWER marketDataType {'reqId': 101, 'marketDataType': 1}
+2025-12-25 00:18:08,396 - INFO - ANSWER tickReqParams {'tickerId': 101, 'minTick': 0.01, 'bboExchange': '9c0001', 'snapshotPermissions': 3}
+2025-12-25 00:18:08,704 - INFO - ANSWER tickSize {'reqId': 101, 'tickType': 8, 'size': 172681}
+2025-12-25 00:18:08,705 - INFO - ANSWER tickString {'reqId': 101, 'tickType': 45, 'value': '1766607206'}
+2025-12-25 00:18:08,706 - INFO - ANSWER tickSize {'reqId': 101, 'tickType': 5, 'size': 2}
+2025-12-25 00:18:08,706 - INFO - ANSWER tickSize {'reqId': 101, 'tickType': 5, 'size': 2}
+2025-12-25 00:18:08,708 - INFO - ANSWER tickSize {'reqId': 101, 'tickType': 0, 'size': 5}
+2025-12-25 00:18:08,709 - INFO - ANSWER tickSize {'reqId': 101, 'tickType': 3, 'size': 1}
+2025-12-25 00:18:08,709 - INFO - ANSWER tickSize {'reqId': 101, 'tickType': 0, 'size': 5}
+2025-12-25 00:18:08,710 - INFO - ANSWER tickSize {'reqId': 101, 'tickType': 3, 'size': 1}
+2025-12-25 00:18:08,710 - INFO - ANSWER tickString {'reqId': 101, 'tickType': 32, 'value': 'K'}
+2025-12-25 00:18:08,711 - INFO - ANSWER tickString {'reqId': 101, 'tickType': 33, 'value': 'K'}
+2025-12-25 00:18:08,742 - INFO - REQUEST cancelMktData {'reqId': 101}
+2025-12-25 00:18:08,743 - INFO - SENDING cancelMktData b'\x00\x00\x00\x082\x002\x00101\x00'
+2025-12-25 00:18:08,743 - INFO - REQUEST reqMarketDataType {'marketDataType': 3}
+2025-12-25 00:18:08,743 - INFO - SENDING reqMarketDataType b'\x00\x00\x00\x0759\x001\x003\x00'
+2025-12-25 00:18:08,744 - INFO - REQUEST reqMktData {'reqId': 102, 'contract': 4364254128: 0,WBD,OPT,20260116,29.0,C,100,SMART,,USD,,,False,,combo:, 'genericTickList': '', 'snapshot': False, 'regulatorySnapshot': False, 'mktDataOptions': []}
+2025-12-25 00:18:08,744 - INFO - SENDING reqMktData b'\x00\x00\x00<1\x0011\x00102\x000\x00WBD\x00OPT\x0020260116\x0029.0\x00C\x00100\x00SMART\x00\x00USD\x00\x00\x000\x00\x000\x000\x00\x00'
+2025-12-25 00:18:09,484 - INFO - ANSWER marketDataType {'reqId': 102, 'marketDataType': 1}
+2025-12-25 00:18:09,485 - INFO - ANSWER tickReqParams {'tickerId': 102, 'minTick': 0.01, 'bboExchange': 'c70003', 'snapshotPermissions': 3}
+2025-12-25 00:18:09,710 - INFO - ANSWER tickSize {'reqId': 102, 'tickType': 8, 'size': 440}
+2025-12-25 00:18:09,712 - INFO - ANSWER tickString {'reqId': 102, 'tickType': 45, 'value': '1766599148'}
+2025-12-25 00:18:09,713 - INFO - ANSWER tickSize {'reqId': 102, 'tickType': 5, 'size': 1}
+2025-12-25 00:18:09,714 - INFO - ANSWER tickSize {'reqId': 102, 'tickType': 5, 'size': 1}
+2025-12-25 00:18:09,714 - INFO - ANSWER tickSize {'reqId': 102, 'tickType': 0, 'size': 0}
+2025-12-25 00:18:09,714 - INFO - ANSWER tickSize {'reqId': 102, 'tickType': 3, 'size': 0}
+2025-12-25 00:18:09,715 - INFO - ANSWER tickSize {'reqId': 102, 'tickType': 0, 'size': 0}
+2025-12-25 00:18:09,715 - INFO - ANSWER tickSize {'reqId': 102, 'tickType': 3, 'size': 0}
+2025-12-25 00:18:10,284 - INFO - REQUEST cancelMktData {'reqId': 102}
+2025-12-25 00:18:10,284 - INFO - SENDING cancelMktData b'\x00\x00\x00\x082\x002\x00102\x00'
+2025-12-25 00:18:10,586 - INFO - Got IV for 36 components
+2025-12-25 00:18:10,587 - INFO - Generating trading signal...
+2025-12-25 00:18:10,594 - INFO - Signal: NO_TRADE
+2025-12-25 00:18:10,594 - INFO - Implied Correlation: 0.19713714631574747
+2025-12-25 00:18:10,594 - INFO - Z-Score: -0.8771478176090696
+2025-12-25 00:18:10,596 - INFO - Signal saved to signals/signal_20251225.json
+2025-12-25 00:18:10,620 - INFO - Signal history updated: 18 total signals
+2025-12-25 00:18:10,683 - INFO - No actionable signal - no alert sent
+2025-12-25 00:18:10,684 - INFO - disconnecting
+2025-12-25 00:18:10,684 - INFO - ANSWER connectionClosed {}
+2025-12-25 00:18:10,684 - INFO - Disconnected from IBKR
