@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-01-02T21:54:00.502390",
+  "date": "2026-01-02",
+  "time": "21:54:00",
+  "market_data": {
+    "impl_corr": 0.2863458078263533,
+    "z_score": 0.3360558477780881,
+    "index_iv": null,
+    "num_components": 43,
+    "vix_level": 18.0,
+    "vxn_level": 20.0
+  },
+  "signals": {
+    "z_score_signal": "NO_TRADE",
+    "ml_signal": "SHORT_DISPERSION",
+    "short_probability": 0.6247369470864357,
+    "strategy_used": "ML"
+  },
+  "percentile": null,
+  "historical_mean": null,
+  "historical_std": null
+}

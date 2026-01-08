@@ -1,0 +1,2162 @@
+[
+  {
+    "id": 1,
+    "strategy": "ml",
+    "entry_date": "2025-12-19T21:07:35.749427",
+    "exit_date": "2025-12-26T21:18:18.318992",
+    "signal_type": "SHORT_DISPERSION",
+    "index_symbol": "QQQ",
+    "entry_corr": 0.2801508645739835,
+    "entry_z_score": 0.319015701235631,
+    "entry_ml_prob": 0.8421921914423875,
+    "exit_corr": 0.18959648598873424,
+    "exit_z_score": -0.9719929898947806,
+    "position_size": 2000.0,
+    "trade_structure": {
+      "signal_type": "SHORT_DISPERSION",
+      "position_size": 2000.0,
+      "index": {
+        "symbol": "QQQ",
+        "side": "SELL",
+        "allocation": 1000.0,
+        "trade_type": "STRADDLE",
+        "option_type": "ETF"
+      },
+      "components": [
+        {
+          "symbol": "NVDA",
+          "weight": 0.1213,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AAPL",
+          "weight": 0.1147,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GOOGL",
+          "weight": 0.1055,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GOOG",
+          "weight": 0.1055,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "MSFT",
+          "weight": 0.0999,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMZN",
+          "weight": 0.0674,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "META",
+          "weight": 0.0462,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AVGO",
+          "weight": 0.0454,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TSLA",
+          "weight": 0.0448,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "NFLX",
+          "weight": 0.0121,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ASML",
+          "weight": 0.012,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "COST",
+          "weight": 0.0108,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMD",
+          "weight": 0.0096,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "CSCO",
+          "weight": 0.0088,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "MU",
+          "weight": 0.0076,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TMUS",
+          "weight": 0.0062,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMAT",
+          "weight": 0.0059,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "PEP",
+          "weight": 0.0059,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "LRCX",
+          "weight": 0.0058,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ISRG",
+          "weight": 0.0056,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "QCOM",
+          "weight": 0.0054,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "INTU",
+          "weight": 0.0052,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "INTC",
+          "weight": 0.0051,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "BKNG",
+          "weight": 0.005,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMGN",
+          "weight": 0.005,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TXN",
+          "weight": 0.0046,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "KLAC",
+          "weight": 0.0046,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "PDD",
+          "weight": 0.0044,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GILD",
+          "weight": 0.0042,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ADBE",
+          "weight": 0.0042,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        }
+      ]
+    },
+    "status": "CLOSED",
+    "pnl": 27.166313575574783,
+    "holding_period": 5
+  },
+  {
+    "id": 2,
+    "strategy": "ml",
+    "entry_date": "2025-12-22T22:46:07.877006",
+    "exit_date": "2025-12-29T21:09:54.118829",
+    "signal_type": "SHORT_DISPERSION",
+    "index_symbol": "QQQ",
+    "entry_corr": 0.22849491018318013,
+    "entry_z_score": -0.4289814898365892,
+    "entry_ml_prob": 0.7876062113410123,
+    "exit_corr": 0.20418605094196499,
+    "exit_z_score": -0.7577520060690465,
+    "position_size": 2000.0,
+    "trade_structure": {
+      "signal_type": "SHORT_DISPERSION",
+      "position_size": 2000.0,
+      "index": {
+        "symbol": "QQQ",
+        "side": "SELL",
+        "allocation": 1000.0,
+        "trade_type": "STRADDLE",
+        "option_type": "ETF"
+      },
+      "components": [
+        {
+          "symbol": "NVDA",
+          "weight": 0.1213,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AAPL",
+          "weight": 0.1147,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GOOGL",
+          "weight": 0.1055,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GOOG",
+          "weight": 0.1055,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "MSFT",
+          "weight": 0.0999,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMZN",
+          "weight": 0.0674,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "META",
+          "weight": 0.0462,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AVGO",
+          "weight": 0.0454,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TSLA",
+          "weight": 0.0448,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "NFLX",
+          "weight": 0.0121,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ASML",
+          "weight": 0.012,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "COST",
+          "weight": 0.0108,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMD",
+          "weight": 0.0096,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "CSCO",
+          "weight": 0.0088,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "MU",
+          "weight": 0.0076,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TMUS",
+          "weight": 0.0062,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMAT",
+          "weight": 0.0059,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "PEP",
+          "weight": 0.0059,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "LRCX",
+          "weight": 0.0058,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ISRG",
+          "weight": 0.0056,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "QCOM",
+          "weight": 0.0054,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "INTU",
+          "weight": 0.0052,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "INTC",
+          "weight": 0.0051,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "BKNG",
+          "weight": 0.005,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMGN",
+          "weight": 0.005,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TXN",
+          "weight": 0.0046,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "KLAC",
+          "weight": 0.0046,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "PDD",
+          "weight": 0.0044,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GILD",
+          "weight": 0.0042,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ADBE",
+          "weight": 0.0042,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        }
+      ]
+    },
+    "status": "CLOSED",
+    "pnl": 7.292657772364543,
+    "holding_period": 5
+  },
+  {
+    "id": 3,
+    "strategy": "ml",
+    "entry_date": "2025-12-23T20:47:04.013518",
+    "exit_date": "2025-12-29T21:09:54.128351",
+    "signal_type": "SHORT_DISPERSION",
+    "index_symbol": "QQQ",
+    "entry_corr": 0.1864264420401227,
+    "entry_z_score": -1.0341598623997683,
+    "entry_ml_prob": null,
+    "exit_corr": 0.20418605094196499,
+    "exit_z_score": -0.7577520060690465,
+    "position_size": 2000.0,
+    "trade_structure": {
+      "signal_type": "SHORT_DISPERSION",
+      "position_size": 2000.0,
+      "index": {
+        "symbol": "QQQ",
+        "side": "SELL",
+        "allocation": 1000.0,
+        "trade_type": "STRADDLE",
+        "option_type": "ETF"
+      },
+      "components": [
+        {
+          "symbol": "NVDA",
+          "weight": 0.1213,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AAPL",
+          "weight": 0.1147,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GOOGL",
+          "weight": 0.1055,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GOOG",
+          "weight": 0.1055,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "MSFT",
+          "weight": 0.0999,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMZN",
+          "weight": 0.0674,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "META",
+          "weight": 0.0462,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AVGO",
+          "weight": 0.0454,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TSLA",
+          "weight": 0.0448,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "NFLX",
+          "weight": 0.0121,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ASML",
+          "weight": 0.012,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "COST",
+          "weight": 0.0108,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMD",
+          "weight": 0.0096,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "CSCO",
+          "weight": 0.0088,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "MU",
+          "weight": 0.0076,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TMUS",
+          "weight": 0.0062,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMAT",
+          "weight": 0.0059,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "PEP",
+          "weight": 0.0059,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "LRCX",
+          "weight": 0.0058,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ISRG",
+          "weight": 0.0056,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "QCOM",
+          "weight": 0.0054,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "INTU",
+          "weight": 0.0052,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "INTC",
+          "weight": 0.0051,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "BKNG",
+          "weight": 0.005,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMGN",
+          "weight": 0.005,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TXN",
+          "weight": 0.0046,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "KLAC",
+          "weight": 0.0046,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "PDD",
+          "weight": 0.0044,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GILD",
+          "weight": 0.0042,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ADBE",
+          "weight": 0.0042,
+          "side": "BUY",
+          "allocation": 33.333333333333336,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        }
+      ]
+    },
+    "status": "CLOSED",
+    "pnl": -5.327882670552683,
+    "holding_period": 5
+  },
+  {
+    "id": 4,
+    "strategy": "ml",
+    "entry_date": "2025-12-26T21:18:18.324725",
+    "exit_date": "2026-01-02T20:12:24.533596",
+    "signal_type": "SHORT_DISPERSION",
+    "index_symbol": "QQQ",
+    "entry_corr": 0.18959648598873424,
+    "entry_z_score": -0.9719929898947806,
+    "entry_ml_prob": null,
+    "exit_corr": 0.29839185298604426,
+    "exit_z_score": 0.5333863436846894,
+    "position_size": 2000.5433262715117,
+    "trade_structure": {
+      "signal_type": "SHORT_DISPERSION",
+      "position_size": 2000.5433262715117,
+      "index": {
+        "symbol": "QQQ",
+        "side": "SELL",
+        "allocation": 1000.2716631357558,
+        "trade_type": "STRADDLE",
+        "option_type": "ETF"
+      },
+      "components": [
+        {
+          "symbol": "NVDA",
+          "weight": 0.1213,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AAPL",
+          "weight": 0.1147,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GOOGL",
+          "weight": 0.1055,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GOOG",
+          "weight": 0.1055,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "MSFT",
+          "weight": 0.0999,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMZN",
+          "weight": 0.0674,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "META",
+          "weight": 0.0462,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AVGO",
+          "weight": 0.0454,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TSLA",
+          "weight": 0.0448,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "NFLX",
+          "weight": 0.0121,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ASML",
+          "weight": 0.012,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "COST",
+          "weight": 0.0108,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMD",
+          "weight": 0.0096,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "CSCO",
+          "weight": 0.0088,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "MU",
+          "weight": 0.0076,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TMUS",
+          "weight": 0.0062,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMAT",
+          "weight": 0.0059,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "PEP",
+          "weight": 0.0059,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "LRCX",
+          "weight": 0.0058,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ISRG",
+          "weight": 0.0056,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "QCOM",
+          "weight": 0.0054,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "INTU",
+          "weight": 0.0052,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "INTC",
+          "weight": 0.0051,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "BKNG",
+          "weight": 0.005,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMGN",
+          "weight": 0.005,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TXN",
+          "weight": 0.0046,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "KLAC",
+          "weight": 0.0046,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "PDD",
+          "weight": 0.0044,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GILD",
+          "weight": 0.0042,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ADBE",
+          "weight": 0.0042,
+          "side": "BUY",
+          "allocation": 33.342388771191864,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        }
+      ]
+    },
+    "status": "CLOSED",
+    "pnl": -32.647476806359265,
+    "holding_period": 5
+  },
+  {
+    "id": 5,
+    "strategy": "ml",
+    "entry_date": "2025-12-30T20:37:53.470514",
+    "exit_date": "2026-01-05T22:23:07.837823",
+    "signal_type": "SHORT_DISPERSION",
+    "index_symbol": "QQQ",
+    "entry_corr": 0.207747518918815,
+    "entry_z_score": -0.7075573130360929,
+    "entry_ml_prob": null,
+    "exit_corr": 0.2646238895371478,
+    "exit_z_score": -0.008317116612504534,
+    "position_size": 2000.582621773548,
+    "trade_structure": {
+      "signal_type": "SHORT_DISPERSION",
+      "position_size": 2000.582621773548,
+      "index": {
+        "symbol": "QQQ",
+        "side": "SELL",
+        "allocation": 1000.291310886774,
+        "trade_type": "STRADDLE",
+        "option_type": "ETF"
+      },
+      "components": [
+        {
+          "symbol": "NVDA",
+          "weight": 0.1213,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AAPL",
+          "weight": 0.1147,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GOOGL",
+          "weight": 0.1055,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GOOG",
+          "weight": 0.1055,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "MSFT",
+          "weight": 0.0999,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMZN",
+          "weight": 0.0674,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "META",
+          "weight": 0.0462,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AVGO",
+          "weight": 0.0454,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TSLA",
+          "weight": 0.0448,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "NFLX",
+          "weight": 0.0121,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ASML",
+          "weight": 0.012,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "COST",
+          "weight": 0.0108,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMD",
+          "weight": 0.0096,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "CSCO",
+          "weight": 0.0088,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "MU",
+          "weight": 0.0076,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TMUS",
+          "weight": 0.0062,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMAT",
+          "weight": 0.0059,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "PEP",
+          "weight": 0.0059,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "LRCX",
+          "weight": 0.0058,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ISRG",
+          "weight": 0.0056,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "QCOM",
+          "weight": 0.0054,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "INTU",
+          "weight": 0.0052,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "INTC",
+          "weight": 0.0051,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "BKNG",
+          "weight": 0.005,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMGN",
+          "weight": 0.005,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TXN",
+          "weight": 0.0046,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "KLAC",
+          "weight": 0.0046,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "PDD",
+          "weight": 0.0044,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GILD",
+          "weight": 0.0042,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ADBE",
+          "weight": 0.0042,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        }
+      ]
+    },
+    "status": "CLOSED",
+    "pnl": -17.067881797288244,
+    "holding_period": 5
+  },
+  {
+    "id": 6,
+    "strategy": "ml",
+    "entry_date": "2025-12-31T23:33:59.683766",
+    "exit_date": "2026-01-07T19:56:33.053769",
+    "signal_type": "SHORT_DISPERSION",
+    "index_symbol": "QQQ",
+    "entry_corr": 0.3209428967158327,
+    "entry_z_score": 0.8876848939947882,
+    "entry_ml_prob": null,
+    "exit_corr": 0.18925848304345497,
+    "exit_z_score": -1.1444266118622832,
+    "position_size": 2000.582621773548,
+    "trade_structure": {
+      "signal_type": "SHORT_DISPERSION",
+      "position_size": 2000.582621773548,
+      "index": {
+        "symbol": "QQQ",
+        "side": "SELL",
+        "allocation": 1000.291310886774,
+        "trade_type": "STRADDLE",
+        "option_type": "ETF"
+      },
+      "components": [
+        {
+          "symbol": "NVDA",
+          "weight": 0.1213,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AAPL",
+          "weight": 0.1147,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GOOGL",
+          "weight": 0.1055,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GOOG",
+          "weight": 0.1055,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "MSFT",
+          "weight": 0.0999,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMZN",
+          "weight": 0.0674,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "META",
+          "weight": 0.0462,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AVGO",
+          "weight": 0.0454,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TSLA",
+          "weight": 0.0448,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "NFLX",
+          "weight": 0.0121,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ASML",
+          "weight": 0.012,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "COST",
+          "weight": 0.0108,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMD",
+          "weight": 0.0096,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "CSCO",
+          "weight": 0.0088,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "MU",
+          "weight": 0.0076,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TMUS",
+          "weight": 0.0062,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMAT",
+          "weight": 0.0059,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "PEP",
+          "weight": 0.0059,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "LRCX",
+          "weight": 0.0058,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ISRG",
+          "weight": 0.0056,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "QCOM",
+          "weight": 0.0054,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "INTU",
+          "weight": 0.0052,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "INTC",
+          "weight": 0.0051,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "BKNG",
+          "weight": 0.005,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMGN",
+          "weight": 0.005,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TXN",
+          "weight": 0.0046,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "KLAC",
+          "weight": 0.0046,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "PDD",
+          "weight": 0.0044,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GILD",
+          "weight": 0.0042,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ADBE",
+          "weight": 0.0042,
+          "side": "BUY",
+          "allocation": 33.3430436962258,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        }
+      ]
+    },
+    "status": "CLOSED",
+    "pnl": 39.516832432709684,
+    "holding_period": 5
+  },
+  {
+    "id": 7,
+    "strategy": "ml",
+    "entry_date": "2026-01-02T20:12:24.546976",
+    "exit_date": "2026-01-08T20:24:39.745472",
+    "signal_type": "SHORT_DISPERSION",
+    "index_symbol": "QQQ",
+    "entry_corr": 0.29839185298604426,
+    "entry_z_score": 0.5333863436846894,
+    "entry_ml_prob": null,
+    "exit_corr": 0.1980932177123538,
+    "exit_z_score": -0.9933884512162007,
+    "position_size": 1999.9296722374208,
+    "trade_structure": {
+      "signal_type": "SHORT_DISPERSION",
+      "position_size": 1999.9296722374208,
+      "index": {
+        "symbol": "QQQ",
+        "side": "SELL",
+        "allocation": 999.9648361187104,
+        "trade_type": "STRADDLE",
+        "option_type": "ETF"
+      },
+      "components": [
+        {
+          "symbol": "NVDA",
+          "weight": 0.1213,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AAPL",
+          "weight": 0.1147,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GOOGL",
+          "weight": 0.1055,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GOOG",
+          "weight": 0.1055,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "MSFT",
+          "weight": 0.0999,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMZN",
+          "weight": 0.0674,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "META",
+          "weight": 0.0462,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AVGO",
+          "weight": 0.0454,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TSLA",
+          "weight": 0.0448,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "NFLX",
+          "weight": 0.0121,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ASML",
+          "weight": 0.012,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "COST",
+          "weight": 0.0108,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMD",
+          "weight": 0.0096,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "CSCO",
+          "weight": 0.0088,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "MU",
+          "weight": 0.0076,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TMUS",
+          "weight": 0.0062,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMAT",
+          "weight": 0.0059,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "PEP",
+          "weight": 0.0059,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "LRCX",
+          "weight": 0.0058,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ISRG",
+          "weight": 0.0056,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "QCOM",
+          "weight": 0.0054,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "INTU",
+          "weight": 0.0052,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "INTC",
+          "weight": 0.0051,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "BKNG",
+          "weight": 0.005,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMGN",
+          "weight": 0.005,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TXN",
+          "weight": 0.0046,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "KLAC",
+          "weight": 0.0046,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "PDD",
+          "weight": 0.0044,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GILD",
+          "weight": 0.0042,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ADBE",
+          "weight": 0.0042,
+          "side": "BUY",
+          "allocation": 33.332161203957014,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        }
+      ]
+    },
+    "status": "CLOSED",
+    "pnl": 30.088532515315855,
+    "holding_period": 5
+  },
+  {
+    "id": 8,
+    "strategy": "ml",
+    "entry_date": "2026-01-05T22:23:07.849148",
+    "exit_date": null,
+    "signal_type": "SHORT_DISPERSION",
+    "index_symbol": "QQQ",
+    "entry_corr": 0.2646238895371478,
+    "entry_z_score": -0.008317116612504534,
+    "entry_ml_prob": null,
+    "exit_corr": null,
+    "exit_z_score": null,
+    "position_size": 1999.5883146014748,
+    "trade_structure": {
+      "signal_type": "SHORT_DISPERSION",
+      "position_size": 1999.5883146014748,
+      "index": {
+        "symbol": "QQQ",
+        "side": "SELL",
+        "allocation": 999.7941573007374,
+        "trade_type": "STRADDLE",
+        "option_type": "ETF"
+      },
+      "components": [
+        {
+          "symbol": "NVDA",
+          "weight": 0.1213,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AAPL",
+          "weight": 0.1147,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GOOGL",
+          "weight": 0.1055,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GOOG",
+          "weight": 0.1055,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "MSFT",
+          "weight": 0.0999,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMZN",
+          "weight": 0.0674,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "META",
+          "weight": 0.0462,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AVGO",
+          "weight": 0.0454,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TSLA",
+          "weight": 0.0448,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "NFLX",
+          "weight": 0.0121,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ASML",
+          "weight": 0.012,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "COST",
+          "weight": 0.0108,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMD",
+          "weight": 0.0096,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "CSCO",
+          "weight": 0.0088,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "MU",
+          "weight": 0.0076,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TMUS",
+          "weight": 0.0062,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMAT",
+          "weight": 0.0059,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "PEP",
+          "weight": 0.0059,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "LRCX",
+          "weight": 0.0058,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ISRG",
+          "weight": 0.0056,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "QCOM",
+          "weight": 0.0054,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "INTU",
+          "weight": 0.0052,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "INTC",
+          "weight": 0.0051,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "BKNG",
+          "weight": 0.005,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "AMGN",
+          "weight": 0.005,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "TXN",
+          "weight": 0.0046,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "KLAC",
+          "weight": 0.0046,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "PDD",
+          "weight": 0.0044,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "GILD",
+          "weight": 0.0042,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        },
+        {
+          "symbol": "ADBE",
+          "weight": 0.0042,
+          "side": "BUY",
+          "allocation": 33.32647191002458,
+          "trade_type": "STRADDLE",
+          "option_type": "STOCK"
+        }
+      ]
+    },
+    "status": "OPEN",
+    "pnl": null,
+    "holding_period": 5
+  }
+]

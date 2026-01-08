@@ -37,14 +37,8 @@ env/
 logs/
 *.log
 
-# Data files (contain sensitive trading data)
-positions/
-signals/
-intraday_data/
-historical_data/
-
 # ML model files (large binary files)
-ml_data/*.pkl
+*.pkl
 
 # Jupyter Notebooks
 .ipynb_checkpoints/

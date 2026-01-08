@@ -1,0 +1,13 @@
+{
+  "timestamp": "2025-12-26 22:57:58.517998",
+  "date": "20251226",
+  "signal": "NO_TRADE",
+  "reason": "Z-score within threshold (|-0.36| < 1.5)",
+  "impl_corr": 0.23181896592629322,
+  "z_score": -0.3620529165280188,
+  "ndx_iv": 14.998472335306179,
+  "num_components": 47,
+  "index_symbol": "QQQ",
+  "index_iv": 14.998472335306179,
+  "qqq_iv": 14.998472335306179
+}

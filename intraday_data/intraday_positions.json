@@ -1,0 +1,38 @@
+{
+  "positions": [
+    {
+      "id": 1,
+      "entry_timestamp": "2025-12-30T21:46:09.942477",
+      "entry_date": "2025-12-30",
+      "entry_time": "21:46:09",
+      "exit_timestamp": "2026-01-08T21:14:47.886074",
+      "signal_type": "SHORT_DISPERSION",
+      "entry_corr": 0.21553980867606676,
+      "entry_z_score": -0.6054978547726287,
+      "entry_ml_prob": 0.6278296119795648,
+      "exit_corr": 0.19525109824259115,
+      "position_size": 2000.0,
+      "status": "CLOSED",
+      "pnl": 6.086613130042681,
+      "holding_period": 5
+    },
+    {
+      "id": 2,
+      "entry_timestamp": "2026-01-02T21:54:00.505617",
+      "entry_date": "2026-01-02",
+      "entry_time": "21:54:00",
+      "exit_timestamp": null,
+      "signal_type": "SHORT_DISPERSION",
+      "entry_corr": 0.2863458078263533,
+      "entry_z_score": 0.3360558477780881,
+      "entry_ml_prob": 0.6247369470864357,
+      "exit_corr": null,
+      "position_size": 2000.0,
+      "status": "OPEN",
+      "pnl": null,
+      "holding_period": 5
+    }
+  ],
+  "capital": 100006.08661313004,
+  "last_updated": "2026-01-08T21:14:47.889861"
+}

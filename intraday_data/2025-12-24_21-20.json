@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-12-24T21:20:28.956211",
+  "date": "2025-12-24",
+  "time": "21:20:28",
+  "market_data": {
+    "impl_corr": 0.2320876682468337,
+    "z_score": -0.37637859507938315,
+    "index_iv": null,
+    "num_components": 46,
+    "vix_level": 18.0,
+    "vxn_level": 20.0
+  },
+  "signals": {
+    "z_score_signal": "NO_TRADE",
+    "ml_signal": "SHORT_DISPERSION",
+    "short_probability": 0.6834886210165424,
+    "strategy_used": "ML"
+  },
+  "percentile": null,
+  "historical_mean": null,
+  "historical_std": null
+}
