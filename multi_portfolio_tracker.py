@@ -6,6 +6,8 @@ Tracks 3 parallel portfolios with different position sizing strategies:
 2. ML with 0.5x Kelly + Confidence Scaling
 3. ML with 1.0x Kelly + Confidence Scaling
 
+All strategies use VEGA-WEIGHTED position sizing by default.
+
 This allows direct comparison of risk management approaches during paper trading.
 """
 
@@ -22,6 +24,13 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from risk_manager import RiskManager, MultiStrategyRiskManager
 from ibkr_connector import NDX_COMPONENTS, INDEX_SYMBOL
+
+# Try to import vega-weighted sizer
+try:
+    from vega_weighted_sizer import MultiStrategyVegaSizer, VEGA_SIZER_AVAILABLE
+    VEGA_AVAILABLE = VEGA_SIZER_AVAILABLE
+except ImportError:
+    VEGA_AVAILABLE = False
 
 # =============================================================================
 # CONFIGURATION
@@ -52,16 +61,23 @@ class MultiPortfolioTrader:
     Tracks 3 parallel portfolios with different position sizing strategies.
     
     Portfolios:
-    1. fixed: Z-Score signal with fixed 2% position sizing
-    2. kelly_0.5x: ML signal with half Kelly + confidence scaling
-    3. kelly_1.0x: ML signal with full Kelly + confidence scaling
+    1. fixed: Z-Score signal with fixed 2% position sizing + vega-weighted
+    2. kelly_0.5x: ML signal with half Kelly + confidence scaling + vega-weighted
+    3. kelly_1.0x: ML signal with full Kelly + confidence scaling + vega-weighted
     """
     
     STRATEGIES = ['fixed', 'kelly_0.5x', 'kelly_1.0x']
     
-    def __init__(self, base_capital: float = INITIAL_CAPITAL):
-        """Initialize the multi-portfolio tracker."""
+    def __init__(self, base_capital: float = INITIAL_CAPITAL, use_vega_weighting: bool = True):
+        """
+        Initialize the multi-portfolio tracker.
+        
+        Args:
+            base_capital: Starting capital for each portfolio
+            use_vega_weighting: Whether to use vega-weighted position sizing
+        """
         self.base_capital = base_capital
+        self.use_vega_weighting = use_vega_weighting and VEGA_AVAILABLE
         
         # Create directories
         os.makedirs(POSITIONS_DIR, exist_ok=True)
@@ -97,6 +113,14 @@ class MultiPortfolioTrader:
                 f'risk_data_{name}.json'
             )
             rm.risk_data = rm._load_risk_data()
+        
+        # Initialize vega-weighted sizer if available
+        if self.use_vega_weighting:
+            self.vega_sizer = MultiStrategyVegaSizer(base_capital=base_capital)
+            logger.info("Vega-weighted sizing ENABLED")
+        else:
+            self.vega_sizer = None
+            logger.info("Vega-weighted sizing DISABLED")
         
         # Portfolio data
         self.portfolios = {name: self._load_portfolio(name) for name in self.STRATEGIES}
@@ -175,20 +199,41 @@ class MultiPortfolioTrader:
         """Check if we can open a new position for a strategy."""
         return len(self.get_open_positions(strategy)) < MAX_POSITIONS
     
-    def calculate_position_sizes(self, ml_probability: float) -> Dict[str, Dict]:
+    def calculate_position_sizes(self, 
+                                  ml_probability: float,
+                                  signal_type: str = 'SHORT_DISPERSION',
+                                  use_ibkr: bool = False) -> Dict[str, Dict]:
         """
         Calculate position sizes for all strategies.
         
         Args:
             ml_probability: ML model's probability for the trade
+            signal_type: 'SHORT_DISPERSION' or 'LONG_DISPERSION'
+            use_ibkr: Whether to use live IBKR data for Greeks
             
         Returns:
             Dict of strategy -> position sizing info
         """
+        # Get current capitals
+        current_capitals = {
+            strategy: self.portfolios[strategy]['capital']
+            for strategy in self.STRATEGIES
+        }
+        
+        # Use vega-weighted sizing if enabled
+        if self.use_vega_weighting and self.vega_sizer:
+            return self.vega_sizer.calculate_all_positions(
+                signal_type=signal_type,
+                current_capitals=current_capitals,
+                ml_probability=ml_probability,
+                use_ibkr=use_ibkr
+            )
+        
+        # Fallback to simple Kelly-based sizing
         results = {}
         
         for strategy in self.STRATEGIES:
-            capital = self.portfolios[strategy]['capital']
+            capital = current_capitals[strategy]
             rm = self.risk_managers[strategy]
             
             if strategy == 'fixed':
@@ -208,19 +253,23 @@ class MultiPortfolioTrader:
             
             size_info['strategy'] = strategy
             size_info['capital'] = capital
+            size_info['total_position'] = size_info.get('position_size', 0)
+            size_info['is_vega_weighted'] = False
             results[strategy] = size_info
         
         return results
     
     def execute_trades(self, 
                        zscore_signal: Dict,
-                       ml_prediction: Dict) -> Dict[str, Dict]:
+                       ml_prediction: Dict,
+                       use_ibkr: bool = False) -> Dict[str, Dict]:
         """
         Execute trades for all strategies based on their signals.
         
         Args:
             zscore_signal: Z-score based signal dict
             ml_prediction: ML prediction dict with ml_signal and short_probability
+            use_ibkr: Whether to use live IBKR data for Greeks
             
         Returns:
             Dict of strategy -> trade result
@@ -230,29 +279,42 @@ class MultiPortfolioTrader:
         # Get ML probability for position sizing
         ml_prob = ml_prediction.get('short_probability', 0.5)
         
+        # Determine signal type for vega weighting
+        z_signal = zscore_signal.get('signal', 'NO_TRADE')
+        ml_signal = ml_prediction.get('ml_signal', 'NO_TRADE')
+        
+        if ml_signal in ['SHORT_DISPERSION', 'LONG_DISPERSION']:
+            signal_type = ml_signal
+        elif z_signal in ['SHORT_DISPERSION', 'LONG_DISPERSION']:
+            signal_type = z_signal
+        else:
+            signal_type = 'SHORT_DISPERSION'  # Default for sizing calculation
+        
         # Calculate position sizes for all strategies
-        position_sizes = self.calculate_position_sizes(ml_prob)
+        position_sizes = self.calculate_position_sizes(ml_prob, signal_type, use_ibkr)
         
         # Check and close expired positions first
         self._check_and_close_all_positions(zscore_signal)
         
         # Execute trades for each strategy
         for strategy in self.STRATEGIES:
+            size_info = position_sizes[strategy]
+            
             results[strategy] = {
                 'traded': False,
                 'position': None,
                 'reason': None,
-                'position_size': position_sizes[strategy]
+                'position_size': size_info
             }
             
             # Determine which signal to use
             if strategy == 'fixed':
                 # Fixed strategy uses Z-score signal
-                signal = zscore_signal.get('signal', 'NO_TRADE')
+                signal = z_signal
                 signal_source = 'Z-Score'
             else:
                 # Kelly strategies use ML signal
-                signal = ml_prediction.get('ml_signal', 'NO_TRADE')
+                signal = ml_signal
                 signal_source = 'ML'
             
             # Check if signal is actionable
@@ -266,20 +328,33 @@ class MultiPortfolioTrader:
                 continue
             
             # Check risk controls
-            size_info = position_sizes[strategy]
-            if not size_info['can_trade']:
-                results[strategy]['reason'] = size_info['reason']
+            if not size_info.get('can_trade', True):
+                results[strategy]['reason'] = size_info.get('reason', 'Risk controls')
                 continue
+            
+            # Get position size
+            total_position = size_info.get('total_position', 0)
+            if total_position <= 0:
+                results[strategy]['reason'] = "Position size is zero"
+                continue
+            
+            position_pct = total_position / self.portfolios[strategy]['capital']
+            
+            # Get vega info
+            is_vega_weighted = 'index' in size_info and 'components' in size_info
+            vega_summary = size_info.get('summary', {}) if is_vega_weighted else {}
             
             # Execute the trade
             position = self._open_position(
                 strategy=strategy,
                 signal_type=signal,
                 signal_source=signal_source,
-                position_size=size_info['position_size'],
-                position_pct=size_info['position_pct'],
+                position_size=total_position,
+                position_pct=position_pct,
                 zscore_signal=zscore_signal,
-                ml_prediction=ml_prediction
+                ml_prediction=ml_prediction,
+                is_vega_weighted=is_vega_weighted,
+                vega_summary=vega_summary
             )
             
             results[strategy]['traded'] = True
@@ -296,7 +371,9 @@ class MultiPortfolioTrader:
                        position_size: float,
                        position_pct: float,
                        zscore_signal: Dict,
-                       ml_prediction: Dict) -> Dict:
+                       ml_prediction: Dict,
+                       is_vega_weighted: bool = False,
+                       vega_summary: Dict = None) -> Dict:
         """Open a new position for a strategy."""
         position = {
             'id': len(self.portfolios[strategy]['positions']) + 1,
@@ -312,13 +389,18 @@ class MultiPortfolioTrader:
             'exit_z_score': None,
             'position_size': position_size,
             'position_pct': position_pct,
+            'is_vega_weighted': is_vega_weighted,
+            'vega_neutral': vega_summary.get('is_vega_neutral', False) if vega_summary else False,
+            'vega_ratio': vega_summary.get('vega_ratio', 1.0) if vega_summary else 1.0,
             'status': 'OPEN',
             'pnl': None,
             'holding_period': HOLDING_PERIOD_DAYS
         }
         
         self.portfolios[strategy]['positions'].append(position)
-        logger.info(f"[{strategy.upper()}] Opened position #{position['id']}: {signal_type} (${position_size:,.0f}, {position_pct:.1%})")
+        
+        vega_str = "✅VN" if position['vega_neutral'] else ""
+        logger.info(f"[{strategy.upper()}] Opened position #{position['id']}: {signal_type} (${position_size:,.0f}, {position_pct:.1%}) {vega_str}")
         
         return position
     
@@ -384,17 +466,20 @@ class MultiPortfolioTrader:
             'exit_date': position['exit_date'],
             'signal_type': position['signal_type'],
             'position_size': position['position_size'],
-            'position_pct': position['position_pct'],
+            'is_vega_weighted': position.get('is_vega_weighted', False),
+            'vega_neutral': position.get('vega_neutral', False),
             'entry_corr': position['entry_corr'],
             'exit_corr': exit_corr,
             'pnl': position['pnl'],
             'is_win': is_win
         })
         
-        logger.info(f"[{strategy.upper()}] Closed position #{position['id']}: P&L ${position['pnl']:,.2f}")
+        pnl_str = f"+${position['pnl']:.0f}" if position['pnl'] >= 0 else f"-${abs(position['pnl']):.0f}"
+        vega_str = "VN" if position.get('vega_neutral', False) else "--"
+        logger.info(f"[{strategy.upper()}] Closed position #{position['id']}: {position['signal_type']} | P&L: {pnl_str} | {vega_str}")
     
-    def get_portfolio_stats(self, strategy: str) -> Dict:
-        """Get statistics for a portfolio."""
+    def get_stats(self, strategy: str) -> Dict:
+        """Get statistics for a strategy."""
         portfolio = self.portfolios[strategy]
         open_positions = self.get_open_positions(strategy)
         closed_trades = portfolio['trade_history']
@@ -403,6 +488,9 @@ class MultiPortfolioTrader:
         wins = sum(1 for t in closed_trades if t.get('is_win', False))
         win_rate = wins / len(closed_trades) * 100 if closed_trades else 0
         
+        # Count vega-neutral trades
+        vega_neutral_count = sum(1 for t in closed_trades if t.get('vega_neutral', False))
+        
         return {
             'strategy': strategy,
             'capital': portfolio['capital'],
@@ -410,52 +498,29 @@ class MultiPortfolioTrader:
             'open_positions': len(open_positions),
             'closed_trades': len(closed_trades),
             'total_pnl': total_pnl,
-            'win_rate': win_rate
+            'win_rate': win_rate,
+            'vega_neutral_trades': vega_neutral_count
         }
     
     def print_comparison(self):
-        """Print side-by-side comparison of all strategies."""
-        stats = {s: self.get_portfolio_stats(s) for s in self.STRATEGIES}
-        
+        """Print comparison of all portfolios."""
         print("\n" + "=" * 90)
-        print("MULTI-PORTFOLIO COMPARISON")
+        print("PORTFOLIO COMPARISON")
         print("=" * 90)
         
-        # Header
-        print(f"\n{'Metric':<20} {'Fixed 2%':>20} {'Kelly 0.5x':>20} {'Kelly 1.0x':>20}")
-        print("-" * 90)
+        stats = {s: self.get_stats(s) for s in self.STRATEGIES}
         
-        # Capital
-        print(f"{'Capital':<20} ${stats['fixed']['capital']:>18,.0f} ${stats['kelly_0.5x']['capital']:>18,.0f} ${stats['kelly_1.0x']['capital']:>18,.0f}")
+        print(f"\n  {'Strategy':<15} {'Capital':>15} {'Return':>10} {'Open':>8} {'Closed':>8} {'Win Rate':>10} {'Vega-Neutral':>12}")
+        print("  " + "-" * 85)
         
-        # Return
-        print(f"{'Return':<20} {stats['fixed']['return_pct']:>19.2f}% {stats['kelly_0.5x']['return_pct']:>19.2f}% {stats['kelly_1.0x']['return_pct']:>19.2f}%")
-        
-        # Open positions
-        print(f"{'Open Positions':<20} {stats['fixed']['open_positions']:>20} {stats['kelly_0.5x']['open_positions']:>20} {stats['kelly_1.0x']['open_positions']:>20}")
-        
-        # Closed trades
-        print(f"{'Closed Trades':<20} {stats['fixed']['closed_trades']:>20} {stats['kelly_0.5x']['closed_trades']:>20} {stats['kelly_1.0x']['closed_trades']:>20}")
-        
-        # Total P&L
-        print(f"{'Total P&L':<20} ${stats['fixed']['total_pnl']:>18,.0f} ${stats['kelly_0.5x']['total_pnl']:>18,.0f} ${stats['kelly_1.0x']['total_pnl']:>18,.0f}")
-        
-        # Win rate
-        print(f"{'Win Rate':<20} {stats['fixed']['win_rate']:>19.1f}% {stats['kelly_0.5x']['win_rate']:>19.1f}% {stats['kelly_1.0x']['win_rate']:>19.1f}%")
-        
-        print("-" * 90)
-        
-        # Determine best performer
-        returns = [(s, stats[s]['return_pct']) for s in self.STRATEGIES]
-        best = max(returns, key=lambda x: x[1])
-        
-        if best[1] != 0:
-            print(f"\nBest Performer: {best[0]} ({best[1]:+.2f}%)")
-        
-        print("=" * 90)
+        for strategy in self.STRATEGIES:
+            s = stats[strategy]
+            vn_str = f"{s['vega_neutral_trades']}/{s['closed_trades']}" if s['closed_trades'] > 0 else "0/0"
+            print(f"  {strategy:<15} ${s['capital']:>13,.0f} {s['return_pct']:>9.2f}% {s['open_positions']:>8} "
+                  f"{s['closed_trades']:>8} {s['win_rate']:>9.1f}% {vn_str:>12}")
     
     def print_open_positions(self):
-        """Print all open positions across strategies."""
+        """Print all open positions."""
         print("\n" + "-" * 90)
         print("OPEN POSITIONS")
         print("-" * 90)
@@ -469,11 +534,13 @@ class MultiPortfolioTrader:
                     entry_date = datetime.fromisoformat(pos['entry_date'])
                     trading_days = self._count_trading_days(entry_date, datetime.now())
                     remaining = pos['holding_period'] - trading_days
+                    vega_str = "✅VN" if pos.get('vega_neutral', False) else "⚠️"
                     
-                    print(f"    #{pos['id']}: {pos['signal_type']} | "
+                    print(f"    #{pos['id']}: {pos['signal_type'][:5]} | "
                           f"Size: ${pos['position_size']:,.0f} ({pos['position_pct']:.1%}) | "
-                          f"Days: {trading_days}/{pos['holding_period']} | "
-                          f"Closes in: {remaining}")
+                          f"Days: {trading_days}/{pos['holding_period']} | {vega_str}")
+            else:
+                print(f"\n  [{strategy.upper()}] No open positions")
     
     def print_risk_status(self):
         """Print risk status for all strategies."""
@@ -509,22 +576,29 @@ class MultiPortfolioTrader:
 # TRADING SESSION
 # =============================================================================
 
-def run_multi_portfolio_session(zscore_signal: Dict, ml_prediction: Dict) -> MultiPortfolioTrader:
+def run_multi_portfolio_session(zscore_signal: Dict, 
+                                 ml_prediction: Dict,
+                                 use_vega_weighting: bool = True,
+                                 use_ibkr: bool = False) -> MultiPortfolioTrader:
     """
     Run a complete trading session with all 3 strategies.
     
     Args:
         zscore_signal: Z-score based signal
         ml_prediction: ML prediction dict
+        use_vega_weighting: Whether to use vega-weighted position sizing
+        use_ibkr: Whether to use live IBKR data for Greeks
         
     Returns:
         MultiPortfolioTrader instance
     """
-    trader = MultiPortfolioTrader()
+    trader = MultiPortfolioTrader(use_vega_weighting=use_vega_weighting)
     
     print("\n" + "=" * 90)
     print(f"MULTI-PORTFOLIO TRADING SESSION - {INDEX_SYMBOL}")
     print(f"Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"Vega-Weighted: {'✅ ENABLED' if trader.use_vega_weighting else '❌ DISABLED'}")
+    print(f"Greeks Source: {'LIVE (IBKR)' if use_ibkr else 'SIMULATED'}")
     print("=" * 90)
     
     # Print signal information
@@ -544,23 +618,53 @@ def run_multi_portfolio_session(zscore_signal: Dict, ml_prediction: Dict) -> Mul
     print(f"    SHORT Probability: {ml_prob:.1%}")
     print(f"    Strategy: {ml_prediction.get('strategy_used', 'N/A')}")
     
+    # Determine signal type for sizing
+    if ml_signal in ['SHORT_DISPERSION', 'LONG_DISPERSION']:
+        signal_type = ml_signal
+    elif z_signal in ['SHORT_DISPERSION', 'LONG_DISPERSION']:
+        signal_type = z_signal
+    else:
+        signal_type = 'SHORT_DISPERSION'
+    
     # Calculate and display position sizes
     print("\n" + "-" * 90)
-    print("POSITION SIZING")
+    print("POSITION SIZING" + (" (VEGA-WEIGHTED)" if trader.use_vega_weighting else ""))
     print("-" * 90)
     
-    position_sizes = trader.calculate_position_sizes(ml_prob)
+    position_sizes = trader.calculate_position_sizes(ml_prob, signal_type, use_ibkr)
     
-    print(f"\n  {'Strategy':<15} {'Kelly %':>10} {'Conf Mult':>10} {'Size Red':>10} {'Final %':>10} {'Amount':>15}")
-    print("  " + "-" * 75)
-    
-    for strategy in trader.STRATEGIES:
-        ps = position_sizes[strategy]
-        kelly_str = f"{ps['kelly_pct']:.1%}" if ps['kelly_pct'] > 0 else "N/A"
-        print(f"  {strategy:<15} {kelly_str:>10} {ps['confidence_multiplier']:>10.2f}x {ps['size_reduction']:>9.0%} {ps['position_pct']:>10.1%} ${ps['position_size']:>13,.0f}")
+    if trader.use_vega_weighting:
+        # Vega-weighted display
+        print(f"\n  {'Strategy':<15} {'Total Pos':>12} {'Index':>12} {'Components':>12} {'Vega-Neutral':>14}")
+        print("  " + "-" * 70)
+        
+        for strategy in trader.STRATEGIES:
+            ps = position_sizes[strategy]
+            total = ps.get('total_position', 0)
+            index_alloc = ps.get('index', {}).get('allocation', 0) if 'index' in ps else total / 2
+            comp_alloc = ps.get('summary', {}).get('component_allocation', 0) if 'summary' in ps else total / 2
+            is_vn = ps.get('summary', {}).get('is_vega_neutral', False) if 'summary' in ps else False
+            vn_str = "✅ Yes" if is_vn else "⚠️ No"
+            
+            print(f"  {strategy:<15} ${total:>10,.0f} ${index_alloc:>10,.0f} ${comp_alloc:>10,.0f} {vn_str:>14}")
+    else:
+        # Simple Kelly display
+        print(f"\n  {'Strategy':<15} {'Kelly %':>10} {'Conf Mult':>10} {'Size Red':>10} {'Final %':>10} {'Amount':>15}")
+        print("  " + "-" * 75)
+        
+        for strategy in trader.STRATEGIES:
+            ps = position_sizes[strategy]
+            kelly_pct = ps.get('kelly_pct', ps.get('kelly_sizing', {}).get('kelly_pct', 0))
+            conf_mult = ps.get('confidence_multiplier', ps.get('kelly_sizing', {}).get('confidence_multiplier', 1.0))
+            size_red = ps.get('size_reduction', ps.get('kelly_sizing', {}).get('size_reduction', 1.0))
+            pos_pct = ps.get('position_pct', ps.get('total_position', 0) / trader.portfolios[strategy]['capital'])
+            pos_size = ps.get('total_position', ps.get('position_size', 0))
+            
+            kelly_str = f"{kelly_pct:.1%}" if kelly_pct > 0 else "N/A"
+            print(f"  {strategy:<15} {kelly_str:>10} {conf_mult:>10.2f}x {size_red:>9.0%} {pos_pct:>10.1%} ${pos_size:>13,.0f}")
     
     # Execute trades
-    results = trader.execute_trades(zscore_signal, ml_prediction)
+    results = trader.execute_trades(zscore_signal, ml_prediction, use_ibkr)
     
     # Print trade execution results
     print("\n" + "-" * 90)
@@ -575,7 +679,8 @@ def run_multi_portfolio_session(zscore_signal: Dict, ml_prediction: Dict) -> Mul
         
         if result['traded']:
             pos = result['position']
-            print(f"    Position #{pos['id']}: {pos['signal_type']} | ${pos['position_size']:,.0f} ({pos['position_pct']:.1%})")
+            vega_str = "✅VN" if pos.get('vega_neutral', False) else ""
+            print(f"    Position #{pos['id']}: {pos['signal_type']} | ${pos['position_size']:,.0f} ({pos['position_pct']:.1%}) {vega_str}")
     
     # Print full summary
     trader.print_full_summary()
@@ -607,7 +712,8 @@ def main():
         'strategy_used': 'ML_MODEL'
     }
     
-    run_multi_portfolio_session(sample_zscore, sample_ml)
+    # Test with vega-weighted (default)
+    run_multi_portfolio_session(sample_zscore, sample_ml, use_vega_weighting=True, use_ibkr=False)
 
 
 if __name__ == "__main__":

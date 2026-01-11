@@ -7,17 +7,15 @@ Enhanced version with multi-portfolio risk management:
 - Kelly 0.5x + Confidence Scaling (ML)
 - Kelly 1.0x + Confidence Scaling (ML)
 
-Includes:
-- Kelly criterion position sizing
-- Confidence-based allocation scaling
-- Drawdown controls and circuit breakers
-- VEGA-WEIGHTED position sizing (optional)
+All modes use:
+- VEGA-WEIGHTED position sizing (default)
+- LIVE GREEKS from IBKR when connected
+- SIMULATED GREEKS when in --offline mode
 
 Usage:
-    python run_daily_v2.py              # Full run with IBKR
-    python run_daily_v2.py --offline    # Test mode without IBKR
-    python run_daily_v2.py --signal-only # Generate signal only, no trading
-    python run_daily_v2.py --log-data   # Intraday data logging with vega-weighted sizing
+    python run_daily_v2.py              # Full run with IBKR (live Greeks)
+    python run_daily_v2.py --offline    # Test mode (simulated Greeks)
+    python run_daily_v2.py --log-data   # Intraday data logging
     python run_daily_v2.py --no-vega    # Disable vega-weighted sizing
 """
 
@@ -45,7 +43,7 @@ except ImportError:
 
 # Try to import vega-weighted sizer
 try:
-    from vega_weighted_sizer import VegaWeightedKellySizer, MultiStrategyVegaSizer, VEGA_SIZER_AVAILABLE
+    from vega_weighted_sizer import MultiStrategyVegaSizer, VEGA_SIZER_AVAILABLE
     VEGA_AVAILABLE = VEGA_SIZER_AVAILABLE
 except ImportError:
     VEGA_AVAILABLE = False
@@ -252,7 +250,7 @@ def print_signal_comparison(signal, ml_prediction):
         print(f"   LONG uses Z-score only (ML doesn't improve LONG predictions)")
 
 
-def print_risk_management_info(use_vega: bool = True):
+def print_risk_management_info(use_vega: bool = True, use_ibkr: bool = False):
     """Print risk management configuration."""
     print("\n" + "-" * 70)
     print("RISK MANAGEMENT CONFIGURATION")
@@ -278,6 +276,7 @@ def print_risk_management_info(use_vega: bool = True):
         print("    Index/Component split: 50%/50%")
         print("    Component weighting: Inverse-vega (higher vega = smaller position)")
         print("    Goal: Vega-neutral exposure (no directional vol bet)")
+        print(f"    Greeks Source: {'LIVE (IBKR)' if use_ibkr else 'SIMULATED'}")
     else:
         print("    Status: ❌ DISABLED")
         print("    Using simple Kelly-based sizing without vega weighting")
@@ -287,7 +286,7 @@ def main():
     """Main entry point for daily dispersion trading with risk management."""
     parser = argparse.ArgumentParser(description='Dispersion Trading Daily Runner v2 (Multi-Portfolio)')
     parser.add_argument('--offline', action='store_true', 
-                        help='Run in offline test mode (no IBKR connection)')
+                        help='Run in offline test mode (simulated Greeks)')
     parser.add_argument('--signal-only', action='store_true',
                         help='Generate signal only, do not execute trades')
     parser.add_argument('--port', type=int, default=7497,
@@ -302,14 +301,15 @@ def main():
                         help='Show risk management configuration')
     parser.add_argument('--no-vega', action='store_true',
                         help='Disable vega-weighted position sizing')
-    parser.add_argument('--live-greeks', action='store_true',
-                        help='Use live IBKR data for Greeks (requires IBKR connection)')
     
     args = parser.parse_args()
     
-    # Determine if vega weighting is enabled
+    # Determine settings based on mode
+    # - Vega-weighted is ON by default (unless --no-vega)
+    # - Live Greeks when IBKR connected (not --offline)
+    # - Simulated Greeks when --offline
     use_vega = not args.no_vega and VEGA_AVAILABLE
-    use_ibkr_greeks = args.live_greeks and not args.offline
+    use_ibkr = not args.offline  # Live Greeks when not offline
     
     print("\n" + "=" * 90)
     print("DISPERSION TRADING SYSTEM v2 - MULTI-PORTFOLIO RISK MANAGEMENT")
@@ -320,19 +320,18 @@ def main():
     print(f"Strategy: HYBRID (ML for SHORT, Z-score for LONG)")
     print(f"ML Status: {'DISABLED' if args.no_ml else ('ENABLED' if ML_AVAILABLE else 'NOT AVAILABLE')}")
     print(f"Vega-Weighted: {'✅ ENABLED' if use_vega else '❌ DISABLED'}")
-    if use_vega:
-        print(f"Greeks Source: {'LIVE (IBKR)' if use_ibkr_greeks else 'SIMULATED'}")
+    print(f"Greeks Source: {'SIMULATED' if args.offline else 'LIVE (IBKR)'}")
     print("=" * 90)
     
     # Show risk management info
     if args.show_risk:
-        print_risk_management_info(use_vega)
+        print_risk_management_info(use_vega, use_ibkr)
         return
     
     # Check positions only
     if args.check_positions:
         print("\nChecking positions only...")
-        trader = MultiPortfolioTrader()
+        trader = MultiPortfolioTrader(use_vega_weighting=use_vega)
         trader.print_full_summary()
         return
     
@@ -342,7 +341,7 @@ def main():
         print("   Collecting data for research (no trades will be executed)")
         print("   This data is NOT used for ML training to avoid overfitting")
         if use_vega:
-            print("   📈 Vega-weighted sizing ENABLED for all 3 portfolios")
+            print(f"   📈 Vega-weighted sizing ENABLED (Greeks: {'SIMULATED' if args.offline else 'LIVE'})")
     
     # Generate signal
     if args.offline:
@@ -394,7 +393,7 @@ def main():
     # Print signal comparison
     print_signal_comparison(signal, ml_prediction)
     
-    # Calculate vega info if enabled
+    # Calculate vega info for display/logging
     vega_info = None
     if use_vega and VEGA_AVAILABLE:
         try:
@@ -415,7 +414,7 @@ def main():
                 signal_type=signal_type,
                 current_capitals={'fixed': 100000, 'kelly_0.5x': 100000, 'kelly_1.0x': 100000},
                 ml_probability=ml_prediction.get('short_probability', 0.5),
-                use_ibkr=use_ibkr_greeks
+                use_ibkr=use_ibkr
             )
             
             # Print vega comparison
@@ -455,11 +454,12 @@ def main():
                 print(f"   {time}     | {corr:.4f}  | {z:>7.4f} | {prob_str:>8} | {ml_sig}")
         
         # Run intraday paper trading with vega-weighted sizing
+        # use_ibkr=False for --offline, True otherwise
         run_intraday_tracking(
             signal, 
             ml_prediction,
             use_vega_weighting=use_vega,
-            use_ibkr=use_ibkr_greeks
+            use_ibkr=use_ibkr
         )
         
         print("\nℹ️  Main portfolios NOT affected (intraday tracking is separate)")
@@ -471,11 +471,16 @@ def main():
         
         # Execute trades for all 3 strategies if not signal-only mode
         if not args.signal_only:
-            run_multi_portfolio_session(signal, ml_prediction)
+            run_multi_portfolio_session(
+                signal, 
+                ml_prediction,
+                use_vega_weighting=use_vega,
+                use_ibkr=use_ibkr
+            )
         else:
             print("\nSignal-only mode - no trades executed")
             # Still show portfolio status
-            trader = MultiPortfolioTrader()
+            trader = MultiPortfolioTrader(use_vega_weighting=use_vega)
             trader.print_full_summary()
     
     print("\n" + "=" * 90)
