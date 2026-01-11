@@ -40,6 +40,9 @@ HISTORICAL_DATA_DIR = "historical_data"
 ENABLE_EMAIL_ALERTS = False  # Set to True to enable email alerts
 EMAIL_RECIPIENT = "your_email@example.com"
 
+# Safety killswitch
+MIN_COMPONENTS_REQUIRED = 45  # Minimum components needed for valid signal
+
 # =============================================================================
 # LOGGING SETUP
 # =============================================================================
@@ -141,7 +144,21 @@ class DispersionSignalGenerator:
         
         # Get component IVs
         component_ivs = self.ibkr.get_all_component_ivs()
-        self.logger.info(f"Got IV for {len(component_ivs)} components")
+        num_components = len(component_ivs)
+        self.logger.info(f"Got IV for {num_components} components")
+        
+        # KILLSWITCH: Check minimum components requirement
+        if num_components < MIN_COMPONENTS_REQUIRED:
+            self.logger.error(f"\n{'='*60}")
+            self.logger.error(f"🚨 KILLSWITCH ACTIVATED 🚨")
+            self.logger.error(f"{'='*60}")
+            self.logger.error(f"Only got IV for {num_components}/{len(NDX_COMPONENTS)} components")
+            self.logger.error(f"Minimum required: {MIN_COMPONENTS_REQUIRED}")
+            self.logger.error(f"")
+            self.logger.error(f"⚠️  DATA QUALITY ISSUE - TRADE NOT TAKEN")
+            self.logger.error(f"Please rerun the code and ensure IBKR connection is uninterrupted")
+            self.logger.error(f"{'='*60}\n")
+            return None
         
         # Get weights
         weights = {symbol: weight for symbol, weight in NDX_COMPONENTS}

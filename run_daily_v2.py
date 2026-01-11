@@ -361,7 +361,16 @@ def main():
         }
     
     if signal is None:
-        print("\nFailed to generate signal")
+        print("\n" + "="*60)
+        print("🚨 SIGNAL GENERATION FAILED")
+        print("="*60)
+        print("\nPossible causes:")
+        print("  - IBKR connection interrupted")
+        print("  - Less than 45 component IVs extracted (killswitch)")
+        print("  - Market data not available")
+        print("\n⚠️  NO TRADES EXECUTED - NO DATA LOGGED")
+        print("Please check IBKR connection and rerun.")
+        print("="*60)
         return
     
     # Generate ML prediction
